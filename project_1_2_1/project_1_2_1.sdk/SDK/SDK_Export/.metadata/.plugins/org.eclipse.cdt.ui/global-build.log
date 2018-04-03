@@ -1,0 +1,673 @@
+20:06:36 **** Build of project standalone_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+
+**** Build of configuration Debug for project Lab_1.2.1 ****
+
+Nothing to build for project Lab_1.2.1
+20:10:29 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Switch_LED.d" -MT"Switch_LED.d" -o "Switch_LED.o" "../Switch_LED.c"
+Finished building: ../Switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./Switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp/ps7_cortexa9_0/lib/libxil.a(xil-crt0.o): In function `_start':
+/home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/standalone_bsp/ps7_cortexa9_0/libsrc/standalone_v3_12_a/src/xil-crt0.S:149: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [Lab_1.2.1.elf] Error 1
+21:33:15 **** Auto Build of project standalone_bsp ****
+make -k all 
+Finished building libraries
+21:34:52 **** Clean-only build of configuration Debug for project Lab_1.2.1 ****
+make clean 
+rm -rf  ./Switch_LED.o  ./Switch_LED.d  Lab_1.2.1.elf.size  Lab_1.2.1.elf
+ 
+21:34:53 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Switch_LED.d" -MT"Switch_LED.d" -o "Switch_LED.o" "../Switch_LED.c"
+../Switch_LED.c: In function 'main':
+../Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../Switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./Switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23808	   1152	  22628	  47588	   b9e4	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+21:48:14 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+21:52:33 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+21:53:11 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:05:27 **** Auto Build of project standalone_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+22:05:46 **** Auto Build of project standalone_bsp ****
+make -k all 
+Finished building libraries
+22:05:47 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:08:35 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:09:48 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:10:22 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:14:13 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:15:35 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:19:33 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:20:02 **** Clean-only build of configuration Debug for project Lab_1.2.1 ****
+make clean 
+rm -rf  ./Switch_LED.o  ./Switch_LED.d  Lab_1.2.1.elf.size  Lab_1.2.1.elf
+ 
+22:20:02 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/Switch_LED.c
+ 
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+22:24:33 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+Finished building: ../src/Switch_LED.c
+ 
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+22:30:48 **** Build of project standalone_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+
+**** Build of configuration Debug for project Lab_1.2.1 ****
+
+Nothing to build for project Lab_1.2.1
+22:31:25 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Switch_LED.d" -MT"Switch_LED.d" -o "Switch_LED.o" "../Switch_LED.c"
+Finished building: ../Switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./Switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp/ps7_cortexa9_0/lib/libxil.a(xil-crt0.o): In function `_start':
+/home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/standalone_bsp/ps7_cortexa9_0/libsrc/standalone_v3_12_a/src/xil-crt0.S:149: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [Lab_1.2.1.elf] Error 1
+22:31:46 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Switch_LED.d" -MT"Switch_LED.d" -o "Switch_LED.o" "../Switch_LED.c"
+../Switch_LED.c: In function 'main':
+../Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../Switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./Switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23808	   1152	  22628	  47588	   b9e4	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+22:32:34 **** Clean-only build of configuration Debug for project Lab_1.2.1 ****
+make clean 
+rm -rf  ./Switch_LED.o  ./Switch_LED.d  Lab_1.2.1.elf.size  Lab_1.2.1.elf
+ 
+22:32:34 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+Finished building: ../src/Switch_LED.c
+ 
+22:39:59 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/Switch_LED.c
+ 
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+22:46:35 **** Auto Build of project standalone_bsp ****
+make -k all 
+Finished building libraries
+19:27:13 **** Auto Build of project standalone_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+19:27:35 **** Auto Build of project standalone_bsp ****
+make -k all 
+Finished building libraries
+19:27:35 **** Clean-only build of configuration Debug for project Lab_1.2.1 ****
+make clean 
+rm -rf  ./src/Switch_LED.o  ./Switch_LED.o  ./src/Switch_LED.d  ./Switch_LED.d  Lab_1.2.1.elf.size  Lab_1.2.1.elf
+ 
+19:27:35 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/Switch_LED.c
+ 
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+19:27:41 **** Clean-only build of project standalone_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+19:27:42 **** Build of project standalone_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+19:27:57 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+19:27:57 **** Clean-only build of configuration Debug for project Lab_1.2.1 ****
+make clean 
+rm -rf  ./src/Switch_LED.o  ./Switch_LED.o  ./src/Switch_LED.d  ./Switch_LED.d  Lab_1.2.1.elf.size  Lab_1.2.1.elf
+ 
+19:27:58 **** Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/Switch_LED.c
+ 
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+19:32:54 **** Build of project standalone_bsp2 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+
+**** Build of configuration Debug for project Lab_1.2.1 ****
+
+Nothing to build for project Lab_1.2.1
+19:34:08 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+Finished building: ../src/switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp2/ps7_cortexa9_0/lib/libxil.a(xil-crt0.o): In function `_start':
+/home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/standalone_bsp2/ps7_cortexa9_0/libsrc/standalone_v3_12_a/src/xil-crt0.S:149: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [Lab_1.2.1.elf] Error 1
+19:35:14 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+../src/switch_LED.c: In function 'main':
+Building file: ../src/switch_LED.c
+../src/switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+Finished building: ../src/switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../src/switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23808	   1152	  22628	  47588	   b9e4	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+../src/switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+19:39:49 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+19:47:46 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+../src/switch_LED.c: In function 'main':
+../src/switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../src/switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23808	   1152	  22628	  47588	   b9e4	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+19:47:52 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+19:48:16 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+../src/switch_LED.c: In function 'main':
+../src/switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/switch_LED.c
+../src/switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23796	   1152	  22628	  47576	   b9d8	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+19:49:15 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+../src/switch_LED.c: In function 'main':
+../src/switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23788	   1152	  22628	  47568	   b9d0	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+19:49:22 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+19:51:28 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+../src/switch_LED.c: In function 'main':
+../src/switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23808	   1152	  22628	  47588	   b9e4	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+19:51:33 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+19:52:09 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+19:52:33 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+20:02:59 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+20:09:11 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+20:10:14 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Tue Mar 27 19:23:11 2018
+# Process ID: 4719
+# Log file: /home/xyin/project_1_2_1/project_1_2_1.runs/impl_1/design_Lab1_2_1_wrapper.rdi
+# Journal file: /home/xyin/project_1_2_1/project_1_2_1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_Lab1_2_1_wrapper.tcl -notrace
