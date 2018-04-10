@@ -1,0 +1,369 @@
+
+Log started: 2018-04-10  20:33:49
+/opt/PetaLinux/petalinux-v2013.10-final/tools/packagemanager/bin/dpkg: error while loading shared libraries: libselinux.so.1: cannot open shared object file: No such file or directory
+Log ended: 2018-04-10  20:33:49
+
+Log started: 2018-04-10  20:42:24
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package base-files.
+(Reading database ... (Reading database ... 100%(Reading database ... 0 files and directories currently installed.)
+Unpacking base-files (from .../base-files_3.0.14-r73_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package base-files-dev.
+Unpacking base-files-dev (from .../base-files-dev_3.0.14-r73_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package base-passwd.
+Unpacking base-passwd (from .../base-passwd_3.5.26-r2_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package base-passwd-dev.
+Unpacking base-passwd-dev (from .../base-passwd-dev_3.5.26-r2_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package update-alternatives-cworth.
+Unpacking update-alternatives-cworth (from .../update-alternatives-cworth_1:0.1.8+svnr649-r13.0_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package libc6.
+Unpacking libc6 (from .../libc6_2.17-r1_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package busybox.
+Unpacking busybox (from .../busybox_1.20.2-r8_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package busybox-dev.
+Unpacking busybox-dev (from .../busybox-dev_1.20.2-r8_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package eglibc-extra-nss.
+Unpacking eglibc-extra-nss (from .../eglibc-extra-nss_2.17-r1_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package netbase.
+Unpacking netbase (from .../netbase_1:5.0-r0_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package init-ifupdown.
+Unpacking init-ifupdown (from .../init-ifupdown_1.0-r0_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package init-ifupdown-dev.
+Unpacking init-ifupdown-dev (from .../init-ifupdown-dev_1.0-r0_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package initscripts.
+Unpacking initscripts (from .../initscripts_1.0-r140_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package initscripts-dev.
+Unpacking initscripts-dev (from .../initscripts-dev_1.0-r140_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package libthread-db1.
+Unpacking libthread-db1 (from .../libthread-db1_2.17-r1_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package libcidn1.
+Unpacking libcidn1 (from .../libcidn1_2.17-r1_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package libc6-dev.
+Unpacking libc6-dev (from .../libc6-dev_2.17-r1_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package libgcc-s1.
+Unpacking libgcc-s1 (from .../libgcc-s1_4.7.3-r1_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package modutils-initscripts.
+Unpacking modutils-initscripts (from .../modutils-initscripts_1.0-r6_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package modutils-initscripts-dev.
+Unpacking modutils-initscripts-dev (from .../modutils-initscripts-dev_1.0-r6_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package mtd-utils.
+Unpacking mtd-utils (from .../mtd-utils_1.5.0-r3_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package mtd-utils-dev.
+Unpacking mtd-utils-dev (from .../mtd-utils-dev_1.5.0-r3_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package netbase-dev.
+Unpacking netbase-dev (from .../netbase-dev_1:5.0-r0_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package sysvinit-pidof.
+Unpacking sysvinit-pidof (from .../sysvinit-pidof_2.88dsf-r11_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package sysvinit-inittab.
+Unpacking sysvinit-inittab (from .../sysvinit-inittab_2.88dsf-r9_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package sysvinit.
+Unpacking sysvinit (from .../sysvinit_2.88dsf-r11_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package sysvinit-dev.
+Unpacking sysvinit-dev (from .../sysvinit-dev_2.88dsf-r11_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package sysvinit-inittab-dev.
+Unpacking sysvinit-inittab-dev (from .../sysvinit-inittab-dev_2.88dsf-r9_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package tinylogin.
+Unpacking tinylogin (from .../tinylogin_1.4-r9_armv7a-vfp-neon.deb) ...
+dpkg: warning: overriding problem because --force enabled:
+ package architecture (armv7a-vfp-neon) does not match system (i386)
+Selecting previously unselected package tinylogin-dev.
+Unpacking tinylogin-dev (from .../tinylogin-dev_1.4-r9_armv7a-vfp-neon.deb) ...
+Selecting previously unselected package update-rc.d.
+Unpacking update-rc.d (from .../update-rc.d_0.7-r5_all.deb) ...
+Selecting previously unselected package update-rc.d-dev.
+Unpacking update-rc.d-dev (from .../update-rc.d-dev_0.7-r5_all.deb) ...
+Setting up base-files (3.0.14-r73) ...
+
+Configuration file `/etc/fstab', does not exist on system.
+Installing new config file as you requested.
+
+Configuration file `/etc/hostname', does not exist on system.
+Installing new config file as you requested.
+Setting up base-files-dev (3.0.14-r73) ...
+Setting up base-passwd (3.5.26-r2) ...
+Setting up base-passwd-dev (3.5.26-r2) ...
+Setting up update-alternatives-cworth (1:0.1.8+svnr649-r13.0) ...
+Setting up libc6 (2.17-r1) ...
+Setting up busybox (1.20.2-r8) ...
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/date to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/groups to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/id to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/touch to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/users to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/who to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/patch to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/vi to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/find to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/grep to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/egrep to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/fgrep to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/xargs to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/halt to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/poweroff to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/reboot to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/insmod to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/lsmod to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/modprobe to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/rmmod to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/ping to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/ping6 to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/ash to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/sh to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/mdev to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/[ to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/[[ to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/ar to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/awk to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/basename to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/cat to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/chattr to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/chgrp to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/chmod to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/chown to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/chroot to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/chvt to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/clear to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/cmp to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/cp to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/cpio to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/cut to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/dc to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/dd to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/deallocvt to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/devmem to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/df to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/diff to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/dirname to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/dmesg to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/dnsdomainname to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/du to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/dumpkmap to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/dumpleases to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/echo to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/env to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/expr to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/false to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/fbset to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/fdisk to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/flock to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/free to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/fsck to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/fsck.minix to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/ftpd to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/ftpget to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/ftpput to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/fuser to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/getopt to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/gunzip to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/gzip to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/hd to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/head to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/hexdump to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/hostname to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/httpd to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/hwclock to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/ifconfig to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/ifdown to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/ifup to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/inetd to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/ip to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/kill to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/killall to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/klogd to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/less to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/ln to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/loadfont to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/loadkmap to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/logger to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/logname to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/logread to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/losetup to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/ls to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/md5sum to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/microcom to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/mkdir to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/mkdosfs to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/mkfifo to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/mkfs.minix to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/mkfs.vfat to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/mknod to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/mkswap to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/mktemp to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/more to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/mount to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/mv to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/netstat to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/nice to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/nohup to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/nslookup to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/od to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/openvt to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/pidof to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/pivot_root to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/printf to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/ps to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/pwd to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/rdate to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/readlink to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/realpath to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/renice to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/reset to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/rm to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/rmdir to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/route to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/run-parts to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/sed to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/seq to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/setconsole to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/sha1sum to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/sha256sum to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/sha512sum to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/sleep to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/sort to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/start-stop-daemon to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/stat to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/strings to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/stty to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/swapoff to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/swapon to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/switch_root to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/sync to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/sysctl to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/syslogd to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/tail to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/tar to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/tee to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/telnet to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/telnetd to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/test to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/tftp to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/time to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/top to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/tr to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/traceroute to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/true to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/tty to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/udhcpc to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/udhcpd to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/umount to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/uname to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/uniq to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/unzip to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/uptime to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/usleep to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/watch to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/watchdog to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/wc to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/wget to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/which to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/whoami to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/yes to /bin/busybox
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/zcat to /bin/busybox
+Setting up busybox-dev (1.20.2-r8) ...
+Setting up eglibc-extra-nss (2.17-r1) ...
+Setting up netbase (1:5.0-r0) ...
+
+Configuration file `/etc/hosts', does not exist on system.
+Installing new config file as you requested.
+Setting up init-ifupdown (1.0-r0) ...
+
+Configuration file `/etc/network/interfaces', does not exist on system.
+Installing new config file as you requested.
+ Adding system startup for /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage/etc/init.d/networking.
+Setting up init-ifupdown-dev (1.0-r0) ...
+Setting up initscripts (1.0-r140) ...
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//etc/init.d/functions to /etc/init.d/functions.initscripts
+Setting up initscripts-dev (1.0-r140) ...
+Setting up libthread-db1 (2.17-r1) ...
+Setting up libcidn1 (2.17-r1) ...
+Setting up libc6-dev (2.17-r1) ...
+Setting up libgcc-s1 (4.7.3-r1) ...
+Setting up modutils-initscripts (1.0-r6) ...
+ Adding system startup for /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage/etc/init.d/modutils.sh.
+Setting up modutils-initscripts-dev (1.0-r6) ...
+Setting up mtd-utils (1.5.0-r3) ...
+Setting up mtd-utils-dev (1.5.0-r3) ...
+Setting up netbase-dev (1:5.0-r0) ...
+Setting up sysvinit-pidof (2.88dsf-r11) ...
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/pidof to /bin/pidof.sysvinit
+Setting up sysvinit-inittab (2.88dsf-r9) ...
+
+Configuration file `/etc/inittab', does not exist on system.
+Installing new config file as you requested.
+Setting up sysvinit (2.88dsf-r11) ...
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/init to /sbin/init.sysvinit
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//bin/mountpoint to /bin/mountpoint.sysvinit
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/halt to /sbin/halt.sysvinit
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/reboot to /sbin/reboot.sysvinit
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/runlevel to /sbin/runlevel.sysvinit
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/shutdown to /sbin/shutdown.sysvinit
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/poweroff to /sbin/poweroff.sysvinit
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//usr/bin/last to /usr/bin/last.sysvinit
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//usr/bin/mesg to /usr/bin/mesg.sysvinit
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//usr/bin/utmpdump to /usr/bin/utmpdump.sysvinit
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//usr/bin/wall to /usr/bin/wall.sysvinit
+Setting up sysvinit-dev (2.88dsf-r11) ...
+Setting up sysvinit-inittab-dev (2.88dsf-r9) ...
+Setting up tinylogin (1.4-r9) ...
+update-alternatives: Linking /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/rootfs/stage//sbin/getty to /sbin/getty.tinylogin
+Setting up tinylogin-dev (1.4-r9) ...
+Setting up update-rc.d (0.7-r5) ...
+Setting up update-rc.d-dev (0.7-r5) ...
+Log ended: 2018-04-10  20:42:50

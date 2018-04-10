@@ -1,0 +1,49 @@
+20:45:36.167 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/design_1_2_2.xml. 
+20:46:55.585 INFO  - Saving repository preferences. 
+20:46:55.586 INFO  - Reading in cores from local repositories: 
+		 /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository 
+20:46:55.622 INFO  - Updating libgen.options on all BSP projects. 
+20:46:55.622 INFO  - Cleaning BSP projects in the workspace. 
+20:47:50.577 WARN  - Unable to determine location of documentation for OS petalinux. 
+21:10:04.577 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/design_1_2_2.xml into /hw_platform_0/system.xml. 
+21:10:07.582 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+21:10:07.583 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+21:10:07.610 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+21:10:07.611 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+21:10:07.612 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+21:10:07.861 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:10:08.816 INFO  - Restoring local repository preferences: 
+		 /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository 
+21:10:13.032 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+21:10:13.223 INFO  - Clearing existing target manager status. 
+21:10:28.035 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.c into /zynq_fsbl/src/ps7_init.c. 
+21:10:28.037 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.h into /zynq_fsbl/src/ps7_init.h. 
+21:10:28.044 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.html into /zynq_fsbl/src/ps7_init.html. 
+21:10:28.047 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw_platform_0/ps7_summary.html into /zynq_fsbl/src/ps7_summary.html. 
+21:10:28.051 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.tcl into /zynq_fsbl/src/ps7_init.tcl. 
+21:10:28.055 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+21:16:23.363 INFO  - Settings changed on project petalinux_bsp_0. Triggering a rebuild... 
+21:42:17.039 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:12:04.451 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/design_1_2_2.xml. 
+20:12:04.817 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/design_1_2_2.xml. 
+20:12:04.948 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/design_1_2_2.xml into /hw_platform_0/system.xml. 
+20:12:06.884 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+20:12:06.885 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+20:12:06.955 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+20:12:06.956 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+20:12:06.957 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+20:12:07.296 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+20:12:09.278 INFO  - Restoring local repository preferences: 
+		 /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository 
+20:12:11.079 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+20:12:11.213 INFO  - Clearing existing target manager status. 
+20:12:14.141 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.c into /zynq_fsbl/src/ps7_init.c. 
+20:12:14.145 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.h into /zynq_fsbl/src/ps7_init.h. 
+20:12:14.226 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.html into /zynq_fsbl/src/ps7_init.html. 
+20:12:14.227 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw_platform_0/ps7_summary.html into /zynq_fsbl/src/ps7_summary.html. 
+20:12:14.230 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.tcl into /zynq_fsbl/src/ps7_init.tcl. 
+20:12:15.264 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+20:14:00.381 INFO  - Saving repository preferences. 
+20:15:21.066 WARN  - Unable to determine location of documentation for OS petalinux. 
+20:57:44.569 INFO  - Invoking Bootgen:  
+20:57:45.993 INFO  - Bootgen command execution is done. 

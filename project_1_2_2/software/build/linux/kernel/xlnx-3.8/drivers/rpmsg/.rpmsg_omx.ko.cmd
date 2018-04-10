@@ -1,0 +1,1 @@
+cmd_drivers/rpmsg/rpmsg_omx.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T /opt/PetaLinux/petalinux-v2013.10-final/components/linux-kernel/xlnx-3.8/scripts/module-common.lds --build-id  -o drivers/rpmsg/rpmsg_omx.ko drivers/rpmsg/rpmsg_omx.o drivers/rpmsg/rpmsg_omx.mod.o

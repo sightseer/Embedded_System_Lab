@@ -1,0 +1,2802 @@
+20:48:16 **** Build of project petalinux_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#-------------------------------------------------
+# Top Level BSP DRC for Petalinux...
+# Created by: Michal Simek
+# version: petalinux_v2_00_a
+#-------------------------------------------------
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2/projec
+t_1_2_2.sdk/SDK/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00
+_a/../../..
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::drc
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::drc
+#--------------------------------------
+# uboot BSP DRC...
+#--------------------------------------
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::drc
+#--------------------------------------
+# Linux-Kconfig Kconfig BSP DRC...
+#--------------------------------------
+Running generate.
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2/projec
+t_1_2_2.sdk/SDK/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00
+_a/../../..
+#--------------------------------------
+# Standalone BSP generate...
+#--------------------------------------
+Standalone BSP standalone_v3_12_a
+/opt/Xilinx/SDK/2013.4/sw/lib/bsp/standalone_v3_12_a/src/common ./src/
+Calling standalone::generate
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::generate
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave ps7_afi_0
+IP 45436896 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 50187840 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 50188240 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 50188640 ps7_afi_3 is already appended - skip it
+-slave ps7_coresight_comp_0
+IP 50181536 ps7_coresight_comp_0 is already appended - skip it
+-slave ps7_ddr_0
+IP 50177936 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 50179936 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 50180336 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 50183936 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 50178336 ps7_ethernet_0 is already appended - skip it
+-slave ps7_globaltimer_0
+IP 50182736 ps7_globaltimer_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 50179536 ps7_gpio_0 is already appended - skip it
+-slave ps7_gpv_0
+IP 50181936 ps7_gpv_0 is already appended - skip it
+-slave ps7_intc_dist_0
+IP 50183136 ps7_intc_dist_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 50184336 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_l2cachec_0
+IP 50183536 ps7_l2cachec_0 is already appended - skip it
+-slave ps7_ocmc_0
+IP 50181136 ps7_ocmc_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 49194624 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 45435552 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 50184736 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 50185136 ps7_ram_1 is already appended - skip it
+-slave ps7_scuc_0
+IP 50182336 ps7_scuc_0 is already appended - skip it
+-slave ps7_scugic_0
+IP 50185536 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 50185936 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 50186336 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 50178736 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 50186736 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 50179136 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 50034496 ps7_uart_1 is already appended - skip it
+-slave ps7_xadc_0
+IP 50180736 ps7_xadc_0 is already appended - skip it
+ps7_ocmc_0
+ps7_coresight_comp_0
+ps7_gpv_0
+ps7_scuc_0
+ps7_globaltimer_0
+ps7_intc_dist_0
+ps7_l2cachec_0
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial1 aliasref ps7_uart_1 1} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0}
+WARNING:EDK - : console ip none was not found.  This may prevent output from
+   appearing on the boot console.
+
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::generate
+#--------------------------------------
+# uboot BSP generate...
+#--------------------------------------
+ERROR Uart not specified. Please specific console
+ERROR main_memory not specified. Please specific main_memory
+FLASH doesn't exists
+ERROR:EDK - petalinux () - can't read "eram_high": no such variable 
+ERROR:EDK - Error(s) while running TCL procedure generate().
+20:49:17 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling standalone
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling XilFFs Library
+Creating archive libxilffs.a
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+20:49:33 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+21:09:54 **** Build of project petalinux_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#-------------------------------------------------
+# Top Level BSP DRC for Petalinux...
+# Created by: Michal Simek
+# version: petalinux_v2_00_a
+#-------------------------------------------------
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::drc
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::drc
+#--------------------------------------
+# uboot BSP DRC...
+#--------------------------------------
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::drc
+#--------------------------------------
+# Linux-Kconfig Kconfig BSP DRC...
+#--------------------------------------
+Running generate.
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+#--------------------------------------
+# Standalone BSP generate...
+#--------------------------------------
+Standalone BSP standalone_v3_12_a
+/opt/Xilinx/SDK/2013.4/sw/lib/bsp/standalone_v3_12_a/src/common ./src/
+Calling standalone::generate
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::generate
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave ps7_afi_0
+IP 21876784 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 21877184 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 21877584 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 21877984 ps7_afi_3 is already appended - skip it
+-slave ps7_coresight_comp_0
+IP 21870784 ps7_coresight_comp_0 is already appended - skip it
+-slave ps7_ddr_0
+IP 17912880 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 21869184 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 21869584 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 21873184 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 21867584 ps7_ethernet_0 is already appended - skip it
+-slave ps7_globaltimer_0
+IP 21871984 ps7_globaltimer_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 21868784 ps7_gpio_0 is already appended - skip it
+-slave ps7_gpv_0
+IP 21871184 ps7_gpv_0 is already appended - skip it
+-slave ps7_intc_dist_0
+IP 21872384 ps7_intc_dist_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 21873584 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_l2cachec_0
+IP 21872784 ps7_l2cachec_0 is already appended - skip it
+-slave ps7_ocmc_0
+IP 21870384 ps7_ocmc_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 17911024 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 22685824 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 21873984 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 21874384 ps7_ram_1 is already appended - skip it
+-slave ps7_scuc_0
+IP 21871584 ps7_scuc_0 is already appended - skip it
+-slave ps7_scugic_0
+IP 21874784 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 21875184 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 21875584 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 21867984 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 21875984 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 21868384 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 14222000 ps7_uart_1 is already appended - skip it
+-slave ps7_xadc_0
+IP 21869984 ps7_xadc_0 is already appended - skip it
+ps7_ocmc_0
+ps7_coresight_comp_0
+ps7_gpv_0
+ps7_scuc_0
+ps7_globaltimer_0
+ps7_intc_dist_0
+ps7_l2cachec_0
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial1 aliasref ps7_uart_1 1} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0}
+WARNING:EDK - : console ip none was not found.  This may prevent output from
+   appearing on the boot console.
+
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::generate
+#--------------------------------------
+# uboot BSP generate...
+#--------------------------------------
+ERROR Uart not specified. Please specific console
+ERROR main_memory not specified. Please specific main_memory
+FLASH doesn't exists
+ERROR:EDK - petalinux () - can't read "eram_high": no such variable 
+ERROR:EDK - Error(s) while running TCL procedure generate().
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+21:10:00 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+Finished building libraries
+21:10:01 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+21:10:02 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+21:10:04 **** Auto Build of project petalinux_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#-------------------------------------------------
+# Top Level BSP DRC for Petalinux...
+# Created by: Michal Simek
+# version: petalinux_v2_00_a
+#-------------------------------------------------
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::drc
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::drc
+#--------------------------------------
+# uboot BSP DRC...
+#--------------------------------------
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::drc
+#--------------------------------------
+# Linux-Kconfig Kconfig BSP DRC...
+#--------------------------------------
+Running generate.
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+#--------------------------------------
+# Standalone BSP generate...
+#--------------------------------------
+Standalone BSP standalone_v3_12_a
+/opt/Xilinx/SDK/2013.4/sw/lib/bsp/standalone_v3_12_a/src/common ./src/
+Calling standalone::generate
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::generate
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave ps7_afi_0
+IP 41697328 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 41697728 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 41698128 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 41698528 ps7_afi_3 is already appended - skip it
+-slave ps7_coresight_comp_0
+IP 41691328 ps7_coresight_comp_0 is already appended - skip it
+-slave ps7_ddr_0
+IP 37733424 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 41689728 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 41690128 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 41693728 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 41688128 ps7_ethernet_0 is already appended - skip it
+-slave ps7_globaltimer_0
+IP 41692528 ps7_globaltimer_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 41689328 ps7_gpio_0 is already appended - skip it
+-slave ps7_gpv_0
+IP 41691728 ps7_gpv_0 is already appended - skip it
+-slave ps7_intc_dist_0
+IP 41692928 ps7_intc_dist_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 41694128 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_l2cachec_0
+IP 41693328 ps7_l2cachec_0 is already appended - skip it
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+-slave ps7_ocmc_0
+make: Target `all' not remade because of errors.
+IP 41690928 ps7_ocmc_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 37731568 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 42506368 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 41694528 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 41694928 ps7_ram_1 is already appended - skip it
+-slave ps7_scuc_0
+IP 41692128 ps7_scuc_0 is already appended - skip it
+-slave ps7_scugic_0
+IP 41695328 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 41695728 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 41696128 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 41688528 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 41696528 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 41688928 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 34042544 ps7_uart_1 is already appended - skip it
+-slave ps7_xadc_0
+IP 41690528 ps7_xadc_0 is already appended - skip it
+ps7_ocmc_0
+ps7_coresight_comp_0
+ps7_gpv_0
+ps7_scuc_0
+ps7_globaltimer_0
+ps7_intc_dist_0
+ps7_l2cachec_0
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial1 aliasref ps7_uart_1 1} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0}
+WARNING:EDK - : console ip none was not found.  This may prevent output from
+   appearing on the boot console.
+
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::generate
+#--------------------------------------
+# uboot BSP generate...
+#--------------------------------------
+ERROR Uart not specified. Please specific console
+ERROR main_memory not specified. Please specific main_memory
+FLASH doesn't exists
+ERROR:EDK - petalinux () - can't read "eram_high": no such variable 
+ERROR:EDK - Error(s) while running TCL procedure generate().
+21:10:07 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+Finished building libraries
+21:10:09 **** Auto Build of project petalinux_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#-------------------------------------------------
+# Top Level BSP DRC for Petalinux...
+# Created by: Michal Simek
+# version: petalinux_v2_00_a
+#-------------------------------------------------
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::drc
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::drc
+#--------------------------------------
+# uboot BSP DRC...
+#--------------------------------------
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::drc
+#--------------------------------------
+# Linux-Kconfig Kconfig BSP DRC...
+#--------------------------------------
+Running generate.
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+#--------------------------------------
+# Standalone BSP generate...
+#--------------------------------------
+Standalone BSP standalone_v3_12_a
+/opt/Xilinx/SDK/2013.4/sw/lib/bsp/standalone_v3_12_a/src/common ./src/
+Calling standalone::generate
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::generate
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave ps7_afi_0
+IP 43597872 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 43598272 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 43598672 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 43599072 ps7_afi_3 is already appended - skip it
+-slave ps7_coresight_comp_0
+IP 43591872 ps7_coresight_comp_0 is already appended - skip it
+-slave ps7_ddr_0
+IP 39633968 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 43590272 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 43590672 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 43594272 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 43588672 ps7_ethernet_0 is already appended - skip it
+-slave ps7_globaltimer_0
+IP 43593072 ps7_globaltimer_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 43589872 ps7_gpio_0 is already appended - skip it
+-slave ps7_gpv_0
+IP 43592272 ps7_gpv_0 is already appended - skip it
+-slave ps7_intc_dist_0
+IP 43593472 ps7_intc_dist_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 43594672 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_l2cachec_0
+IP 43593872 ps7_l2cachec_0 is already appended - skip it
+-slave ps7_ocmc_0
+IP 43591472 ps7_ocmc_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 39632112 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 44406912 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 43595072 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 43595472 ps7_ram_1 is already appended - skip it
+-slave ps7_scuc_0
+IP 43592672 ps7_scuc_0 is already appended - skip it
+-slave ps7_scugic_0
+IP 43595872 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 43596272 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 43596672 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 43589072 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 43597072 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 43589472 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 35943088 ps7_uart_1 is already appended - skip it
+-slave ps7_xadc_0
+IP 43591072 ps7_xadc_0 is already appended - skip it
+ps7_ocmc_0
+ps7_coresight_comp_0
+ps7_gpv_0
+ps7_scuc_0
+ps7_globaltimer_0
+ps7_intc_dist_0
+ps7_l2cachec_0
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial1 aliasref ps7_uart_1 1} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0}
+WARNING:EDK - : console ip none was not found.  This may prevent output from
+   appearing on the boot console.
+
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::generate
+#--------------------------------------
+# uboot BSP generate...
+#--------------------------------------
+ERROR Uart not specified. Please specific console
+ERROR main_memory not specified. Please specific main_memory
+FLASH doesn't exists
+ERROR:EDK - petalinux () - can't read "eram_high": no such variable 
+ERROR:EDK - Error(s) while running TCL procedure generate().
+21:10:13 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling standalone
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling XilFFs Library
+Creating archive libxilffs.a
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+21:10:28 **** Clean-only build of project petalinux_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+21:10:28 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+21:10:28 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+21:10:29 **** Build of project petalinux_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#-------------------------------------------------
+# Top Level BSP DRC for Petalinux...
+# Created by: Michal Simek
+# version: petalinux_v2_00_a
+#-------------------------------------------------
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::drc
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::drc
+#--------------------------------------
+# uboot BSP DRC...
+#--------------------------------------
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::drc
+#--------------------------------------
+# Linux-Kconfig Kconfig BSP DRC...
+#--------------------------------------
+Running generate.
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+#--------------------------------------
+# Standalone BSP generate...
+#--------------------------------------
+Standalone BSP standalone_v3_12_a
+/opt/Xilinx/SDK/2013.4/sw/lib/bsp/standalone_v3_12_a/src/common ./src/
+Calling standalone::generate
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::generate
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+make: Target `all' not remade because of errors.
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave ps7_afi_0
+IP 35641824 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 35642224 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 35642624 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 35643024 ps7_afi_3 is already appended - skip it
+-slave ps7_coresight_comp_0
+IP 35635824 ps7_coresight_comp_0 is already appended - skip it
+-slave ps7_ddr_0
+IP 35632224 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 35634224 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 35634624 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 35638224 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 35632624 ps7_ethernet_0 is already appended - skip it
+-slave ps7_globaltimer_0
+IP 35637024 ps7_globaltimer_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 35633824 ps7_gpio_0 is already appended - skip it
+-slave ps7_gpv_0
+IP 35636224 ps7_gpv_0 is already appended - skip it
+-slave ps7_intc_dist_0
+IP 35637424 ps7_intc_dist_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 35638624 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_l2cachec_0
+IP 35637824 ps7_l2cachec_0 is already appended - skip it
+-slave ps7_ocmc_0
+IP 35635424 ps7_ocmc_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 31382832 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 35354640 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 35639024 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 35639424 ps7_ram_1 is already appended - skip it
+-slave ps7_scuc_0
+IP 35636624 ps7_scuc_0 is already appended - skip it
+-slave ps7_scugic_0
+IP 35639824 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 35640224 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 35640624 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 35633024 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 35641024 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 35633424 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 27693360 ps7_uart_1 is already appended - skip it
+-slave ps7_xadc_0
+IP 35635024 ps7_xadc_0 is already appended - skip it
+ps7_ocmc_0
+ps7_coresight_comp_0
+ps7_gpv_0
+ps7_scuc_0
+ps7_globaltimer_0
+ps7_intc_dist_0
+ps7_l2cachec_0
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial1 aliasref ps7_uart_1 1} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0}
+WARNING:EDK - : console ip none was not found.  This may prevent output from
+   appearing on the boot console.
+
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::generate
+#--------------------------------------
+# uboot BSP generate...
+#--------------------------------------
+ERROR Uart not specified. Please specific console
+ERROR main_memory not specified. Please specific main_memory
+FLASH doesn't exists
+ERROR:EDK - petalinux () - can't read "eram_high": no such variable 
+ERROR:EDK - Error(s) while running TCL procedure generate().
+21:10:31 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling standalone
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling XilFFs Library
+Creating archive libxilffs.a
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+21:10:46 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+21:16:23 **** Clean-only build of project petalinux_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+21:16:23 **** Build of project petalinux_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#-------------------------------------------------
+# Top Level BSP DRC for Petalinux...
+# Created by: Michal Simek
+# version: petalinux_v2_00_a
+#-------------------------------------------------
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::drc
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::drc
+#--------------------------------------
+# uboot BSP DRC...
+#--------------------------------------
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::drc
+#--------------------------------------
+# Linux-Kconfig Kconfig BSP DRC...
+#--------------------------------------
+Running generate.
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+#--------------------------------------
+# Standalone BSP generate...
+#--------------------------------------
+Standalone BSP standalone_v3_12_a
+/opt/Xilinx/SDK/2013.4/sw/lib/bsp/standalone_v3_12_a/src/common ./src/
+Calling standalone::generate
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::generate
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave ps7_afi_0
+IP 30224432 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 30224832 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 30225232 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 30225632 ps7_afi_3 is already appended - skip it
+-slave ps7_coresight_comp_0
+IP 30218432 ps7_coresight_comp_0 is already appended - skip it
+-slave ps7_ddr_0
+IP 25951024 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 30201472 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 30201872 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 30220832 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 25949440 ps7_ethernet_0 is already appended - skip it
+-slave ps7_globaltimer_0
+IP 30219632 ps7_globaltimer_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 30201072 ps7_gpio_0 is already appended - skip it
+-slave ps7_gpv_0
+IP 30218832 ps7_gpv_0 is already appended - skip it
+-slave ps7_intc_dist_0
+IP 30220032 ps7_intc_dist_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 30221232 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_l2cachec_0
+IP 30220432 ps7_l2cachec_0 is already appended - skip it
+-slave ps7_ocmc_0
+IP 30709392 ps7_ocmc_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 25953344 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 22257776 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 30221632 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 30222032 ps7_ram_1 is already appended - skip it
+-slave ps7_scuc_0
+IP 30219232 ps7_scuc_0 is already appended - skip it
+-slave ps7_scugic_0
+IP 30222432 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 30222832 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 30223232 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 25949840 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 30223632 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 30200672 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 25952752 ps7_uart_1 is already appended - skip it
+-slave ps7_xadc_0
+IP 30202272 ps7_xadc_0 is already appended - skip it
+ps7_ocmc_0
+ps7_coresight_comp_0
+ps7_gpv_0
+ps7_scuc_0
+ps7_globaltimer_0
+ps7_intc_dist_0
+ps7_l2cachec_0
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0}
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::generate
+#--------------------------------------
+# uboot BSP generate...
+#--------------------------------------
+/* Main Memory is ps7_ddr_0 */
+INFO automatic U-BOOT position = 0x1fc00000
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::generate
+#--------------------------------------
+# Linux-Kconfig BSP generate...
+#--------------------------------------
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling standalone
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+20:12:05 **** Auto Build of project petalinux_bsp_0 ****
+make -k all 
+Finished building libraries
+20:12:07 **** Auto Build of project petalinux_bsp_0 ****
+make -k all 
+Finished building libraries
+20:12:07 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+Finished building libraries
+20:12:15 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+20:12:17 **** Clean-only build of project petalinux_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+20:12:17 **** Clean-only build of project zynq_fsbl_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+20:12:18 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+20:12:18 **** Build of project petalinux_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#-------------------------------------------------
+# Top Level BSP DRC for Petalinux...
+# Created by: Michal Simek
+# version: petalinux_v2_00_a
+#-------------------------------------------------
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::drc
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::drc
+#--------------------------------------
+# uboot BSP DRC...
+#--------------------------------------
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::drc
+#--------------------------------------
+# Linux-Kconfig Kconfig BSP DRC...
+#--------------------------------------
+Running generate.
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+#--------------------------------------
+# Standalone BSP generate...
+#--------------------------------------
+Standalone BSP standalone_v3_12_a
+/opt/Xilinx/SDK/2013.4/sw/lib/bsp/standalone_v3_12_a/src/common ./src/
+Calling standalone::generate
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::generate
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave ps7_afi_0
+IP 23294000 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 23294400 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 23294800 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 23295200 ps7_afi_3 is already appended - skip it
+-slave ps7_coresight_comp_0
+IP 23288000 ps7_coresight_comp_0 is already appended - skip it
+-slave ps7_ddr_0
+IP 19020592 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 23271040 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 23271440 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 23290400 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 19019008 ps7_ethernet_0 is already appended - skip it
+-slave ps7_globaltimer_0
+IP 23289200 ps7_globaltimer_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 23270640 ps7_gpio_0 is already appended - skip it
+-slave ps7_gpv_0
+IP 23288400 ps7_gpv_0 is already appended - skip it
+-slave ps7_intc_dist_0
+IP 23289600 ps7_intc_dist_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 23290800 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_l2cachec_0
+IP 23290000 ps7_l2cachec_0 is already appended - skip it
+-slave ps7_ocmc_0
+IP 23778960 ps7_ocmc_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 19022912 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 15327344 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 23291200 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 23291600 ps7_ram_1 is already appended - skip it
+-slave ps7_scuc_0
+IP 23288800 ps7_scuc_0 is already appended - skip it
+-slave ps7_scugic_0
+IP 23292000 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 23292400 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 23292800 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 19019408 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 23293200 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 23270240 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 19022320 ps7_uart_1 is already appended - skip it
+-slave ps7_xadc_0
+IP 23271840 ps7_xadc_0 is already appended - skip it
+ps7_ocmc_0
+ps7_coresight_comp_0
+ps7_gpv_0
+ps7_scuc_0
+ps7_globaltimer_0
+ps7_intc_dist_0
+ps7_l2cachec_0
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0}
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::generate
+#--------------------------------------
+# uboot BSP generate...
+#--------------------------------------
+/* Main Memory is ps7_ddr_0 */
+INFO automatic U-BOOT position = 0x1fc00000
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::generate
+#--------------------------------------
+# Linux-Kconfig BSP generate...
+#--------------------------------------
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling standalone
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+20:12:34 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling standalone
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling XilFFs Library
+Creating archive libxilffs.a
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+20:12:48 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+20:16:57 **** Build of project petalinux_bsp_1 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#-------------------------------------------------
+# Top Level BSP DRC for Petalinux...
+# Created by: Michal Simek
+# version: petalinux_v2_00_a
+#-------------------------------------------------
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_1/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::drc
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::drc
+#--------------------------------------
+# uboot BSP DRC...
+#--------------------------------------
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::drc
+#--------------------------------------
+# Linux-Kconfig Kconfig BSP DRC...
+#--------------------------------------
+Running generate.
+project_folder=/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SD
+K/SDK_Export/petalinux_bsp_1/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+#--------------------------------------
+# Standalone BSP generate...
+#--------------------------------------
+Standalone BSP standalone_v3_12_a
+/opt/Xilinx/SDK/2013.4/sw/lib/bsp/standalone_v3_12_a/src/common ./src/
+Calling standalone::generate
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::generate
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave ps7_afi_0
+IP 43987136 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 43987536 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 43987936 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 43988336 ps7_afi_3 is already appended - skip it
+-slave ps7_coresight_comp_0
+IP 43981136 ps7_coresight_comp_0 is already appended - skip it
+-slave ps7_ddr_0
+IP 39713728 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 43964176 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 43964576 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 43983536 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 39712144 ps7_ethernet_0 is already appended - skip it
+-slave ps7_globaltimer_0
+IP 43982336 ps7_globaltimer_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 43963776 ps7_gpio_0 is already appended - skip it
+-slave ps7_gpv_0
+IP 43981536 ps7_gpv_0 is already appended - skip it
+-slave ps7_intc_dist_0
+IP 43982736 ps7_intc_dist_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 43983936 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_l2cachec_0
+IP 43983136 ps7_l2cachec_0 is already appended - skip it
+-slave ps7_ocmc_0
+IP 44472096 ps7_ocmc_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 39716048 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 36044000 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 43984336 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 43984736 ps7_ram_1 is already appended - skip it
+-slave ps7_scuc_0
+IP 43981936 ps7_scuc_0 is already appended - skip it
+-slave ps7_scugic_0
+IP 43985136 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 43985536 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 43985936 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 39712544 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 43986336 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 43963376 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 39715456 ps7_uart_1 is already appended - skip it
+-slave ps7_xadc_0
+IP 43964976 ps7_xadc_0 is already appended - skip it
+ps7_ocmc_0
+ps7_coresight_comp_0
+ps7_gpv_0
+ps7_scuc_0
+ps7_globaltimer_0
+ps7_intc_dist_0
+ps7_l2cachec_0
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0}
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::generate
+#--------------------------------------
+# uboot BSP generate...
+#--------------------------------------
+/* Main Memory is ps7_ddr_0 */
+INFO automatic U-BOOT position = 0x1fc00000
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::generate
+#--------------------------------------
+# Linux-Kconfig BSP generate...
+#--------------------------------------
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling standalone
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+20:21:28 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling standalone
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling XilFFs Library
+Creating archive libxilffs.a
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+20:21:42 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/xyin/Embedded_System_Lab/project_1_2_2/project_1_2_2.sdk/SDK/SDK_Export/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+20:57:46 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.

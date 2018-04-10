@@ -1,0 +1,76 @@
+Package: tinylogin
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: base-files
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: modutils-initscripts
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: sysvinit-inittab
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: init-ifupdown
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: netbase
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: sysvinit-pidof
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: base-passwd
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: libthread-db1
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: mtd-utils
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: libcidn1
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: update-rc.d
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: libgcc-s1
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: update-alternatives-cworth
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: eglibc-extra-nss
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: libc6
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: initscripts
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: sysvinit
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+
+Package: busybox
+Architecture: armv7a-vfp-neon
+Auto-Installed: 1
+

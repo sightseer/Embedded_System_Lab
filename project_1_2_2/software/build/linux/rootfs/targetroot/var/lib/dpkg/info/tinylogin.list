@@ -1,0 +1,16 @@
+/.
+/bin
+/bin/tinylogin
+/sbin
+/usr
+/usr/bin
+/bin/login
+/bin/delgroup
+/bin/addgroup
+/bin/deluser
+/bin/adduser
+/bin/su
+/sbin/sulogin
+/sbin/getty.tinylogin
+/usr/bin/vlock
+/usr/bin/passwd

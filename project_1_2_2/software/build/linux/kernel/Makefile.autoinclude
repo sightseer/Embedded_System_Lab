@@ -1,0 +1,7 @@
+PROOT:=/home/xyin/Embedded_System_Lab/project_1_2_2/software
+INSTANCE:=linux/kernel
+-include /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/Makefile.export
+-include /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/kernel/Makefile.export
+CONFIGFILE:=/home/xyin/Embedded_System_Lab/project_1_2_2/software/subsystems/linux/configs/kernel/config
+dir_linux_kernel_y=/opt/PetaLinux/petalinux-v2013.10-final/components/linux-kernel/xlnx-3.8
+

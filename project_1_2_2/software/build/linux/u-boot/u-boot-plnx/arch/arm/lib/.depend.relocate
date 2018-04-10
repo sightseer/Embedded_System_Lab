@@ -1,0 +1,5 @@
+/home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/u-boot/u-boot-plnx/arch/arm/lib/relocate.o: \
+ relocate.S \
+ /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/u-boot/src/u-boot-plnx/include/linux/linkage.h \
+ /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/u-boot/u-boot-plnx/include2/asm/linkage.h \
+ /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/u-boot/src/u-boot-plnx/include/linux/config.h

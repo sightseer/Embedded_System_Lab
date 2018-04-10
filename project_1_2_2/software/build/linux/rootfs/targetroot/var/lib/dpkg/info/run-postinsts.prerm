@@ -1,0 +1,5 @@
+#!/bin/sh
+#!/bin/sh
+if test "x$D" = "x"; then
+	/etc/init.d/run-postinsts stop
+fi

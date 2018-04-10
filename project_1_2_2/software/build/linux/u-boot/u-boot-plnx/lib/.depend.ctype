@@ -1,0 +1,3 @@
+/home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/u-boot/u-boot-plnx/lib/ctype.o: \
+ ctype.c \
+ /home/xyin/Embedded_System_Lab/project_1_2_2/software/build/linux/u-boot/src/u-boot-plnx/include/linux/ctype.h

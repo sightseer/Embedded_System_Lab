@@ -1,0 +1,2 @@
+kernel/drivers/remoteproc/mb_remoteproc.ko
+kernel/drivers/rpmsg/rpmsg_omx.ko

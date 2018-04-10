@@ -1,0 +1,2 @@
+bitops.h:48:19:0	0	static
+stmicro.c:187:19:spi_flash_probe_stmicro	16	static

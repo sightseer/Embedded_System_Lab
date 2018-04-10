@@ -1,0 +1,6 @@
+/.
+/bin
+/bin/busybox
+/etc
+/etc/busybox.links
+/bin/sh
