@@ -1,0 +1,1 @@
+cmd_kernel/config_data.gz := (cat /home/xyin/Embedded_System_Lab/project2/software/build/linux/kernel/xlnx-3.8/.config | gzip -n -f -9 > kernel/config_data.gz) || (rm -f kernel/config_data.gz ; false)

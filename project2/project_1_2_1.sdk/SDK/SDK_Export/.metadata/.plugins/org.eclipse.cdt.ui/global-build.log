@@ -1,0 +1,2002 @@
+20:06:36 **** Build of project standalone_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+
+**** Build of configuration Debug for project Lab_1.2.1 ****
+
+Nothing to build for project Lab_1.2.1
+20:10:29 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Switch_LED.d" -MT"Switch_LED.d" -o "Switch_LED.o" "../Switch_LED.c"
+Finished building: ../Switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./Switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp/ps7_cortexa9_0/lib/libxil.a(xil-crt0.o): In function `_start':
+/home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/standalone_bsp/ps7_cortexa9_0/libsrc/standalone_v3_12_a/src/xil-crt0.S:149: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [Lab_1.2.1.elf] Error 1
+21:33:15 **** Auto Build of project standalone_bsp ****
+make -k all 
+Finished building libraries
+21:34:52 **** Clean-only build of configuration Debug for project Lab_1.2.1 ****
+make clean 
+rm -rf  ./Switch_LED.o  ./Switch_LED.d  Lab_1.2.1.elf.size  Lab_1.2.1.elf
+ 
+21:34:53 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Switch_LED.d" -MT"Switch_LED.d" -o "Switch_LED.o" "../Switch_LED.c"
+../Switch_LED.c: In function 'main':
+../Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../Switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./Switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23808	   1152	  22628	  47588	   b9e4	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+21:48:14 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+21:52:33 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+21:53:11 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:05:27 **** Auto Build of project standalone_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+22:05:46 **** Auto Build of project standalone_bsp ****
+make -k all 
+Finished building libraries
+22:05:47 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:08:35 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:09:48 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:10:22 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:14:13 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:15:35 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:19:33 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+22:20:02 **** Clean-only build of configuration Debug for project Lab_1.2.1 ****
+make clean 
+rm -rf  ./Switch_LED.o  ./Switch_LED.d  Lab_1.2.1.elf.size  Lab_1.2.1.elf
+ 
+22:20:02 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/Switch_LED.c
+ 
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+22:24:33 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+Finished building: ../src/Switch_LED.c
+ 
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+22:30:48 **** Build of project standalone_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+
+**** Build of configuration Debug for project Lab_1.2.1 ****
+
+Nothing to build for project Lab_1.2.1
+22:31:25 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Switch_LED.d" -MT"Switch_LED.d" -o "Switch_LED.o" "../Switch_LED.c"
+Finished building: ../Switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./Switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp/ps7_cortexa9_0/lib/libxil.a(xil-crt0.o): In function `_start':
+/home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/standalone_bsp/ps7_cortexa9_0/libsrc/standalone_v3_12_a/src/xil-crt0.S:149: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [Lab_1.2.1.elf] Error 1
+22:31:46 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"Switch_LED.d" -MT"Switch_LED.d" -o "Switch_LED.o" "../Switch_LED.c"
+../Switch_LED.c: In function 'main':
+../Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../Switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./Switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23808	   1152	  22628	  47588	   b9e4	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+22:32:34 **** Clean-only build of configuration Debug for project Lab_1.2.1 ****
+make clean 
+rm -rf  ./Switch_LED.o  ./Switch_LED.d  Lab_1.2.1.elf.size  Lab_1.2.1.elf
+ 
+22:32:34 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+Finished building: ../src/Switch_LED.c
+ 
+22:39:59 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/Switch_LED.c
+ 
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+22:46:35 **** Auto Build of project standalone_bsp ****
+make -k all 
+Finished building libraries
+19:27:13 **** Auto Build of project standalone_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+19:27:35 **** Auto Build of project standalone_bsp ****
+make -k all 
+Finished building libraries
+19:27:35 **** Clean-only build of configuration Debug for project Lab_1.2.1 ****
+make clean 
+rm -rf  ./src/Switch_LED.o  ./Switch_LED.o  ./src/Switch_LED.d  ./Switch_LED.d  Lab_1.2.1.elf.size  Lab_1.2.1.elf
+ 
+19:27:35 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/Switch_LED.c
+ 
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+19:27:41 **** Clean-only build of project standalone_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+19:27:42 **** Build of project standalone_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+19:27:57 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+19:27:57 **** Clean-only build of configuration Debug for project Lab_1.2.1 ****
+make clean 
+rm -rf  ./src/Switch_LED.o  ./Switch_LED.o  ./src/Switch_LED.d  ./Switch_LED.d  Lab_1.2.1.elf.size  Lab_1.2.1.elf
+ 
+19:27:58 **** Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/Switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Switch_LED.d" -MT"src/Switch_LED.d" -o "src/Switch_LED.o" "../src/Switch_LED.c"
+../src/Switch_LED.c: In function 'main':
+../src/Switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/Switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/Switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/Switch_LED.c
+ 
+../src/Switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/Switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+make: *** No rule to make target `Switch_LED.o', needed by `Lab_1.2.1.elf'.  Stop.
+19:32:54 **** Build of project standalone_bsp2 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+
+**** Build of configuration Debug for project Lab_1.2.1 ****
+
+Nothing to build for project Lab_1.2.1
+19:34:08 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+Finished building: ../src/switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp2/ps7_cortexa9_0/lib/libxil.a(xil-crt0.o): In function `_start':
+/home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/standalone_bsp2/ps7_cortexa9_0/libsrc/standalone_v3_12_a/src/xil-crt0.S:149: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [Lab_1.2.1.elf] Error 1
+19:35:14 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+../src/switch_LED.c: In function 'main':
+Building file: ../src/switch_LED.c
+../src/switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+Finished building: ../src/switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../src/switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23808	   1152	  22628	  47588	   b9e4	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+../src/switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+19:39:49 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+19:47:46 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+../src/switch_LED.c: In function 'main':
+../src/switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../src/switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+../src/switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23808	   1152	  22628	  47588	   b9e4	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+19:47:52 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+19:48:16 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+../src/switch_LED.c: In function 'main':
+../src/switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/switch_LED.c:8:20: warning: variable 'dip_check' set but not used [-Wunused-but-set-variable]
+../src/switch_LED.c:8:9: warning: variable 'psb_check' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/switch_LED.c
+../src/switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23796	   1152	  22628	  47576	   b9d8	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+19:49:15 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+../src/switch_LED.c: In function 'main':
+../src/switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23788	   1152	  22628	  47568	   b9d0	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+19:49:22 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+19:51:28 **** Auto Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+Building file: ../src/switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+../src/switch_LED.c: In function 'main':
+../src/switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/switch_LED.c
+ 
+Building target: Lab_1.2.1.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1.2.1.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab_1.2.1.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1.2.1.elf  |tee "Lab_1.2.1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23808	   1152	  22628	  47588	   b9e4	Lab_1.2.1.elf
+Finished building: Lab_1.2.1.elf.size
+ 
+19:51:33 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+19:52:09 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+19:52:33 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+20:02:59 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+20:09:11 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+20:10:14 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+19:55:50 **** Auto Build of project standalone_bsp2 ****
+make -k all 
+Finished building libraries
+19:58:22 **** Incremental Build of configuration Debug for project Lab_1.2.1 ****
+make all 
+make: Nothing to be done for `all'.
+20:07:56 **** Clean-only build of configuration Debug for project Lab_1_3 ****
+make clean 
+rm -rf  ./src/switch_LED.o  ./src/switch_LED.d  Lab_1.2.1.elf.size  Lab_1.2.1.elf
+ 
+20:07:56 **** Build of configuration Debug for project Lab_1_3 ****
+make all 
+Building file: ../src/switch_LED.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp2/ps7_cortexa9_0/include -MMD -MP -MF"src/switch_LED.d" -MT"src/switch_LED.d" -o "src/switch_LED.o" "../src/switch_LED.c"
+../src/switch_LED.c: In function 'main':
+../src/switch_LED.c:9:14: warning: unused variable 'tmpdip' [-Wunused-variable]
+../src/switch_LED.c:9:6: warning: unused variable 'tmppsb' [-Wunused-variable]
+../src/switch_LED.c:8:6: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/switch_LED.c
+ 
+Building target: Lab_1_3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp2/ps7_cortexa9_0/lib -o "Lab_1_3.elf"  ./src/switch_LED.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Lab_1_3.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Lab_1_3.elf  |tee "Lab_1_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23808	   1152	  22628	  47588	   b9e4	Lab_1_3.elf
+Finished building: Lab_1_3.elf.size
+ 
+20:08:20 **** Incremental Build of configuration Debug for project Lab_1_3 ****
+make all 
+make: Nothing to be done for `all'.
+20:09:00 **** Auto Build of project standalone_bsp2 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+ERROR:EDK - Cannot read XML file ../hw_platform_0/system.xml
+make: *** [ps7_cortexa9_0/lib/libxil.a] Segmentation fault (core dumped)
+make: Target `all' not remade because of errors.
+20:09:05 **** Auto Build of configuration Debug for project Lab_1_3 ****
+make all 
+make: Nothing to be done for `all'.
+20:09:14 **** Auto Build of configuration Debug for project Lab_1_3 ****
+make all 
+make: Nothing to be done for `all'.
+20:11:24 **** Build of project Lab1_3_bsp ****
+make -k all 
+libgen -hw ../ZC706_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../ZC706_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling standalone
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling iicps
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+
+**** Build of configuration Debug for project Lab1_3 ****
+
+Nothing to build for project Lab1_3
+20:12:34 **** Auto Build of configuration Debug for project Lab1_3 ****
+make all 
+Building file: ../src/Calculator.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Lab1_3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.d" -o "src/Calculator.o" "../src/Calculator.c"
+Finished building: ../src/Calculator.c
+ 
+Building target: Lab1_3.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab1_3_bsp/ps7_cortexa9_0/lib -o "Lab1_3.elf"  ./src/Calculator.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../Lab1_3_bsp/ps7_cortexa9_0/lib/libxil.a(xil-crt0.o): In function `_start':
+/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/Lab1_3_bsp/ps7_cortexa9_0/libsrc/standalone_v3_12_a/src/xil-crt0.S:149: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [Lab1_3.elf] Error 1
+20:13:12 **** Auto Build of configuration Debug for project Lab1_3 ****
+make all 
+Building file: ../src/Calculator.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Lab1_3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.d" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c:4:22: fatal error: sys/mman.h: No such file or directory
+compilation terminated.
+make: *** [src/Calculator.o] Error 1
+20:13:26 **** Auto Build of configuration Debug for project Lab1_3 ****
+make all 
+Building file: ../src/Calculator.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Lab1_3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.d" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c:4:22: fatal error: sys/mman.h: No such file or directory
+compilation terminated.
+make: *** [src/Calculator.o] Error 1
+20:22:18 **** Auto Build of project Lab1_3_bsp ****
+make -k all 
+Finished building libraries
+20:22:31 **** Auto Build of configuration Debug for project Lab1_3 ****
+make all 
+Building file: ../src/Calculator.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Lab1_3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.d" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c:4:22: fatal error: sys/mman.h: No such file or directory
+compilation terminated.
+make: *** [src/Calculator.o] Error 1
+20:28:25 **** Build of project Lab1_3_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+
+**** Build of configuration Debug for project Lab1_3 ****
+
+Nothing to build for project Lab1_3
+20:29:01 **** Auto Build of configuration Debug for project Lab1_3 ****
+make all 
+Building file: ../src/Calculator.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Lab1_3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.d" -o "src/Calculator.o" "../src/Calculator.c"
+Finished building: ../src/Calculator.c
+../../Lab1_3_bsp/ps7_cortexa9_0/lib/libxil.a(xil-crt0.o): In function `_start':
+ 
+/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/Lab1_3_bsp/ps7_cortexa9_0/libsrc/standalone_v3_12_a/src/xil-crt0.S:149: undefined reference to `main'
+Building target: Lab1_3.elf
+Invoking: ARM gcc linker
+collect2: error: ld returned 1 exit status
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab1_3_bsp/ps7_cortexa9_0/lib -o "Lab1_3.elf"  ./src/Calculator.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+make: *** [Lab1_3.elf] Error 1
+20:29:18 **** Auto Build of configuration Debug for project Lab1_3 ****
+make all 
+Building file: ../src/Calculator.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Lab1_3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.d" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c:4:22: fatal error: sys/mman.h: No such file or directory
+compilation terminated.
+make: *** [src/Calculator.o] Error 1
+20:34:41 **** Auto Build of configuration Debug for project Lab1_3 ****
+make all 
+Building file: ../src/Calculator.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Lab1_3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.d" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c:4:22: fatal error: sys/mman.h: No such file or directory
+compilation terminated.
+make: *** [src/Calculator.o] Error 1
+20:35:36 **** Auto Build of configuration Debug for project Lab1_3 ****
+make all 
+Building file: ../src/Calculator.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Lab1_3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.d" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c:4:22: fatal error: sys/mman.h: No such file or directory
+compilation terminated.
+make: *** [src/Calculator.o] Error 1
+20:51:32 **** Auto Build of configuration Debug for project Lab1_3 ****
+make all 
+Building file: ../src/Calculator.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Lab1_3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.d" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c:4:22: fatal error: sys/mman.h: No such file or directory
+compilation terminated.
+make: *** [src/Calculator.o] Error 1
+21:19:45 **** Build of project petalinux_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#-------------------------------------------------
+# Top Level BSP DRC for Petalinux...
+# Created by: Michal Simek
+# version: petalinux_v2_00_a
+#-------------------------------------------------
+project_folder=/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK
+_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::drc
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::drc
+#--------------------------------------
+# uboot BSP DRC...
+#--------------------------------------
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::drc
+#--------------------------------------
+# Linux-Kconfig Kconfig BSP DRC...
+#--------------------------------------
+Running generate.
+project_folder=/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK
+_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+#--------------------------------------
+# Standalone BSP generate...
+#--------------------------------------
+Standalone BSP standalone_v3_12_a
+/opt/Xilinx/SDK/2013.4/sw/lib/bsp/standalone_v3_12_a/src/common ./src/
+Calling standalone::generate
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::generate
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+BTNs_5Bits.s_axi_aclk connected to processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+LEDs_8Bits.s_axi_aclk connected to processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+SWs_8bits.s_axi_aclk connected to processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+processing_system7_0_axi_periph_s00_couplers_auto_pc.aclk connected to
+processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+processing_system7_0_axi_periph_xbar.aclk connected to
+processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+rst_processing_system7_0_100M.slowest_sync_clk connected to
+processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_usb_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave BTNs_5Bits
+-slave LEDs_8Bits
+-slave SWs_8bits
+-slave ps7_afi_0
+IP 47206032 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 47529552 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 47529952 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 47530352 ps7_afi_3 is already appended - skip it
+-slave ps7_coresight_comp_0
+IP 47200032 ps7_coresight_comp_0 is already appended - skip it
+-slave ps7_ddr_0
+IP 47196032 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 47198432 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 47198832 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 47202432 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 47196432 ps7_ethernet_0 is already appended - skip it
+-slave ps7_globaltimer_0
+IP 47201232 ps7_globaltimer_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 47198032 ps7_gpio_0 is already appended - skip it
+-slave ps7_gpv_0
+IP 47200432 ps7_gpv_0 is already appended - skip it
+-slave ps7_intc_dist_0
+IP 47201632 ps7_intc_dist_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 47202832 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_l2cachec_0
+IP 47202032 ps7_l2cachec_0 is already appended - skip it
+-slave ps7_ocmc_0
+IP 47199632 ps7_ocmc_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 47194544 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 47194944 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 47203232 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 47203632 ps7_ram_1 is already appended - skip it
+-slave ps7_scuc_0
+IP 47200832 ps7_scuc_0 is already appended - skip it
+-slave ps7_scugic_0
+IP 47204032 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 47204432 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 47204832 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 47197232 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 47205232 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 47197632 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 46895808 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 47196832 ps7_usb_0 is already appended - skip it
+-slave ps7_xadc_0
+IP 47199232 ps7_xadc_0 is already appended - skip it
+ps7_ocmc_0
+ps7_coresight_comp_0
+ps7_gpv_0
+ps7_scuc_0
+ps7_globaltimer_0
+ps7_intc_dist_0
+ps7_l2cachec_0
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0}
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::generate
+#--------------------------------------
+# uboot BSP generate...
+#--------------------------------------
+/* Main Memory is ps7_ddr_0 */
+INFO automatic U-BOOT position = 0x1fc00000
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::generate
+#--------------------------------------
+# Linux-Kconfig BSP generate...
+#--------------------------------------
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+21:21:05 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling XilFFs Library
+Creating archive libxilffs.a
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+21:21:22 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+21:36:49 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+18:53:47 **** Auto Build of project petalinux_bsp_0 ****
+make -k all 
+Finished building libraries
+18:53:49 **** Auto Build of project petalinux_bsp_0 ****
+make -k all 
+Finished building libraries
+18:53:49 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+Finished building libraries
+18:53:55 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+18:53:56 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11492	  73316	 155248	  25e70	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+18:59:53 **** Auto Build of project petalinux_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+ERROR:EDK - Cannot read XML file ../hw_platform_0/system.xml
+make: *** [ps7_cortexa9_0/lib/libxil.a] Segmentation fault (core dumped)
+make: Target `all' not remade because of errors.
+18:59:58 **** Auto Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+ERROR:EDK - Cannot read XML file ../hw_platform_0/system.xml
+make: *** [ps7_cortexa9_0/lib/libxil.a] Segmentation fault (core dumped)
+make: Target `all' not remade because of errors.
+19:00:00 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+19:04:52 **** Build of project petalinux_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#-------------------------------------------------
+# Top Level BSP DRC for Petalinux...
+# Created by: Michal Simek
+# version: petalinux_v2_00_a
+#-------------------------------------------------
+project_folder=/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK
+_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::drc
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::drc
+#--------------------------------------
+# uboot BSP DRC...
+#--------------------------------------
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::drc
+#--------------------------------------
+# Linux-Kconfig Kconfig BSP DRC...
+#--------------------------------------
+Running generate.
+project_folder=/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK
+_Export/petalinux_bsp_0/ps7_cortexa9_0/libsrc/petalinux_v2_00_a/../../..
+#--------------------------------------
+# Standalone BSP generate...
+#--------------------------------------
+Standalone BSP standalone_v3_12_a
+/opt/Xilinx/SDK/2013.4/sw/lib/bsp/standalone_v3_12_a/src/common ./src/
+Calling standalone::generate
+
+BSP name: device-tree_v1_01_a device-tree_v2_1_0.tcl
+Calling device-tree_v1_01_a ::generate
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+BTNs_5Bits.s_axi_aclk connected to processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+LEDs_8Bits.s_axi_aclk connected to processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+SWs_8bits.s_axi_aclk connected to processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+processing_system7_0_axi_periph_s00_couplers_auto_pc.aclk connected to
+processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+processing_system7_0_axi_periph_xbar.aclk connected to
+processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+rst_processing_system7_0_100M.slowest_sync_clk connected to
+processing_system7_0_FCLK_CLK0:
+    CLK_FREQ_HZ = 100000000
+ps7_uart_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_qspi_linear_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_0.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_cortexa9_1.M_AXI_DP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_CTRL_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ethernet_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_usb_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_sd_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ttc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpio_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ddrc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dev_cfg_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_xadc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ocmc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_coresight_comp_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_gpv_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuc_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_globaltimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_intc_dist_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_l2cachec_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_s.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_iop_bus_config_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_ram_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scugic_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scutimer_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_scuwdt_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_slcr_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_dma_ns.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_1.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_2.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_afi_3.S_AXI_ACLK connected to ps7_axi_interconnect_0_M_AXI_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_xadc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ocmc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_coresight_comp_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpv_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_globaltimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_intc_dist_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_l2cachec_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dma_ns
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave BTNs_5Bits
+-slave LEDs_8Bits
+-slave SWs_8bits
+-slave ps7_afi_0
+IP 27704976 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 28028496 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 28028896 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 28029296 ps7_afi_3 is already appended - skip it
+-slave ps7_coresight_comp_0
+IP 27698976 ps7_coresight_comp_0 is already appended - skip it
+-slave ps7_ddr_0
+IP 27694976 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 27697376 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 27697776 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 27701376 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 27695376 ps7_ethernet_0 is already appended - skip it
+-slave ps7_globaltimer_0
+IP 27700176 ps7_globaltimer_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 27696976 ps7_gpio_0 is already appended - skip it
+-slave ps7_gpv_0
+IP 27699376 ps7_gpv_0 is already appended - skip it
+-slave ps7_intc_dist_0
+IP 27700576 ps7_intc_dist_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 27701776 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_l2cachec_0
+IP 27700976 ps7_l2cachec_0 is already appended - skip it
+-slave ps7_ocmc_0
+IP 27698576 ps7_ocmc_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 27693488 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 27693888 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 27702176 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 27702576 ps7_ram_1 is already appended - skip it
+-slave ps7_scuc_0
+IP 27699776 ps7_scuc_0 is already appended - skip it
+-slave ps7_scugic_0
+IP 27702976 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 27703376 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 27703776 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 27696176 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 27704176 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 27696576 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 27394752 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 27695776 ps7_usb_0 is already appended - skip it
+-slave ps7_xadc_0
+IP 27698176 ps7_xadc_0 is already appended - skip it
+ps7_ocmc_0
+ps7_coresight_comp_0
+ps7_gpv_0
+ps7_scuc_0
+ps7_globaltimer_0
+ps7_intc_dist_0
+ps7_l2cachec_0
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+{serial0 aliasref ps7_uart_1 0} {spi0 aliasref ps7_qspi_0 0} {ethernet0 aliasref
+ps7_ethernet_0 0}
+
+BSP name: uboot_v4_00_c uboot_v2_1_0.tcl
+Calling uboot_v4_00_c ::generate
+#--------------------------------------
+# uboot BSP generate...
+#--------------------------------------
+/* Main Memory is ps7_ddr_0 */
+INFO automatic U-BOOT position = 0x1fc00000
+
+BSP name: linux-kconfig_v1_00_a linux-kconfig_v2_1_0.tcl
+Calling linux-kconfig_v1_00_a ::generate
+#--------------------------------------
+# Linux-Kconfig BSP generate...
+#--------------------------------------
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+19:07:33 **** Build of project zynq_fsbl_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling XilFFs Library
+Creating archive libxilffs.a
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+19:07:50 **** Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11460	  73316	 155216	  25e50	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+19:29:09 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.
+19:52:20 **** Clean-only build of configuration Debug for project zynq_fsbl ****
+make clean 
+rm -rf  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o  ./src/ddr_init.d ./src/fsbl_hooks.d ./src/image_mover.d ./src/main.d ./src/md5.d ./src/nand.d ./src/nor.d ./src/pcap.d ./src/ps7_init.d ./src/qspi.d ./src/rsa.d ./src/sd.d  zynq_fsbl.elf.size  ./src/fsbl_handoff.d  zynq_fsbl.elf
+ 
+19:52:20 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf"  ./src/ddr_init.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl.elf  |tee "zynq_fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	  11460	  73316	 155216	  25e50	zynq_fsbl.elf
+Finished building: zynq_fsbl.elf.size
+ 
+20:10:50 **** Auto Build of configuration Debug for project zynq_fsbl ****
+make all 
+make: Nothing to be done for `all'.

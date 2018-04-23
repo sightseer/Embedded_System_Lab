@@ -1,0 +1,2 @@
+bitops.h:48:19:0	0	static
+spansion.c:148:19:spi_flash_probe_spansion	24	static

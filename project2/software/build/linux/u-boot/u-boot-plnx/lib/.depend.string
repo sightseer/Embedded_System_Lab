@@ -1,0 +1,25 @@
+/home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/u-boot-plnx/lib/string.o: \
+ string.c \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/linux/types.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/linux/config.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/linux/posix_types.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/linux/stddef.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/u-boot-plnx/include2/asm/posix_types.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/u-boot-plnx/include2/asm/types.h \
+ /opt/PetaLinux/petalinux-v2013.10-final/tools/linux-i386/arm-xilinx-linux-gnueabi/bin/../lib/gcc/arm-xilinx-linux-gnueabi/4.7.3/include/stdbool.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/linux/string.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/u-boot-plnx/include2/asm/string.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/u-boot-plnx/include/config.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/config_cmd_defaults.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/config_defaults.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/configs/petalinux-arm-auto.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/../board/xilinx/zynq/xparameters.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/configs/petalinux-auto-board.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/config_cmd_default.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/configs/petalinux-user-config.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/u-boot-plnx/include2/asm/config.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/config_fallbacks.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/config_uncmd_spl.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/linux/linux_string.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/linux/ctype.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/malloc.h

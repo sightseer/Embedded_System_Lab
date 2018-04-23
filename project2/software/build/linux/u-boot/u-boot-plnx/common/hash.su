@@ -1,0 +1,2 @@
+hash.c:242:5:hash_block	24	static
+hash.c:264:5:hash_command	24	static

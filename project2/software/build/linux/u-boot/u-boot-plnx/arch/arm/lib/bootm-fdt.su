@@ -1,0 +1,1 @@
+bootm-fdt.c:39:5:arch_fixup_memory_node	0	static

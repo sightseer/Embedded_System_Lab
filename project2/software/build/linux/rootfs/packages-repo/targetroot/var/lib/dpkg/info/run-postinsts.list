@@ -1,0 +1,8 @@
+/.
+/usr
+/usr/share
+/usr/share/run-postinsts
+/usr/share/run-postinsts/run-postinsts.awk
+/etc
+/etc/init.d
+/etc/init.d/run-postinsts

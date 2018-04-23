@@ -1,0 +1,5 @@
+1524481191869	Delete resource 'hw_platform_0'
+1524481204421	Delete resource 'petalinux_bsp_0'
+1524481213060	Delete resource 'zynq_fsbl'
+1524481221831	Delete resource 'zynq_fsbl_bsp'
+1524484339615	Delete resource 'zynq_fsbl/bootimage'

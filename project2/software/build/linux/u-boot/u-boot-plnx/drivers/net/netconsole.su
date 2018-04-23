@@ -1,0 +1,14 @@
+netconsole.c:53:13:nc_wait_arp_handler	0	static
+netconsole.c:60:13:nc_handler	0	static
+netconsole.c:67:13:nc_timeout	0	static
+netconsole.c:282:12:nc_getc	16	static
+netconsole.c:184:13:nc_send_packet	32	static
+netconsole.c:252:13:nc_putc	24	static
+netconsole.c:72:12:is_broadcast	16	static
+netconsole.c:303:12:nc_tstc	8	static
+netconsole.c:263:13:nc_puts	16	static
+netconsole.c:92:12:refresh_settings_from_env	8	static
+netconsole.c:232:12:nc_start	8	static
+netconsole.c:132:6:NcStart	24	static
+netconsole.c:150:5:nc_input_packet	24	static
+netconsole.c:327:5:drv_nc_init	72	static

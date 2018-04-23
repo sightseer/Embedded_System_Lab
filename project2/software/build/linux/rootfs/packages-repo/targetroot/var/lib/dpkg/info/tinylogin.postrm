@@ -1,0 +1,3 @@
+#!/bin/sh
+#!/bin/sh
+	update-alternatives --remove  getty /sbin/getty.tinylogin

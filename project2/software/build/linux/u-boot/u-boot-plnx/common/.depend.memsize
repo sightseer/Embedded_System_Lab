@@ -1,0 +1,13 @@
+/home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/u-boot-plnx/common/memsize.o: \
+ memsize.c \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/u-boot-plnx/include/config.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/config_cmd_defaults.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/config_defaults.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/configs/petalinux-arm-auto.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/../board/xilinx/zynq/xparameters.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/configs/petalinux-auto-board.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/config_cmd_default.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/configs/petalinux-user-config.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/u-boot-plnx/include2/asm/config.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/config_fallbacks.h \
+ /home/xyin/Embedded_System_Lab/project2/software/build/linux/u-boot/src/u-boot-plnx/include/config_uncmd_spl.h

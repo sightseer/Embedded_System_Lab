@@ -1,0 +1,277 @@
+20:04:31.434 INFO  - Processing command line option -hwspec /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+21:05:58.875 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:33:12.732 INFO  - Processing command line option -hwspec /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+21:33:15.387 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+21:33:15.424 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml into /hw_platform_0/system.xml. 
+21:33:15.451 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1_wrapper.bit into /hw_platform_0/design_Lab1_2_1_wrapper.bit. 
+21:33:15.612 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+21:33:15.613 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+21:33:15.620 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+21:33:15.621 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+21:33:15.622 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+21:33:16.056 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:33:19.190 INFO  - Updating hardware inferred compiler options for Lab_1.2.1. 
+21:33:19.205 INFO  - Clearing existing target manager status. 
+21:52:52.393 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:52:52.493 INFO  - PS initialization will be done as it is not done before. 
+21:52:52.493 INFO  - Running PS initialization.... 
+21:52:52.765 INFO  - ps7_init is completed. 
+21:52:52.865 INFO  - ps7_post_config is completed. 
+21:52:52.965 INFO  - PS Initialization is complete. 
+21:53:15.010 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:53:15.354 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Invalid Target ID
+    Target '64' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+21:59:39.565 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:05:24.398 INFO  - Processing command line option -hwspec /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+22:05:26.704 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+22:05:26.742 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml into /hw_platform_0/system.xml. 
+22:05:26.797 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1_wrapper.bit into /hw_platform_0/design_Lab1_2_1_wrapper.bit. 
+22:05:46.555 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+22:05:46.557 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+22:05:46.594 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+22:05:46.595 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+22:05:46.596 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+22:05:47.489 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+22:05:49.359 INFO  - Updating hardware inferred compiler options for Lab_1.2.1. 
+22:05:49.374 INFO  - Clearing existing target manager status. 
+22:08:40.331 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:08:40.431 INFO  - PS initialization will be done as it is not done before. 
+22:08:40.431 INFO  - Running PS initialization.... 
+22:08:40.706 INFO  - ps7_init is completed. 
+22:08:40.806 INFO  - ps7_post_config is completed. 
+22:08:40.906 INFO  - PS Initialization is complete. 
+22:09:40.193 INFO  - FPGA configured successfully with bitstream "/home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/design_Lab1_2_1_wrapper.bit" 
+22:09:48.844 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:09:50.347 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+22:10:23.321 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:10:29.227 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+22:14:14.399 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:14:18.113 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+22:15:36.966 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:15:41.470 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+22:19:34.144 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:19:36.149 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+22:20:31.483 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:27:47.974 INFO  - Processing command line option -hwspec /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+22:27:48.259 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+22:27:48.639 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml into /hw_platform_0/system.xml. 
+22:27:48.659 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1_wrapper.bit into /hw_platform_0/design_Lab1_2_1_wrapper.bit. 
+22:27:48.914 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+22:27:48.915 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+22:27:48.928 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+22:27:48.929 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+22:27:48.930 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+22:27:49.306 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+22:27:49.792 INFO  - Clearing existing target manager status. 
+22:27:52.994 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+22:32:20.702 INFO  - FPGA configured successfully with bitstream "/home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/design_Lab1_2_1_wrapper.bit" 
+22:43:19.764 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:46:33.231 INFO  - Processing command line option -hwspec /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+22:46:35.548 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+22:46:35.562 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml into /hw_platform_0/system.xml. 
+22:46:35.573 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1_wrapper.bit into /hw_platform_0/design_Lab1_2_1_wrapper.bit. 
+22:46:35.718 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+22:46:35.719 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+22:46:35.726 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+22:46:35.727 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+22:46:35.728 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+22:46:36.145 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+22:46:38.082 INFO  - Updating hardware inferred compiler options for Lab_1.2.1. 
+22:46:38.295 INFO  - Clearing existing target manager status. 
+23:09:00.282 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:27:10.135 INFO  - Processing command line option -hwspec /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+19:27:13.000 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+19:27:13.063 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml into /hw_platform_0/system.xml. 
+19:27:13.097 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1_wrapper.bit into /hw_platform_0/design_Lab1_2_1_wrapper.bit. 
+19:27:34.866 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+19:27:34.868 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+19:27:34.901 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+19:27:34.901 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+19:27:34.902 INFO  - Copied contents of /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+19:27:35.329 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+19:27:38.016 INFO  - Updating hardware inferred compiler options for Lab_1.2.1. 
+19:27:38.027 INFO  - Clearing existing target manager status. 
+19:27:41.867 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+19:37:20.050 INFO  - FPGA configured successfully with bitstream "/home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/design_Lab1_2_1_wrapper.bit" 
+19:39:51.466 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:39:51.566 INFO  - PS initialization will be done as it is not done before. 
+19:39:51.567 INFO  - Running PS initialization.... 
+19:39:51.855 INFO  - ps7_init is completed. 
+19:39:51.955 INFO  - ps7_post_config is completed. 
+19:39:52.055 INFO  - PS Initialization is complete. 
+19:47:54.439 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:49:23.958 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:51:34.301 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:51:40.910 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:59:46.079 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:59:46.179 INFO  - PS initialization will be done as it is not done before. 
+19:59:46.180 INFO  - Running PS initialization.... 
+19:59:46.456 INFO  - ps7_init is completed. 
+19:59:46.556 INFO  - ps7_post_config is completed. 
+19:59:46.656 INFO  - PS Initialization is complete. 
+20:09:03.329 INFO  - FPGA configured successfully with bitstream "/home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/design_Lab1_2_1_wrapper.bit" 
+20:09:12.606 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:09:15.814 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+20:09:39.737 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:09:49.509 INFO  - Processing command line option -hwspec /home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+20:10:07.005 INFO  - FPGA configured successfully with bitstream "/home/xyin/project_1_2_1/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/design_Lab1_2_1_wrapper.bit" 
+20:10:16.225 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:10:16.325 INFO  - PS initialization will be done as it is not done before. 
+20:10:16.326 INFO  - Running PS initialization.... 
+20:10:16.602 INFO  - ps7_init is completed. 
+20:10:16.702 INFO  - ps7_post_config is completed. 
+20:10:16.802 INFO  - PS Initialization is complete. 
+21:10:25.665 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:10:25.677 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:55:47.380 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+19:55:49.868 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+19:55:49.890 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml into /hw_platform_0/system.xml. 
+19:55:49.914 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1_wrapper.bit into /hw_platform_0/design_Lab1_2_1_wrapper.bit. 
+19:55:50.074 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+19:55:50.075 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+19:55:50.082 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+19:55:50.083 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+19:55:50.084 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+19:55:50.512 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+19:55:52.396 INFO  - Updating hardware inferred compiler options for Lab_1.2.1. 
+19:55:52.646 INFO  - Clearing existing target manager status. 
+19:58:08.066 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/design_Lab1_2_1_wrapper.bit" 
+19:58:24.340 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+19:58:24.440 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:58:24.540 INFO  - PS initialization will be done as it is not done before. 
+19:58:24.541 INFO  - Running PS initialization.... 
+19:58:24.643 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+20:08:21.725 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:08:21.825 INFO  - PS initialization will be done as it is not done before. 
+20:08:21.825 INFO  - Running PS initialization.... 
+20:08:23.001 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    AP transaction timeout: ACK = 0x01, expected=0x02)
+    Error Address = 0xf8007080, Size = 0x00000004
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+20:08:56.963 ERROR - SDK has detected that project hw_platform_0 has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+20:09:11.131 INFO  - Project standalone_bsp2 was a BSP project. Please update references. 
+20:09:11.131 ERROR - SDK has detected that project standalone_bsp2 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+20:11:23.346 WARN  - Unexpected exception while copying file /opt/Xilinx/SDK/2013.4/sw/lib/hwplatform_templates/ZC706_hw_platform/ps7_summary.html: java.io.FileNotFoundException: /opt/Xilinx/SDK/2013.4/sw/lib/hwplatform_templates/ZC706_hw_platform/ps7_summary.html (No such file or directory) 
+20:22:15.919 ERROR - SDK has detected that project ZC706_hw_platform has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+20:22:28.471 INFO  - Project Lab1_3_bsp was a BSP project. Please update references. 
+20:22:28.471 ERROR - SDK has detected that project Lab1_3_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+20:26:19.839 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:26:19.843 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:27:44.080 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+20:51:30.893 INFO  - Project Lab1_3_bsp was a BSP project. Please update references. 
+20:51:30.893 ERROR - SDK has detected that project Lab1_3_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+21:15:29.634 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+21:17:27.587 INFO  - Saving repository preferences. 
+21:17:27.592 INFO  - Reading in cores from local repositories: 
+		 /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository 
+21:17:27.617 INFO  - Updating libgen.options on all BSP projects. 
+21:17:27.617 INFO  - Cleaning BSP projects in the workspace. 
+21:18:15.744 WARN  - Unable to determine location of documentation for OS petalinux. 
+21:36:48.520 INFO  - Invoking Bootgen:  
+21:36:49.387 INFO  - Bootgen command execution is done. 
+18:53:46.320 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+18:53:46.992 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+18:53:47.096 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml into /hw_platform_0/system.xml. 
+18:53:47.220 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1_wrapper.bit into /hw_platform_0/system.bit. 
+18:53:48.875 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+18:53:48.876 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+18:53:48.912 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+18:53:48.913 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+18:53:48.914 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+18:53:49.481 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+18:53:51.954 INFO  - Updating hardware inferred compiler options for zynq_fsbl. 
+18:53:51.966 INFO  - Clearing existing target manager status. 
+18:53:54.830 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.c into /zynq_fsbl/src/ps7_init.c. 
+18:53:54.840 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.h into /zynq_fsbl/src/ps7_init.h. 
+18:53:54.869 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.html into /zynq_fsbl/src/ps7_init.html. 
+18:53:54.871 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/ps7_summary.html into /zynq_fsbl/src/ps7_summary.html. 
+18:53:54.873 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/ps7_init.tcl into /zynq_fsbl/src/ps7_init.tcl. 
+18:59:51.866 ERROR - SDK has detected that project hw_platform_0 has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+19:00:01.042 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/hw_platform_0' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+19:00:06.787 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/hw_platform_0' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+19:00:06.788 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/hw_platform_0' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+19:00:07.207 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/hw_platform_0' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+19:00:07.209 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/hw_platform_0' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+
+19:01:30.784 INFO  - Saving repository preferences. 
+19:01:43.466 INFO  - Saving repository preferences. 
+19:02:11.168 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:03:07.918 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw/design_Lab1_2_1.xml. 
+19:03:23.102 INFO  - Saving repository preferences. 
+19:03:50.406 WARN  - Unable to determine location of documentation for OS petalinux. 
+19:29:08.269 INFO  - Invoking Bootgen:  
+19:29:09.468 INFO  - Bootgen command execution is done. 
+20:10:49.762 INFO  - Invoking Bootgen:  
+20:10:50.424 INFO  - Bootgen command execution is done. 

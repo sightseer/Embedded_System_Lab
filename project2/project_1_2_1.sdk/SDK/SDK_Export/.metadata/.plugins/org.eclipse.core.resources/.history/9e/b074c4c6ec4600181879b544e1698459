@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/system.bit
+	[bootloader]/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/zynq_fsbl/Debug/zynq_fsbl.elf
+	/home/xyin/Embedded_System_Lab/project2/software/images/linux/u-boot.elf
+}
