@@ -1,0 +1,1842 @@
+21:32:02 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:32:11 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:39:35 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from ../src/zed_iic.h:49:0,
+                 from ../src/zed_hdmi_display.h:57,
+                 from ../src/zed_hdmi_display.c:53:
+../../hdmi_bsp/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../hdmi_bsp/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+ //     /     \
+ ^
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+       Xuint8 num_bytes;
+              ^
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+       Xuint8 num_bytes;
+              ^
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+    Xuint32 timeout = 100;
+            ^
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:292:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat=]
+    printf("height=%d weight=%d", pDemo->hdmio_height,pDemo->hdmio_width);
+    ^
+../src/zed_hdmi_display.c:292:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat=]
+../src/zed_hdmi_display.c:292:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'Xuint32' [-Wformat=]
+../src/zed_hdmi_display.c:292:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'Xuint32' [-Wformat=]
+../src/zed_hdmi_display.c:350:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+    Xil_DCacheFlush();
+    ^
+../src/zed_hdmi_display.c:290:8: warning: unused variable 'i' [-Wunused-variable]
+    int i=0;
+        ^
+../src/zed_hdmi_display.c:287:12: warning: unused variable 'rgb' [-Wunused-variable]
+    Xuint32 rgb=0;
+            ^
+../src/zed_hdmi_display.c:286:12: warning: unused variable 'b' [-Wunused-variable]
+    Xuint32 b=0;
+            ^
+../src/zed_hdmi_display.c:285:12: warning: unused variable 'g' [-Wunused-variable]
+    Xuint32 g=0;
+            ^
+../src/zed_hdmi_display.c:284:12: warning: unused variable 'r' [-Wunused-variable]
+    Xuint32 r=0;
+            ^
+../src/zed_hdmi_display.c:283:18: warning: unused variable 'cb' [-Wunused-variable]
+    unsigned char cb=0;
+                  ^
+../src/zed_hdmi_display.c:282:18: warning: unused variable 'cr' [-Wunused-variable]
+    unsigned char cr=0;
+                  ^
+../src/zed_hdmi_display.c:281:18: warning: unused variable 'y' [-Wunused-variable]
+    unsigned char y=0;
+                  ^
+../src/zed_hdmi_display.c:280:18: warning: unused variable 'pixel' [-Wunused-variable]
+    Xuint32 cbar, pixel;
+                  ^
+../src/zed_hdmi_display.c:280:12: warning: unused variable 'cbar' [-Wunused-variable]
+    Xuint32 cbar, pixel;
+            ^
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95728	 705536	  32800	 834064	  cba10	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+21:39:46 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+18:26:02 **** Auto Build of project hdmi_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/axivdma_v5_0/src
+make -C ps7_cortexa9_0/libsrc/axivdma_v5_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_0/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v2_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/iic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/iic_v3_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_0/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v2_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_0/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v4_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v4_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+make[2]: Entering directory `/home/dodo/PJ2/part1/SDK_Export/hdmi_bsp/ps7_cortexa9_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `/home/dodo/PJ2/part1/SDK_Export/hdmi_bsp/ps7_cortexa9_0/libsrc/standalone_v4_0/src/profile'
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/vtc_v6_0/src
+make -C ps7_cortexa9_0/libsrc/vtc_v6_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_0/src -s include -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v5_0/src
+make -C ps7_cortexa9_0/libsrc/axivdma_v5_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling axivdma
+make[2]: Entering directory `/home/dodo/PJ2/part1/SDK_Export/hdmi_bsp/ps7_cortexa9_0/libsrc/axivdma_v5_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `/home/dodo/PJ2/part1/SDK_Export/hdmi_bsp/ps7_cortexa9_0/libsrc/axivdma_v5_0/src'
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_0/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v2_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/iic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/iic_v3_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling iic
+make[2]: Entering directory `/home/dodo/PJ2/part1/SDK_Export/hdmi_bsp/ps7_cortexa9_0/libsrc/iic_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `/home/dodo/PJ2/part1/SDK_Export/hdmi_bsp/ps7_cortexa9_0/libsrc/iic_v3_0/src'
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_0/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v2_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_0/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_0/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v4_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/vtc_v6_0/src
+make -C ps7_cortexa9_0/libsrc/vtc_v6_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling video timing controller
+make[2]: Entering directory `/home/dodo/PJ2/part1/SDK_Export/hdmi_bsp/ps7_cortexa9_0/libsrc/vtc_v6_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `/home/dodo/PJ2/part1/SDK_Export/hdmi_bsp/ps7_cortexa9_0/libsrc/vtc_v6_0/src'
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_0/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_0/src -s libs -e "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Finished building libraries
+18:26:12 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_iic.h:49:0,
+                 from ../src/zed_hdmi_display.h:57,
+                 from ../src/zed_hdmi_display.c:53:
+../../hdmi_bsp/ps7_cortexa9_0/include/xbasic_types.h:124:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+../../hdmi_bsp/ps7_cortexa9_0/include/xbasic_types.h:125:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:307:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+In file included from ../src/zed_hdmi_display.c:54:0:
+../src/zed_hdmi_display.c: At top level:
+../src/cf_hdmi_demo.h:42:12: warning: 'IMG_DATA' defined but not used [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64056	 705408	  32768	 802232	  c3db8	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+18:29:12 **** Build of project hdmi_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+/opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling sdps
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling axivdma
+Compiling video timing controller
+Compiling iic
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+
+**** Build of configuration Debug for project hdmi_app ****
+
+Nothing to build for project hdmi_app
+19:36:31 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:37:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/helloworld.c:37:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/helloworld.c:37:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+In file included from ../src/video_frame_buffer.c:54:0:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:92:4: warning: implicit declaration of function 'vfb_rx_setup' [-Wimplicit-function-declaration]
+../src/video_frame_buffer.c:102:4: warning: implicit declaration of function 'vfb_rx_start' [-Wimplicit-function-declaration]
+../src/video_frame_buffer.c:89:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:88:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:87:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:119:4: warning: implicit declaration of function 'vfb_tx_setup' [-Wimplicit-function-declaration]
+../src/video_frame_buffer.c:129:4: warning: implicit declaration of function 'vfb_tx_start' [-Wimplicit-function-declaration]
+../src/video_frame_buffer.c:116:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+Finished building: ../src/video_frame_buffer.c
+../src/video_frame_buffer.c:115:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+ 
+../src/video_frame_buffer.c:114:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:147:1: warning: control reaches end of non-void function [-Wreturn-type]
+Building file: ../src/video_generator.c
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:109:1: warning: control reaches end of non-void function [-Wreturn-type]
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_generator.d" -MT"src/video_generator.d" -o "src/video_generator.o" "../src/video_generator.c"
+../src/video_generator.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/video_generator.c:47:0:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/video_generator.c:48:0:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+Finished building: ../src/video_generator.c
+ 
+Building file: ../src/video_resolution.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_resolution.d" -MT"src/video_resolution.d" -o "src/video_resolution.o" "../src/video_resolution.c"
+../src/video_resolution.c:3:1: warning: multi-line comment [-Wcomment]
+Finished building: ../src/video_resolution.c
+In file included from ../src/video_resolution.c:49:0:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+ 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:307:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+In file included from ../src/zed_hdmi_display.c:54:0:
+../src/zed_hdmi_display.c: At top level:
+../src/cf_hdmi_demo.h:42:12: warning: 'IMG_DATA' defined but not used [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building file: ../src/zed_iic_axi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_iic_axi.d" -MT"src/zed_iic_axi.d" -o "src/zed_iic_axi.o" "../src/zed_iic_axi.c"
+Finished building: ../src/zed_iic_axi.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64096	 705408	  25600	 795104	  c21e0	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+16:45:48 **** Build of project hdmi_bsp ****
+make -k all 
+Finished building libraries
+16:45:49 **** Clean-only build of configuration Debug for project hdmi_app ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o  ./src/helloworld.d ./src/platform.d ./src/video_frame_buffer.d ./src/video_generator.d ./src/video_resolution.d ./src/zed_hdmi_display.d ./src/zed_iic_axi.d  hdmi_app.elf.size  hdmi_app.elf
+ 
+16:45:49 **** Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:37:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/helloworld.c:37:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/helloworld.c:37:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/video_frame_buffer.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_frame_buffer.d" -MT"src/video_frame_buffer.d" -o "src/video_frame_buffer.o" "../src/video_frame_buffer.c"
+In file included from ../src/video_frame_buffer.c:54:0:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:92:4: warning: implicit declaration of function 'vfb_rx_setup' [-Wimplicit-function-declaration]
+../src/video_frame_buffer.c:102:4: warning: implicit declaration of function 'vfb_rx_start' [-Wimplicit-function-declaration]
+../src/video_frame_buffer.c:89:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:88:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:87:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c: In function 'vfb_tx_init':
+../src/video_frame_buffer.c:119:4: warning: implicit declaration of function 'vfb_tx_setup' [-Wimplicit-function-declaration]
+../src/video_frame_buffer.c:129:4: warning: implicit declaration of function 'vfb_tx_start' [-Wimplicit-function-declaration]
+../src/video_frame_buffer.c:116:8: warning: unused variable 'uDMACR' [-Wunused-variable]
+../src/video_frame_buffer.c:115:8: warning: unused variable 'uBaseAddr' [-Wunused-variable]
+../src/video_frame_buffer.c:114:26: warning: unused variable 'FrameCfg' [-Wunused-variable]
+../src/video_frame_buffer.c:147:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/video_frame_buffer.c: In function 'vfb_rx_init':
+../src/video_frame_buffer.c:109:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/video_frame_buffer.c
+ 
+Building file: ../src/video_generator.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_generator.d" -MT"src/video_generator.d" -o "src/video_generator.o" "../src/video_generator.c"
+../src/video_generator.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/video_generator.c:47:0:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/video_generator.c:48:0:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+Finished building: ../src/video_generator.c
+ 
+Building file: ../src/video_resolution.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/video_resolution.d" -MT"src/video_resolution.d" -o "src/video_resolution.o" "../src/video_resolution.c"
+../src/video_resolution.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/video_resolution.c:49:0:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+Finished building: ../src/video_resolution.c
+ 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:307:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+In file included from ../src/zed_hdmi_display.c:54:0:
+../src/zed_hdmi_display.c: At top level:
+../src/cf_hdmi_demo.h:42:12: warning: 'IMG_DATA' defined but not used [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building file: ../src/zed_iic_axi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_iic_axi.d" -MT"src/zed_iic_axi.d" -o "src/zed_iic_axi.o" "../src/zed_iic_axi.c"
+Finished building: ../src/zed_iic_axi.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64096	 705408	  25600	 795104	  c21e0	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+16:59:42 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+17:04:30 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+17:19:29 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+18:01:25 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+18:09:52 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+18:11:54 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+18:19:11 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+18:20:31 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+18:21:10 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+18:23:55 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+19:24:55 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:289:13: error: unterminated comment
+../src/zed_hdmi_display.c:288:13: error: expected declaration or statement at end of input
+../src/zed_hdmi_display.c:288:13: error: expected declaration or statement at end of input
+../src/zed_hdmi_display.c:288:13: error: expected declaration or statement at end of input
+../src/zed_hdmi_display.c:288:13: error: expected declaration or statement at end of input
+../src/zed_hdmi_display.c:281:22: warning: unused variable 'pStorageMem' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:18: warning: unused variable 'pixel' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+In file included from ../src/zed_hdmi_display.c:54:0:
+../src/zed_hdmi_display.c: At top level:
+../src/cf_hdmi_demo.h:42:12: warning: 'IMG_DATA' defined but not used [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:288:13: warning: control reaches end of non-void function [-Wreturn-type]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/zed_hdmi_display.o] Error 1
+19:25:04 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:309:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+In file included from ../src/zed_hdmi_display.c:54:0:
+../src/zed_hdmi_display.c: At top level:
+../src/cf_hdmi_demo.h:42:12: warning: 'IMG_DATA' defined but not used [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:303:28: warning: 'pixel' may be used uninitialized in this function [-Wuninitialized]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63924	 705408	  25600	 794932	  c2134	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+19:25:30 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:310:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+In file included from ../src/zed_hdmi_display.c:54:0:
+../src/zed_hdmi_display.c: At top level:
+../src/cf_hdmi_demo.h:42:12: warning: 'IMG_DATA' defined but not used [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63932	 705408	  25600	 794940	  c213c	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+19:26:03 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+19:27:15 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+19:28:30 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+19:28:52 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:310:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+In file included from ../src/zed_hdmi_display.c:54:0:
+../src/zed_hdmi_display.c: At top level:
+../src/cf_hdmi_demo.h:42:12: warning: 'IMG_DATA' defined but not used [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63932	 705408	  25600	 794940	  c213c	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+19:44:16 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:312:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:282:8: warning: unused variable 'cnt' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+In file included from ../src/zed_hdmi_display.c:54:0:
+../src/zed_hdmi_display.c: At top level:
+../src/cf_hdmi_demo.h:4:12: warning: 'IMG_DATA' defined but not used [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63940	1051360	  25600	1140900	 1168a4	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+19:45:05 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:312:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63964	1051360	  25600	1140924	 1168bc	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+19:46:10 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+19:48:57 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:312:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63964	1051360	  25600	1140924	 1168bc	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+19:55:00 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:312:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63972	1051368	  25600	1140940	 1168cc	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+19:56:22 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+19:57:32 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:312:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63972	1051368	  25600	1140940	 1168cc	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+19:58:15 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+19:59:20 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+20:07:26 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:285:28: error: 'hdmio_height' undeclared (first use in this function)
+../src/zed_hdmi_display.c:285:28: note: each undeclared identifier is reported only once for each function it appears in
+../src/zed_hdmi_display.c:312:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/zed_hdmi_display.o] Error 1
+20:07:57 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:312:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63964	1051368	  25600	1140932	 1168c4	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+20:09:15 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:282:4: error: unknown type name 'Xunit32'
+../src/zed_hdmi_display.c:282:33: error: expected expression before ']' token
+../src/zed_hdmi_display.c:313:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:282:12: warning: unused variable 'total_pixel' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/zed_hdmi_display.o] Error 1
+20:09:45 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:282:4: error: unknown type name 'Xunit32'
+../src/zed_hdmi_display.c:305:16: error: expected expression before ')' token
+../src/zed_hdmi_display.c:313:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:282:12: warning: unused variable 'total_pixel' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/zed_hdmi_display.o] Error 1
+20:10:31 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:282:4: error: unknown type name 'Xunit32'
+../src/zed_hdmi_display.c:314:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/zed_hdmi_display.o] Error 1
+20:11:04 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:314:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64028	1051368	  25600	1140996	 116904	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+20:13:13 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+20:14:10 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:315:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64028	1051368	  25600	1140996	 116904	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+20:23:00 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:315:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:282:12: warning: unused variable 'total_pixel' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64036	1051368	  25600	1141004	 11690c	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+20:23:36 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:315:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:282:12: warning: unused variable 'total_pixel' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64060	1051368	  25600	1141028	 116924	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+20:24:27 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+20:31:46 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:319:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:282:12: warning: unused variable 'total_pixel' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64060	1051368	  25600	1141028	 116924	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+20:36:09 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+20:37:06 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+20:38:09 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+20:41:10 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+20:42:57 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+Building file: ../src/zed_hdmi_display.c
+In file included from ../src/zed_hdmi_display.c:53:0:
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:319:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:282:12: warning: unused variable 'total_pixel' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64060	1047280	  25600	1136940	 11592c	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+20:44:23 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+20:51:40 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+20:54:30 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+20:59:35 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:02:24 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:06:18 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:319:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:282:12: warning: unused variable 'total_pixel' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64044	1051368	  25600	1141012	 116914	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+21:07:19 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:13:08 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:14:43 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+Building file: ../src/zed_hdmi_display.c
+In file included from ../src/zed_hdmi_display.c:53:0:
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:319:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:282:12: warning: unused variable 'total_pixel' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64044	1047280	  25600	1136924	 11591c	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+21:16:09 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:19:43 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:23:22 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:25:30 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:28:48 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:31:27 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:35:16 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:38:09 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:39:20 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:320:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:283:8: warning: unused variable 'cnt' [-Wunused-variable]
+../src/zed_hdmi_display.c:282:12: warning: unused variable 'total_pixel' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64020	1049312	  25600	1138932	 1160f4	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+21:39:53 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:40:36 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:320:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:282:12: warning: unused variable 'total_pixel' [-Wunused-variable]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64044	1049312	  25600	1138956	 11610c	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+21:44:55 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:50:31 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:320:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64008	1051360	  25600	1140968	 1168e8	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+21:51:42 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:55:28 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+21:59:26 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:320:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64008	1047272	  25600	1136880	 1158f0	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+22:00:22 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+22:02:12 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:320:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64008	1049312	  25600	1138920	 1160e8	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+22:03:08 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+22:05:33 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+22:06:53 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:320:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64008	1049312	  25600	1138920	 1160e8	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+22:07:18 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+22:14:31 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:320:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64008	1051360	  25600	1140968	 1168e8	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+22:14:51 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+22:17:23 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:320:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64000	1051360	  25600	1140960	 1168e0	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+22:17:48 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+22:18:37 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:320:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64004	1051360	  25600	1140964	 1168e4	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+22:18:58 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+22:20:15 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:321:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64012	1051360	  25600	1140972	 1168ec	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+22:20:39 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.
+22:21:49 **** Auto Build of configuration Debug for project hdmi_app ****
+make all 
+Building file: ../src/zed_hdmi_display.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hdmi_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zed_hdmi_display.d" -MT"src/zed_hdmi_display.d" -o "src/zed_hdmi_display.o" "../src/zed_hdmi_display.c"
+../src/zed_hdmi_display.c:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.c:53:0:
+../src/zed_hdmi_display.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:62:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_resolution.h:3:1: warning: multi-line comment [-Wcomment]
+In file included from ../src/zed_hdmi_display.h:63:0,
+                 from ../src/zed_hdmi_display.c:53:
+../src/video_generator.h:3:1: warning: multi-line comment [-Wcomment]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_init':
+../src/zed_hdmi_display.c:177:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:228:14: warning: variable 'num_bytes' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c:154:12: warning: unused variable 'timeout' [-Wunused-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_cbars':
+../src/zed_hdmi_display.c:321:4: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+../src/zed_hdmi_display.c:280:12: warning: variable 'cbar' set but not used [-Wunused-but-set-variable]
+../src/zed_hdmi_display.c: In function 'zed_hdmi_display_clear':
+../src/zed_hdmi_display.c:275:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/zed_hdmi_display.c
+ 
+Building target: hdmi_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hdmi_bsp/ps7_cortexa9_0/lib -o "hdmi_app.elf"  ./src/helloworld.o ./src/platform.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/zed_hdmi_display.o ./src/zed_iic_axi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: hdmi_app.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size hdmi_app.elf  |tee "hdmi_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64016	1051360	  25600	1140976	 1168f0	hdmi_app.elf
+Finished building: hdmi_app.elf.size
+ 
+22:22:01 **** Incremental Build of configuration Debug for project hdmi_app ****
+make all 
+make: Nothing to be done for `all'.

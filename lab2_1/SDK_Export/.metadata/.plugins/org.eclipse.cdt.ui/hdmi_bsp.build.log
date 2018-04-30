@@ -1,0 +1,6 @@
+16:45:48 **** Build of project hdmi_bsp ****
+make -k all 
+Finished building libraries
+
+16:45:48 Build Finished (took 159ms)
+
