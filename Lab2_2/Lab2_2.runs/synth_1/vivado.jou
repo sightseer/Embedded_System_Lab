@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Mon Apr 30 20:14:13 2018
+# Process ID: 5873
+# Log file: /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.runs/synth_1/tutorial_wrapper.rds
+# Journal file: /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source tutorial_wrapper.tcl

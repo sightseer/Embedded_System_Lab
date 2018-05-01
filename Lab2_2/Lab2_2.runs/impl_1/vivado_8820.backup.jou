@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Tue Oct 21 17:02:54 2014
+# Process ID: 8201
+# Log file: /home/ta/Projects/2014_ESD/demo/lab_3/tutorial/tutorial.runs/impl_1/tutorial_wrapper.rdi
+# Journal file: /home/ta/Projects/2014_ESD/demo/lab_3/tutorial/tutorial.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source tutorial_wrapper.tcl -notrace

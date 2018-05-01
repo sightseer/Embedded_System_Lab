@@ -1,0 +1,1490 @@
+20:03:00 INFO  : Processing command line option -hwspec /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hw/HDMI.xml.
+21:42:21 INFO  : No changes in MSS file content so not generating sources.
+23:14:31 INFO  : FPGA configured successfully with bitstream "/home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hw_platform_0/HDMI_wrapper.bit"
+23:18:12 INFO  : ps7_init is completed.
+23:18:12 INFO  : ps7_post_config is completed.
+23:18:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:37:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:07:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:08:22 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:08:44 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:12:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:12:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:31:18 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:31:48 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:31:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:32:36 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:32:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:34:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:34:46 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:34:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:36:19 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:36:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:37:54 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:37:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:38:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:38:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:42:37 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:42:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:43:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:43:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:47:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:48:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:50:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:52:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:52:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:53:29 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:53:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:03:02 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+02:03:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+02:03:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:07:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+02:08:44 ERROR : Unable to disconnect from existing targets
+java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(XMDJSONProcess.java:140)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:331)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:313)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:206)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:57)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:399)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+02:08:44 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+08:31:35 INFO  : FPGA configured successfully with bitstream "/home/esd/Lab2/Lab2.1_Color/Lab2.1.sdk/SDK/SDK_Export/hw_platform_0/HDMI_wrapper.bit"
+08:31:38 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:31:38 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:31:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:31:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:31:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:31:44 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:31:44 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:31:44 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:31:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:32:40 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:32:40 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:32:40 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:45 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:45 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:45 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:48 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+08:33:51 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:51 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:51 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:33:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:34:36 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:34:36 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:34:36 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:13 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:13 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:13 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:35:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:35:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+08:37:41 ERROR : Unable to disconnect from existing targets
+java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(XMDJSONProcess.java:140)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:331)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:313)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:206)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:57)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:399)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+08:37:41 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:27:29 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:27:29 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:27:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:27:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:27:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:27:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:27:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:27:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:27:36 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:27:36 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:27:36 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:35 INFO  : FPGA configured successfully with bitstream "/home/esd/Lab2/Lab2.1_Color/Lab2.1.sdk/SDK/SDK_Export/hw_platform_0/HDMI_wrapper.bit"
+23:29:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:29:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:30:00 INFO  : ps7_init is completed.
+23:30:00 INFO  : ps7_post_config is completed.
+23:30:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:30:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:30:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:30:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:30:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:30:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:30:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:31:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:31:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:52:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:33 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:39 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:39 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:39 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:42 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:42 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:42 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:42 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:42 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:42 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:52:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:56 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:56 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:56 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:56 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:52:56 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:18 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:18 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:18 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:18 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:18 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:18 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:18 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:18 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:18 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:38 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:38 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:38 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:38 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:38 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:38 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:38 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:38 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:38 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:49 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:49 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:49 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:52 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:52 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:52 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:52 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+23:53:52 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+INFO: [Common 17-14] Message 'Hsm 55-1559' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+23:53:54 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:53:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:03:12 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:03:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:04:57 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:05:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:12:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:16:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:16:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:17:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:17:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:18:12 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:18:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:20:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:20:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:52:34 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:15:58 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:15:58 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:15:58 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:15:58 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:15:58 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:28 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:28 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:28 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:46 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:47 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:47 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:47 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:47 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:16:47 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:19:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:19:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:19:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:19:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:19:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:19:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:19:59 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:19:59 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:19:59 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:24:44 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:24:44 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:24:44 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:01 INFO  : FPGA configured successfully with bitstream "/home/esd/Lab2/Lab2.1_Color/Lab2.1.sdk/SDK/SDK_Export/hw_platform_0/HDMI_wrapper.bit"
+18:25:02 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:02 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:02 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:06 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:06 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:06 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:12 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:12 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:12 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:20 INFO  : ps7_init is completed.
+18:25:20 INFO  : ps7_post_config is completed.
+18:25:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:25:54 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:54 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:25:55 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:26:03 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:26:03 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:26:03 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:26:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:26:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:26:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:26:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:26:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:27:30 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:30 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:30 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:30 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:30 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:30 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:36 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:36 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:36 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:27:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:27:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:28:13 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:28:13 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:28:13 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:04 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:04 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:04 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:04 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:04 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:04 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:04 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:04 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:04 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:15 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:15 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:15 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:15 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:15 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:15 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:15 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:15 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:15 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:23 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:23 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:23 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:25 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:31:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:31:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:53 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:31:54 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:33:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:33:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:33:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:33:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+18:33:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+INFO: [Common 17-14] Message 'Hsm 55-1559' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+18:33:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:33:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:41:32 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:41:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:42:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:42:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:48:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:48:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:48:51 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:48:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:52:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:53:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:54:58 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:55:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:55:58 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:56:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:01:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:01:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:01:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:01:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:05:48 INFO  : FPGA configured successfully with bitstream "/home/esd/Lab2/Lab2.1_Color/Lab2.1.sdk/SDK/SDK_Export/hw_platform_0/HDMI_wrapper.bit"
+20:06:02 INFO  : ps7_init is completed.
+20:06:03 INFO  : ps7_post_config is completed.
+20:06:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:07:03 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+20:07:03 ERROR : Timeout occured while waiting to get reply for command "xdownload 64 /home/esd/Lab2/Lab2.1_Color/Lab2.1.sdk/SDK/SDK_Export/hdmi_app/Debug/hdmi_app.elf"
+20:07:03 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:731)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:537)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:251)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+20:08:33 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:28:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:09 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:13 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:13 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:13 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:32 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:37 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:28:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:29:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:10 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:19 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:19 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:19 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:19 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:19 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:19 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:20 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:20 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:20 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:25 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:25 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:25 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:29:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:29:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:34:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:34:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:34:35 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:24 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:24 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:24 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:24 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:24 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:24 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:24 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:24 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:24 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:29 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:29 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:29 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:33 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:37:44 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:44 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:44 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:45 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:45 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:45 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:45 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:45 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:45 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:48 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:52 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:52 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:52 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:55 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:37:58 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:58 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:58 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:37:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:38:52 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:38:52 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:38:52 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:07 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:07 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:07 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:07 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:07 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:07 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:07 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:07 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:07 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:11 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:39:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:17 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:39:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:41 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+
+20:39:42 WARN  :  [Hsm 55-1559] Software Design already exists with Name /home/esd/Lab2/Lab2.1/Lab2.1.sdk/SDK/SDK_Export/hdmi_bsp/system.mss
+INFO: [Common 17-14] Message 'Hsm 55-1559' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+20:39:48 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:39:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:45:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:45:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:45:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:50:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:12:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:13:43 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:13:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:16:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:30:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:32:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:32:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:39:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+18:26:23.631 INFO  - Restoring global repository preferences: 
+		 /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository 
+18:26:23.797 ERROR - Unable to read in MSS file /home/dodo/PJ2/part1/SDK_Export/hdmi_bsp/system.mss. 
+19:42:27.934 INFO  - Restoring global repository preferences: 
+		 /opt/PetaLinux/petalinux-v2013.10-final/components/edk_user_repository 
+16:45:56.350 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+16:59:43.196 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+17:04:30.807 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+17:19:30.286 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+18:02:02.409 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:02:02.509 INFO  - PS initialization will be done as it is not done before. 
+18:02:02.510 INFO  - Running PS initialization.... 
+18:02:02.794 INFO  - ps7_init is completed. 
+18:02:02.894 INFO  - ps7_post_config is completed. 
+18:02:02.994 INFO  - PS Initialization is complete. 
+18:11:36.529 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+18:11:55.284 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+18:12:39.950 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+18:13:33.498 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+18:19:12.192 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+18:19:16.499 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+18:20:32.428 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+18:20:34.536 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+18:21:11.112 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+18:21:14.815 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+18:21:39.019 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:22:44.062 ERROR - FPGA Configuration failed.Failed to download the bit file
+
+    Failed to verify DONE bit after programming FPGA
+ 
+18:23:41.904 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+18:23:57.444 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:23:57.544 INFO  - PS initialization will be done as it is not done before. 
+18:23:57.545 INFO  - Running PS initialization.... 
+18:23:57.830 INFO  - ps7_init is completed. 
+18:23:57.930 INFO  - ps7_post_config is completed. 
+18:23:58.030 INFO  - PS Initialization is complete. 
+19:25:46.339 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+19:26:04.630 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:26:07.737 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+19:26:27.813 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+19:26:54.823 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+19:27:15.909 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:27:23.718 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+19:27:30.775 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:28:18.478 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+19:28:32.634 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:28:32.734 INFO  - PS initialization will be done as it is not done before. 
+19:28:32.734 INFO  - Running PS initialization.... 
+19:28:33.015 INFO  - ps7_init is completed. 
+19:28:33.115 INFO  - ps7_post_config is completed. 
+19:28:33.215 INFO  - PS Initialization is complete. 
+19:45:20.210 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+19:45:20.224 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:46:02.230 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+19:46:12.704 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:46:12.805 INFO  - PS initialization will be done as it is not done before. 
+19:46:12.805 INFO  - Running PS initialization.... 
+19:46:13.084 INFO  - ps7_init is completed. 
+19:46:13.184 INFO  - ps7_post_config is completed. 
+19:46:13.284 INFO  - PS Initialization is complete. 
+19:55:16.198 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+19:55:16.208 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:56:10.006 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+19:56:24.099 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:56:24.199 INFO  - PS initialization will be done as it is not done before. 
+19:56:24.199 INFO  - Running PS initialization.... 
+19:56:24.475 INFO  - ps7_init is completed. 
+19:56:24.575 INFO  - ps7_post_config is completed. 
+19:56:24.675 INFO  - PS Initialization is complete. 
+19:58:16.027 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:58:19.933 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:58:26.084 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+19:58:26.562 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+19:58:26.566 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:59:04.030 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+19:59:22.146 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:59:22.246 INFO  - PS initialization will be done as it is not done before. 
+19:59:22.246 INFO  - Running PS initialization.... 
+19:59:22.521 INFO  - ps7_init is completed. 
+19:59:22.621 INFO  - ps7_post_config is completed. 
+19:59:22.721 INFO  - PS Initialization is complete. 
+20:12:14.271 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:12:14.275 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:13:03.993 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+20:13:16.460 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:13:16.560 INFO  - PS initialization will be done as it is not done before. 
+20:13:16.560 INFO  - Running PS initialization.... 
+20:13:16.835 INFO  - ps7_init is completed. 
+20:13:16.935 INFO  - ps7_post_config is completed. 
+20:13:17.035 INFO  - PS Initialization is complete. 
+20:23:42.240 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:23:42.248 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:24:19.009 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+20:24:28.933 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:24:29.033 INFO  - PS initialization will be done as it is not done before. 
+20:24:29.034 INFO  - Running PS initialization.... 
+20:24:29.314 INFO  - ps7_init is completed. 
+20:24:29.414 INFO  - ps7_post_config is completed. 
+20:24:29.514 INFO  - PS Initialization is complete. 
+20:35:20.849 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:36:01.367 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+20:36:12.252 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:36:12.352 INFO  - PS initialization will be done as it is not done before. 
+20:36:12.353 INFO  - Running PS initialization.... 
+20:36:12.629 INFO  - ps7_init is completed. 
+20:36:12.729 INFO  - ps7_post_config is completed. 
+20:36:12.829 INFO  - PS Initialization is complete. 
+20:37:07.045 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:37:09.847 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:37:17.721 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:37:17.935 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:37:17.929 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+20:37:58.116 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+20:38:11.456 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:38:11.556 INFO  - PS initialization will be done as it is not done before. 
+20:38:11.556 INFO  - Running PS initialization.... 
+20:38:11.823 INFO  - ps7_init is completed. 
+20:38:11.923 INFO  - ps7_post_config is completed. 
+20:38:12.023 INFO  - PS Initialization is complete. 
+20:40:01.779 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:40:01.810 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:41:01.186 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+20:41:12.502 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:41:12.602 INFO  - PS initialization will be done as it is not done before. 
+20:41:12.602 INFO  - Running PS initialization.... 
+20:41:12.878 INFO  - ps7_init is completed. 
+20:41:12.978 INFO  - ps7_post_config is completed. 
+20:41:13.078 INFO  - PS Initialization is complete. 
+20:43:27.745 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:43:27.753 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:44:10.176 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+20:44:25.293 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:44:25.393 INFO  - PS initialization will be done as it is not done before. 
+20:44:25.394 INFO  - Running PS initialization.... 
+20:44:25.665 INFO  - ps7_init is completed. 
+20:44:25.766 INFO  - ps7_post_config is completed. 
+20:44:25.866 INFO  - PS Initialization is complete. 
+20:50:54.383 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:50:54.399 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:51:32.326 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+20:51:42.339 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:51:42.439 INFO  - PS initialization will be done as it is not done before. 
+20:51:42.440 INFO  - Running PS initialization.... 
+20:51:42.725 INFO  - ps7_init is completed. 
+20:51:42.825 INFO  - ps7_post_config is completed. 
+20:51:42.925 INFO  - PS Initialization is complete. 
+20:53:35.082 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:53:35.092 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:54:17.890 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+20:54:32.800 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:54:32.900 INFO  - PS initialization will be done as it is not done before. 
+20:54:32.900 INFO  - Running PS initialization.... 
+20:54:33.188 INFO  - ps7_init is completed. 
+20:54:33.288 INFO  - ps7_post_config is completed. 
+20:54:33.388 INFO  - PS Initialization is complete. 
+20:58:27.071 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:58:27.076 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:59:05.854 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+20:59:37.583 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:59:37.683 INFO  - PS initialization will be done as it is not done before. 
+20:59:37.684 INFO  - Running PS initialization.... 
+20:59:37.967 INFO  - ps7_init is completed. 
+20:59:38.068 INFO  - ps7_post_config is completed. 
+20:59:38.168 INFO  - PS Initialization is complete. 
+21:00:46.548 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:00:46.567 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:02:15.164 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:02:26.267 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:02:26.367 INFO  - PS initialization will be done as it is not done before. 
+21:02:26.369 INFO  - Running PS initialization.... 
+21:02:26.669 INFO  - ps7_init is completed. 
+21:02:26.768 INFO  - ps7_post_config is completed. 
+21:02:26.868 INFO  - PS Initialization is complete. 
+21:06:34.332 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:06:34.340 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:07:09.708 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:07:21.382 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:07:21.482 INFO  - PS initialization will be done as it is not done before. 
+21:07:21.482 INFO  - Running PS initialization.... 
+21:07:21.752 INFO  - ps7_init is completed. 
+21:07:21.852 INFO  - ps7_post_config is completed. 
+21:07:21.952 INFO  - PS Initialization is complete. 
+21:12:15.216 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:12:15.226 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:12:58.854 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:13:10.693 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:13:10.793 INFO  - PS initialization will be done as it is not done before. 
+21:13:10.793 INFO  - Running PS initialization.... 
+21:13:11.075 INFO  - ps7_init is completed. 
+21:13:11.176 INFO  - ps7_post_config is completed. 
+21:13:11.276 INFO  - PS Initialization is complete. 
+21:14:50.690 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:14:50.698 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:15:53.649 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:16:11.120 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:16:11.220 INFO  - PS initialization will be done as it is not done before. 
+21:16:11.220 INFO  - Running PS initialization.... 
+21:16:11.508 INFO  - ps7_init is completed. 
+21:16:11.608 INFO  - ps7_post_config is completed. 
+21:16:11.709 INFO  - PS Initialization is complete. 
+21:18:50.325 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:19:34.775 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:19:45.642 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:19:45.742 INFO  - PS initialization will be done as it is not done before. 
+21:19:45.742 INFO  - Running PS initialization.... 
+21:19:46.019 INFO  - ps7_init is completed. 
+21:19:46.119 INFO  - ps7_post_config is completed. 
+21:19:46.220 INFO  - PS Initialization is complete. 
+21:21:07.759 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:21:07.842 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:23:12.464 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:23:24.056 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:23:24.156 INFO  - PS initialization will be done as it is not done before. 
+21:23:24.157 INFO  - Running PS initialization.... 
+21:23:24.477 INFO  - ps7_init is completed. 
+21:23:24.577 INFO  - ps7_post_config is completed. 
+21:23:24.677 INFO  - PS Initialization is complete. 
+21:24:34.296 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:24:34.312 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:25:12.924 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:25:32.972 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:25:33.072 INFO  - PS initialization will be done as it is not done before. 
+21:25:33.073 INFO  - Running PS initialization.... 
+21:25:33.350 INFO  - ps7_init is completed. 
+21:25:33.450 INFO  - ps7_post_config is completed. 
+21:25:33.550 INFO  - PS Initialization is complete. 
+21:28:02.186 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:28:02.202 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:28:39.000 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:28:50.331 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:28:50.431 INFO  - PS initialization will be done as it is not done before. 
+21:28:50.431 INFO  - Running PS initialization.... 
+21:28:50.736 INFO  - ps7_init is completed. 
+21:28:50.836 INFO  - ps7_post_config is completed. 
+21:28:50.936 INFO  - PS Initialization is complete. 
+21:30:30.312 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+21:30:30.320 WARN  - Terminating existing sessions on processor ps7_cortexa9_0 
+21:30:41.647 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:31:20.314 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:31:29.826 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:31:29.926 INFO  - PS initialization will be done as it is not done before. 
+21:31:29.927 INFO  - Running PS initialization.... 
+21:31:30.200 INFO  - ps7_init is completed. 
+21:31:30.301 INFO  - ps7_post_config is completed. 
+21:31:30.401 INFO  - PS Initialization is complete. 
+21:34:22.125 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:34:22.152 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:35:06.816 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:35:17.859 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:35:17.960 INFO  - PS initialization will be done as it is not done before. 
+21:35:17.961 INFO  - Running PS initialization.... 
+21:35:18.256 INFO  - ps7_init is completed. 
+21:35:18.356 INFO  - ps7_post_config is completed. 
+21:35:18.457 INFO  - PS Initialization is complete. 
+21:37:25.909 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:37:25.916 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:38:02.603 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:38:11.566 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:38:11.666 INFO  - PS initialization will be done as it is not done before. 
+21:38:11.667 INFO  - Running PS initialization.... 
+21:38:11.943 INFO  - ps7_init is completed. 
+21:38:12.043 INFO  - ps7_post_config is completed. 
+21:38:12.143 INFO  - PS Initialization is complete. 
+21:39:55.288 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:43:48.847 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:43:48.865 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:44:41.817 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:44:58.303 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:44:58.422 INFO  - PS initialization will be done as it is not done before. 
+21:44:58.423 INFO  - Running PS initialization.... 
+21:44:58.721 INFO  - ps7_init is completed. 
+21:44:58.820 INFO  - ps7_post_config is completed. 
+21:44:58.920 INFO  - PS Initialization is complete. 
+21:51:42.852 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:51:47.162 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:52:27.737 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:52:27.748 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:55:16.856 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+21:55:30.235 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:55:30.335 INFO  - PS initialization will be done as it is not done before. 
+21:55:30.337 INFO  - Running PS initialization.... 
+21:55:30.620 INFO  - ps7_init is completed. 
+21:55:30.720 INFO  - ps7_post_config is completed. 
+21:55:30.820 INFO  - PS Initialization is complete. 
+21:59:32.963 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:59:32.973 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:00:13.365 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+22:00:24.003 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:00:24.104 INFO  - PS initialization will be done as it is not done before. 
+22:00:24.104 INFO  - Running PS initialization.... 
+22:00:24.382 INFO  - ps7_init is completed. 
+22:00:24.482 INFO  - ps7_post_config is completed. 
+22:00:24.582 INFO  - PS Initialization is complete. 
+22:02:18.188 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+22:02:18.201 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:02:55.167 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+22:03:10.543 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:03:10.643 INFO  - PS initialization will be done as it is not done before. 
+22:03:10.643 INFO  - Running PS initialization.... 
+22:03:10.913 INFO  - ps7_init is completed. 
+22:03:11.013 INFO  - ps7_post_config is completed. 
+22:03:11.113 INFO  - PS Initialization is complete. 
+22:05:35.236 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:07:19.653 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:14:52.698 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:17:50.230 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:19:00.274 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:20:41.027 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:22:03.363 INFO  - Processor reset is completed for ps7_cortexa9_0 
+23:12:23.265 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:41:42.119 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+19:41:44.456 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+19:41:44.499 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml into /hw_platform_0/system.xml. 
+19:41:44.525 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/HDMI_wrapper.bit into /hw_platform_0/HDMI_wrapper.bit. 
+19:41:45.139 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+19:41:45.140 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+19:41:45.149 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+19:41:45.154 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+19:41:45.155 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+19:41:45.733 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+19:41:48.484 INFO  - Updating hardware inferred compiler options for hdmi_app. 
+19:41:48.495 INFO  - Clearing existing target manager status. 
+19:44:02.524 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+19:45:48.707 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:45:48.807 INFO  - PS initialization will be done as it is not done before. 
+19:45:48.807 INFO  - Running PS initialization.... 
+19:45:49.096 INFO  - ps7_init is completed. 
+19:45:49.196 INFO  - ps7_post_config is completed. 
+19:45:49.296 INFO  - PS Initialization is complete. 
+19:46:08.029 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/lab2_1/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+19:47:00.613 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:47:04.036 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+19:48:39.368 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+19:49:18.370 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+19:49:27.332 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:49:29.732 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+19:49:47.331 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:49:49.279 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+19:50:27.744 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:51:48.143 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+19:51:50.428 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+19:51:50.442 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml into /hw_platform_0/system.xml. 
+19:51:50.455 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/HDMI_wrapper.bit into /hw_platform_0/system.bit. 
+19:52:11.276 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+19:52:11.279 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+19:52:11.288 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+19:52:11.290 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+19:52:11.291 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+19:52:12.498 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+19:52:14.489 INFO  - Updating hardware inferred compiler options for hdmi_app. 
+19:52:14.655 INFO  - Clearing existing target manager status. 
+19:52:29.018 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw_platform_0/HDMI_wrapper.bit" 
+19:52:40.106 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:52:40.206 INFO  - PS initialization will be done as it is not done before. 
+19:52:40.207 INFO  - Running PS initialization.... 
+19:52:40.484 INFO  - ps7_init is completed. 
+19:52:40.584 INFO  - ps7_post_config is completed. 
+19:52:40.684 INFO  - PS Initialization is complete. 
+20:13:35.267 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:13:35.275 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:28:55.575 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+20:28:58.663 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+20:28:58.763 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml into /hw_platform_0/system.xml. 
+20:28:58.879 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/HDMI_wrapper.bit into /hw_platform_0/system.bit. 
+20:29:21.136 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+20:29:21.138 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+20:29:21.147 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+20:29:21.148 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+20:29:21.149 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+20:29:21.937 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+20:29:23.960 INFO  - Updating hardware inferred compiler options for hdmi_app. 
+20:29:24.207 INFO  - Clearing existing target manager status. 
+20:37:36.197 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+20:37:52.630 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:05:25.916 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:05:25.982 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:06:28.494 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+21:06:31.461 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+21:06:31.477 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml into /hw_platform_0/system.xml. 
+21:06:31.489 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/HDMI_wrapper.bit into /hw_platform_0/system.bit. 
+21:06:52.360 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+21:06:52.362 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+21:06:52.375 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+21:06:52.376 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+21:06:52.379 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+21:06:53.326 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:06:55.801 INFO  - Updating hardware inferred compiler options for hdmi_app. 
+21:06:56.035 INFO  - Clearing existing target manager status. 
+21:10:55.301 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/project2/project_1_2_1.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+21:11:20.945 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:14:10.136 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:15:04.762 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+21:15:07.475 INFO  - The hardware specification for project 'hw_platform_0' is different from /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+21:15:07.490 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml into /hw_platform_0/system.xml. 
+21:15:07.569 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/HDMI_wrapper.bit into /hw_platform_0/tutorial_wrapper.bit. 
+21:15:08.007 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.c into /hw_platform_0/ps7_init.c. 
+21:15:08.009 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.h into /hw_platform_0/ps7_init.h. 
+21:15:08.016 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.html into /hw_platform_0/ps7_init.html. 
+21:15:08.017 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_summary.html into /hw_platform_0/ps7_summary.html. 
+21:15:08.018 INFO  - Copied contents of /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/ps7_init.tcl into /hw_platform_0/ps7_init.tcl. 
+21:15:08.478 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:15:10.448 INFO  - Updating hardware inferred compiler options for hdmi_app. 
+21:15:10.656 INFO  - Clearing existing target manager status. 
+21:16:14.628 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+21:16:34.817 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:20:03.035 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.runs/impl_1/tutorial_wrapper.bit" 
+21:20:13.049 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:21:25.703 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+21:21:34.313 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:31:44.075 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/Lab2_2/test.bit" 
+21:31:51.158 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:32:53.324 ERROR - SDK has detected that project hw_platform_0 has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+21:33:09.242 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:34:11.978 INFO  - Processing command line option -hwspec /home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw/tutorial.xml. 
+21:35:11.570 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+21:35:25.732 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:44:47.242 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:44:47.263 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:47:47.860 INFO  - FPGA configured successfully with bitstream "/home/xyin/Embedded_System_Lab/Lab2_2/Lab2_2.sdk/SDK/SDK_Export/hw_platform_0/tutorial_wrapper.bit" 
+22:48:02.357 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:48:02.457 INFO  - PS initialization will be done as it is not done before. 
+22:48:02.458 INFO  - Running PS initialization.... 
+22:48:02.743 INFO  - ps7_init is completed. 
+22:48:02.842 INFO  - ps7_post_config is completed. 
+22:48:02.942 INFO  - PS Initialization is complete. 
+22:48:39.056 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+22:48:39.077 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
