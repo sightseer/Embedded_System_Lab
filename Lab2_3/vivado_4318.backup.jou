@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Tue May  1 16:20:34 2018
+# Process ID: 3078
+# Log file: /home/xyin/Embedded_System_Lab/Lab2_3/vivado.log
+# Journal file: /home/xyin/Embedded_System_Lab/Lab2_3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project vivado /home/xyin/Embedded_System_Lab/Lab2_3/vivado -part xc7z020clg484-1
+set_property board em.avnet.com:zynq:zed:d [current_project]
+set_property constrs_type XDC [current_fileset -constrset]

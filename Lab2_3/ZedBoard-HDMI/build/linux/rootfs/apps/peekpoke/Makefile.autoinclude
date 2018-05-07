@@ -1,0 +1,8 @@
+PROOT:=/home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI
+INSTANCE:=linux/rootfs/peekpoke
+-include /home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/build/linux/Makefile.export
+-include /home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/build/linux/rootfs/Makefile.export
+-include /home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/build/linux/rootfs/apps/peekpoke/Makefile.export
+CONFIGFILE:=/home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/subsystems/linux/configs/rootfs/config
+dir_apps_y=/opt/PetaLinux/petalinux-v2013.10-final/components/apps/peekpoke
+

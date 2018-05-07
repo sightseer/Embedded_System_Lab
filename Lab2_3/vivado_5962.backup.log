@@ -1,0 +1,3391 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Tue May  1 17:13:23 2018
+# Process ID: 4318
+# Log file: /home/xyin/Embedded_System_Lab/Lab2_3/vivado.log
+# Journal file: /home/xyin/Embedded_System_Lab/Lab2_3/vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+WARNING: [Common 17-301] Failed to get a license: Implementation
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+Attempting to get a license: Synthesis
+WARNING: [Common 17-301] Failed to get a license: Synthesis
+Loading parts and site information from /opt/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+source {/home/xyin/Embedded_System_Lab/Lab2_3/hdl-master/projects/adv7511/zed/system_project.tcl}
+# source ../../scripts/adi_env.tcl
+couldn't read file "../../scripts/adi_env.tcl": no such file or directory
+    while executing
+"source ../../scripts/adi_env.tcl"
+    (file "/home/xyin/Embedded_System_Lab/Lab2_3/hdl-master/projects/adv7511/zed/system_project.tcl" line 4)
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution.
+hdl-master
+hdl-master.zip
+SDK.log
+test.log
+vivado_4318.backup.jou
+vivado_4318.backup.log
+vivado.jou
+vivado.log
+vivado_pid4318.str
+cd hdl-master
+cd library/axi_clkgen/
+sour
+ERROR: [Common 17-163] Missing value for option 'file', please type 'source -help' for usage info.
+source ./axi_clkgen_ip.tcl
+# source ../scripts/adi_env.tcl
+## set ad_hdl_dir [file normalize [file join [file dirname [info script]] "../.."]]
+## set ad_phdl_dir $ad_hdl_dir
+## if [info exists ::env(ADI_HDL_DIR)] {
+##   set ad_hdl_dir [file normalize $::env(ADI_HDL_DIR)]
+## }
+## if [info exists ::env(ADI_PHDL_DIR)] {
+##   set ad_phdl_dir [file normalize $::env(ADI_PHDL_DIR)]
+## }
+# source $ad_hdl_dir/library/scripts/adi_ip.tcl
+## if {![info exists REQUIRED_VIVADO_VERSION]} {
+##   set REQUIRED_VIVADO_VERSION "2017.4.1"
+## }
+## if {[info exists ::env(ADI_IGNORE_VERSION_CHECK)]} {
+##   set IGNORE_VERSION_CHECK 1
+## } elseif {![info exists IGNORE_VERSION_CHECK]} {
+##   set IGNORE_VERSION_CHECK 0
+## }
+## proc adi_ip_ttcl {ip_name ip_constr_files} {
+## 
+##   set proj_filegroup [ipx::get_file_groups -of_objects [ipx::current_core] -filter {NAME =~ *synthesis*}]
+##   set f [ipx::add_file $ip_constr_files $proj_filegroup]
+##   set_property -dict [list \
+##     type ttcl \
+##   ] $f
+##   ipx::reorder_files -front $ip_constr_files $proj_filegroup
+## }
+## proc adi_ip_bd {ip_name ip_bd_files} {
+##   set proj_filegroup [ipx::get_file_groups xilinx_blockdiagram -of_objects [ipx::current_core]]
+##   if {$proj_filegroup == {}} {
+##     set proj_filegroup [ipx::add_file_group -type xilinx_blockdiagram "" [ipx::current_core]]
+##   }
+##   set f [ipx::add_file $ip_bd_files $proj_filegroup]
+##   set_property -dict [list \
+##     type tclSource \
+##   ] $f
+## }
+## proc adi_ip_infer_streaming_interfaces {ip_name} {
+## 
+##   ipx::infer_bus_interfaces xilinx.com:interface:axis_rtl:1.0 [ipx::current_core]
+## 
+## }
+## proc adi_ip_infer_mm_interfaces {ip_name} {
+## 
+##   ipx::infer_bus_interfaces xilinx.com:interface:aximm_rtl:1.0 [ipx::current_core]
+## 
+## }
+## proc adi_set_ports_dependency {port_prefix dependency {driver_value {}}} {
+##   foreach port [ipx::get_ports [format "%s%s" $port_prefix "*"]] {
+##     set_property ENABLEMENT_DEPENDENCY $dependency $port
+##     if {$driver_value != {}} {
+##       set_property DRIVER_VALUE $driver_value $port
+##     }
+##   }
+## }
+## proc adi_set_bus_dependency {bus prefix dependency} {
+##   set_property ENABLEMENT_DEPENDENCY $dependency [ipx::get_bus_interfaces $bus -of_objects [ipx::current_core]]
+##   adi_set_ports_dependency $prefix $dependency
+## }
+## proc adi_add_port_map {bus phys logic} {
+##   set map [ipx::add_port_map $phys $bus]
+##   set_property "PHYSICAL_NAME" $phys $map
+##   set_property "LOGICAL_NAME" $logic $map
+## }
+## proc adi_add_bus {bus_name mode abs_type bus_type port_maps} {
+##   set bus [ipx::add_bus_interface $bus_name [ipx::current_core]]
+## 
+##   set_property "ABSTRACTION_TYPE_VLNV" $abs_type $bus
+##   set_property "BUS_TYPE_VLNV" $bus_type $bus
+##   set_property "INTERFACE_MODE" $mode $bus
+## 
+##   foreach port_map $port_maps {
+##     adi_add_port_map $bus {*}$port_map
+##   }
+## }
+## proc adi_add_multi_bus {num bus_name_prefix mode abs_type bus_type port_maps dependency} {
+##   for {set i 0} {$i < 8} {incr i} {
+##     set bus_name [format "%s%d" $bus_name_prefix $i]
+##     set bus [ipx::add_bus_interface $bus_name [ipx::current_core]]
+## 
+##     set_property "ABSTRACTION_TYPE_VLNV" $abs_type $bus
+##     set_property "BUS_TYPE_VLNV" $bus_type $bus
+##     set_property "INTERFACE_MODE" $mode $bus
+## 
+##     if {$dependency ne ""} {
+##       set bus_dependency [string map [list "{i}" $i] $dependency]
+##       set_property ENABLEMENT_DEPENDENCY $bus_dependency $bus
+##     }
+## 
+##     foreach port_map $port_maps {
+##       lassign $port_map phys logic width
+##       set map [ipx::add_port_map $phys $bus]
+##       set_property "PHYSICAL_NAME" $phys $map
+##       set_property "LOGICAL_NAME" $logic $map
+##       set_property "PHYSICAL_RIGHT" [expr $i*$width] $map
+##       set_property "PHYSICAL_LEFT" [expr ($i+1)*$width-1] $map
+##     }
+##   }
+## }
+## proc adi_add_bus_clock {clock_signal_name bus_inf_name {reset_signal_name ""} {reset_signal_mode "slave"}} {
+##   set bus_inf_name_clean [string map {":" "_"} $bus_inf_name]
+##   set clock_inf_name [format "%s%s" $bus_inf_name_clean "_signal_clock"]
+##   set clock_inf [ipx::add_bus_interface $clock_inf_name [ipx::current_core]]
+##   set_property abstraction_type_vlnv "xilinx.com:signal:clock_rtl:1.0" $clock_inf
+##   set_property bus_type_vlnv "xilinx.com:signal:clock:1.0" $clock_inf
+##   set_property display_name $clock_inf_name $clock_inf
+##   set clock_map [ipx::add_port_map "CLK" $clock_inf]
+##   set_property physical_name $clock_signal_name $clock_map
+## 
+##   set assoc_busif [ipx::add_bus_parameter "ASSOCIATED_BUSIF" $clock_inf]
+##   set_property value $bus_inf_name $assoc_busif
+## 
+##   if { $reset_signal_name != "" } {
+##     set assoc_reset [ipx::add_bus_parameter "ASSOCIATED_RESET" $clock_inf]
+##     set_property value $reset_signal_name $assoc_reset
+## 
+##     set reset_inf_name [format "%s%s" $bus_inf_name_clean "_signal_reset"]
+##     set reset_inf [ipx::add_bus_interface $reset_inf_name [ipx::current_core]]
+##     set_property abstraction_type_vlnv "xilinx.com:signal:reset_rtl:1.0" $reset_inf
+##     set_property bus_type_vlnv "xilinx.com:signal:reset:1.0" $reset_inf
+##     set_property display_name $reset_inf_name $reset_inf
+##     set_property interface_mode $reset_signal_mode $reset_inf
+##     set reset_map [ipx::add_port_map "RST" $reset_inf]
+##     set_property physical_name $reset_signal_name $reset_map
+## 
+##     set reset_polarity [ipx::add_bus_parameter "POLARITY" $reset_inf]
+##     if {[string match {*[Nn]} $reset_signal_name] == 1} {
+##       set_property value "ACTIVE_LOW" $reset_polarity
+##     } else {
+##       set_property value "ACTIVE_HIGH" $reset_polarity
+##     }
+##   }
+## }
+## proc adi_ip_add_core_dependencies {vlnvs} {
+##   foreach file_group [ipx::get_file_groups * -of_objects [ipx::current_core]] {
+##     foreach vlnv $vlnvs {
+##       ipx::add_subcore $vlnv $file_group
+##     }
+##   }
+## }
+## variable ip_constr_files
+## proc adi_ip_create {ip_name} {
+## 
+##   global ad_hdl_dir
+##   global ad_phdl_dir
+##   global ip_constr_files
+##   global REQUIRED_VIVADO_VERSION
+##   global IGNORE_VERSION_CHECK
+## 
+##   set VIVADO_VERSION [version -short]
+##   if {[string compare $VIVADO_VERSION $REQUIRED_VIVADO_VERSION] != 0} {
+##     puts -nonewline "CRITICAL WARNING: vivado version mismatch; "
+##     puts -nonewline "expected $REQUIRED_VIVADO_VERSION, "
+##     puts -nonewline "got $VIVADO_VERSION.\n"
+##   }
+## 
+##   create_project $ip_name . -force
+## 
+##   ## Load custom message severity definitions
+##   source $ad_hdl_dir/projects/scripts/adi_xilinx_msg.tcl
+## 
+##   set ip_constr_files ""
+##   set lib_dirs $ad_hdl_dir/library
+##   if {$ad_hdl_dir ne $ad_phdl_dir} {
+##     lappend lib_dirs $ad_phdl_dir/library
+##   }
+## 
+##   set_property ip_repo_paths $lib_dirs [current_fileset]
+##   update_ip_catalog
+## }
+## proc adi_ip_files {ip_name ip_files} {
+## 
+##   global ip_constr_files
+## 
+##   set ip_constr_files ""
+##   foreach m_file $ip_files {
+##     if {[file extension $m_file] eq ".xdc"} {
+##       lappend ip_constr_files $m_file
+##     }
+##   }
+## 
+##   set proj_fileset [get_filesets sources_1]
+##   add_files -norecurse -scan_for_includes -fileset $proj_fileset $ip_files
+##   set_property "top" "$ip_name" $proj_fileset
+## }
+## proc adi_ip_properties_lite {ip_name} {
+## 
+##   global ip_constr_files
+## 
+##   ipx::package_project -root_dir . -vendor analog.com -library user -taxonomy /Analog_Devices
+##   set_property name $ip_name [ipx::current_core]
+##   set_property vendor_display_name {Analog Devices} [ipx::current_core]
+##   set_property company_url {http://www.analog.com} [ipx::current_core]
+## 
+##   set i_families ""
+##   foreach i_part [get_parts] {
+##     lappend i_families [get_property FAMILY $i_part]
+##   }
+##   set i_families [lsort -unique $i_families]
+##   set s_families [get_property supported_families [ipx::current_core]]
+##   foreach i_family $i_families {
+##     set s_families "$s_families $i_family Production"
+##     set s_families "$s_families $i_family Beta"
+##   }
+##   set_property supported_families $s_families [ipx::current_core]
+##   ipx::save_core
+## 
+##   ipx::remove_all_bus_interface [ipx::current_core]
+##   set memory_maps [ipx::get_memory_maps * -of_objects [ipx::current_core]]
+##   foreach map $memory_maps {
+##     ipx::remove_memory_map [lindex $map 2] [ipx::current_core ]
+##   }
+##   ipx::save_core
+## 
+##   set i_filegroup [ipx::get_file_groups -of_objects [ipx::current_core] -filter {NAME =~ *synthesis*}]
+##   foreach i_file $ip_constr_files {
+##     set i_module [file tail $i_file]
+##     regsub {_constr\.xdc} $i_module {} i_module
+##     ipx::add_file $i_file $i_filegroup
+##     ipx::reorder_files -front $i_file $i_filegroup
+##     set_property SCOPED_TO_REF $i_module [ipx::get_files $i_file -of_objects $i_filegroup]
+##   }
+##   ipx::save_core
+## }
+## proc adi_ip_properties {ip_name} {
+## 
+##   adi_ip_properties_lite $ip_name
+## 
+##   ipx::infer_bus_interface {\
+##     s_axi_awvalid \
+##     s_axi_awaddr \
+##     s_axi_awprot \
+##     s_axi_awready \
+##     s_axi_wvalid \
+##     s_axi_wdata \
+##     s_axi_wstrb \
+##     s_axi_wready \
+##     s_axi_bvalid \
+##     s_axi_bresp \
+##     s_axi_bready \
+##     s_axi_arvalid \
+##     s_axi_araddr \
+##     s_axi_arprot \
+##     s_axi_arready \
+##     s_axi_rvalid \
+##     s_axi_rdata \
+##     s_axi_rresp \
+##     s_axi_rready} \
+##   xilinx.com:interface:aximm_rtl:1.0 [ipx::current_core]
+## 
+##   ipx::infer_bus_interface s_axi_aclk xilinx.com:signal:clock_rtl:1.0 [ipx::current_core]
+##   ipx::infer_bus_interface s_axi_aresetn xilinx.com:signal:reset_rtl:1.0 [ipx::current_core]
+## 
+##   set raddr_width [expr [get_property SIZE_LEFT [ipx::get_ports -nocase true s_axi_araddr -of_objects [ipx::current_core]]] + 1]
+##   set waddr_width [expr [get_property SIZE_LEFT [ipx::get_ports -nocase true s_axi_awaddr -of_objects [ipx::current_core]]] + 1]
+## 
+##   if {$raddr_width != $waddr_width} {
+##     puts [format "WARNING: AXI address width mismatch for %s (r=%d, w=%d)" $ip_name $raddr_width, $waddr_width]
+##     set range 65536
+##   } else {
+##     if {$raddr_width >= 16} {
+##       set range 65536
+##     } else {
+##       set range [expr 1 << $raddr_width]
+##     }
+##   }
+## 
+##   ipx::add_memory_map {s_axi} [ipx::current_core]
+##   set_property slave_memory_map_ref {s_axi} [ipx::get_bus_interfaces s_axi -of_objects [ipx::current_core]]
+##   ipx::add_address_block {axi_lite} [ipx::get_memory_maps s_axi -of_objects [ipx::current_core]]
+##   set_property range $range [ipx::get_address_blocks axi_lite \
+##     -of_objects [ipx::get_memory_maps s_axi -of_objects [ipx::current_core]]]
+##   ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces s_axi_aclk \
+##     -of_objects [ipx::current_core]]
+##   set_property value s_axi [ipx::get_bus_parameters ASSOCIATED_BUSIF \
+##     -of_objects [ipx::get_bus_interfaces s_axi_aclk \
+##     -of_objects [ipx::current_core]]]
+##   ipx::save_core
+## }
+## proc adi_if_define {name} {
+## 
+##   ipx::create_abstraction_definition analog.com interface ${name}_rtl 1.0
+##   ipx::create_bus_definition analog.com interface $name 1.0
+## 
+##   set_property xml_file_name ${name}_rtl.xml [ipx::current_busabs]
+##   set_property xml_file_name ${name}.xml [ipx::current_busdef]
+##   set_property bus_type_vlnv analog.com:interface:${name}:1.0 [ipx::current_busabs]
+## 
+##   ipx::save_abstraction_definition [ipx::current_busabs]
+##   ipx::save_bus_definition [ipx::current_busdef]
+## }
+## proc adi_if_ports {dir width name {type none}} {
+## 
+##   ipx::add_bus_abstraction_port $name [ipx::current_busabs]
+##   set m_intf [ipx::get_bus_abstraction_ports $name -of_objects [ipx::current_busabs]]
+##   set_property master_presence required $m_intf
+##   set_property slave_presence  required $m_intf
+##   set_property master_width $width $m_intf
+##   set_property slave_width  $width $m_intf
+## 
+##   set m_dir "in"
+##   set s_dir "out"
+##   if {$dir eq "output"} {
+##     set m_dir "out"
+##     set s_dir "in"
+##   }
+## 
+##   set_property master_direction $m_dir $m_intf
+##   set_property slave_direction  $s_dir $m_intf
+## 
+##   if {$type ne "none"} {
+##     set_property is_${type} true $m_intf
+##   }
+## 
+##   ipx::save_bus_definition [ipx::current_busdef]
+##   ipx::save_abstraction_definition [ipx::current_busabs]
+## }
+## proc adi_if_infer_bus {if_name mode name maps} {
+## 
+##   ipx::add_bus_interface $name [ipx::current_core]
+##   set m_bus_if [ipx::get_bus_interfaces $name -of_objects [ipx::current_core]]
+##   set_property abstraction_type_vlnv ${if_name}_rtl:1.0 $m_bus_if
+##   set_property bus_type_vlnv ${if_name}:1.0 $m_bus_if
+##   set_property interface_mode $mode $m_bus_if
+## 
+##   foreach map $maps  {
+##     set m_maps [regexp -all -inline {\S+} $map]
+##     lassign $m_maps p_name p_map
+##     ipx::add_port_map $p_name $m_bus_if
+##     set_property physical_name $p_map [ipx::get_port_maps $p_name -of_objects $m_bus_if]
+##   }
+## }
+# adi_ip_create axi_clkgen
+CRITICAL WARNING: vivado version mismatch; expected 2017.4.1, got 2013.4.
+## set_msg_config -id {Vivado 12-1790} -string "Evaluation features should NOT be used in production systems." -new_severity WARNING
+## set_msg_config -id {BD 41-1343} -new_severity WARNING
+## set_msg_config -id {BD 41-1306} -new_severity WARNING
+## set_msg_config -severity {CRITICAL WARNING} -quiet -id {BD 41-1276} -new_severity ERROR
+## set_msg_config -id {IP_Flow 19-3656} -new_severity INFO
+## set_msg_config -id {IP_Flow 19-4623} -new_severity INFO
+## set_msg_config -id {IP_Flow 19-459} -new_severity INFO
+## set_msg_config -id {Place 30-73} -string "axi_spi" -new_severity WARNING
+## set_msg_config -string "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY" -new_severity WARNING
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xyin/Embedded_System_Lab/Lab2_3/hdl-master/library'.
+WARNING: [IP_Flow 19-3299] If you move the project, the path for repository '/home/xyin/Embedded_System_Lab/Lab2_3/hdl-master/library' may become invalid. A better location for the repository would be in a path adjacent to the project.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2013.4/data/ip'.
+# adi_ip_files axi_clkgen [list \
+#   "$ad_hdl_dir/library/common/ad_rst.v" \
+#   "$ad_hdl_dir/library/xilinx/common/ad_mmcm_drp.v" \
+#   "$ad_hdl_dir/library/common/up_axi.v" \
+#   "$ad_hdl_dir/library/common/up_clkgen.v" \
+#   "bd/bd.tcl" \
+#   "axi_clkgen.v" ]
+# adi_ip_properties axi_clkgen
+ERROR: [Common 17-170] Unknown option '-vendor', please type 'ipx::package_project -help' for usage info.
+
+    while executing
+"ipx::package_project -root_dir . -vendor analog.com -library user -taxonomy /Analog_Devices"
+    (procedure "adi_ip_properties_lite" line 5)
+    invoked from within
+"adi_ip_properties_lite $ip_name"
+    (procedure "adi_ip_properties" line 3)
+    invoked from within
+"adi_ip_properties axi_clkgen"
+    (file "./axi_clkgen_ip.tcl" line 15)
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_project
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution.
+axi_clkgen.data
+axi_clkgen_ip.tcl
+axi_clkgen.v
+axi_clkgen.xpr
+bd
+Makefile
+cd ../..
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution.
+library
+LICENSE
+LICENSE_ADIBSD
+LICENSE_GPL2
+LICENSE_LGPL
+Makefile
+projects
+quiet.mk
+README.md
+cd ../hdl-master/
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution.
+library
+LICENSE
+LICENSE_ADIBSD
+LICENSE_GPL2
+LICENSE_LGPL
+Makefile
+projects
+quiet.mk
+README.md
+cd projects/adv7511/zed/
+source ./system_project.tcl
+# source ../../scripts/adi_env.tcl
+## set ad_hdl_dir [file normalize [file join [file dirname [info script]] "../.."]]
+## set ad_phdl_dir $ad_hdl_dir
+## if [info exists ::env(ADI_HDL_DIR)] {
+##   set ad_hdl_dir [file normalize $::env(ADI_HDL_DIR)]
+## }
+## if [info exists ::env(ADI_PHDL_DIR)] {
+##   set ad_phdl_dir [file normalize $::env(ADI_PHDL_DIR)]
+## }
+# source $ad_hdl_dir/projects/scripts/adi_project.tcl
+## variable p_board
+## variable p_device
+## variable sys_zynq
+## variable p_prcfg_init
+## variable p_prcfg_list
+## variable p_prcfg_status
+## if {![info exists REQUIRED_VIVADO_VERSION]} {
+##   set REQUIRED_VIVADO_VERSION "2017.4.1"
+## }
+## if {[info exists ::env(ADI_IGNORE_VERSION_CHECK)]} {
+##   set IGNORE_VERSION_CHECK 1
+## } elseif {![info exists IGNORE_VERSION_CHECK]} {
+##   set IGNORE_VERSION_CHECK 0
+## }
+## set p_board "not-applicable"
+## set p_device "none"
+## set sys_zynq 1
+## set ADI_POWER_OPTIMIZATION 0
+## proc adi_project_xilinx {project_name {mode 0}} {
+## 
+##   global ad_hdl_dir
+##   global ad_phdl_dir
+##   global p_board
+##   global p_device
+##   global sys_zynq
+##   global REQUIRED_VIVADO_VERSION
+##   global IGNORE_VERSION_CHECK
+## 
+##   if [regexp "_ac701$" $project_name] {
+##     set p_device "xc7a200tfbg676-2"
+##     set p_board "xilinx.com:ac701:part0:1.0"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_kc705$" $project_name] {
+##     set p_device "xc7k325tffg900-2"
+##     set p_board "xilinx.com:kc705:part0:1.1"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_vc707$" $project_name] {
+##     set p_device "xc7vx485tffg1761-2"
+##     set p_board "xilinx.com:vc707:part0:1.1"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_kcu105$" $project_name] {
+##     set p_device "xcku040-ffva1156-2-e"
+##     set p_board "xilinx.com:kcu105:part0:1.1"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_zed$" $project_name] {
+##     set p_device "xc7z020clg484-1"
+##     set p_board "em.avnet.com:zed:part0:1.3"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_microzed$" $project_name] {
+##     set p_device "xc7z010clg400-1"
+##     set p_board "not-applicable"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_zc702$" $project_name] {
+##     set p_device "xc7z020clg484-1"
+##     set p_board "xilinx.com:zc702:part0:1.2"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_zc706$" $project_name] {
+##     set p_device "xc7z045ffg900-2"
+##     set p_board "xilinx.com:zc706:part0:1.2"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_mitx045$" $project_name] {
+##     set p_device "xc7z045ffg900-2"
+##     set p_board "not-applicable"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_zcu102$" $project_name] {
+##     set p_device "xczu9eg-ffvb1156-2-e"
+##     set p_board "xilinx.com:zcu102:part0:3.1"
+##     set sys_zynq 2
+##   }
+## 
+##   set VIVADO_VERSION [version -short]
+##   if {[string compare $VIVADO_VERSION $REQUIRED_VIVADO_VERSION] != 0} {
+##     puts -nonewline "CRITICAL WARNING: vivado version mismatch; "
+##     puts -nonewline "expected $REQUIRED_VIVADO_VERSION, "
+##     puts -nonewline "got $VIVADO_VERSION.\n"
+##   }
+## 
+##   if {$mode == 0} {
+##     set project_system_dir "./$project_name.srcs/sources_1/bd/system"
+##     create_project $project_name . -part $p_device -force
+##   } else {
+##     set project_system_dir ".srcs/sources_1/bd/system"
+##     create_project -in_memory -part $p_device
+##   }
+## 
+##   if {$mode == 1} {
+##     file mkdir $project_name.data
+##   }
+## 
+##   if {$p_board ne "not-applicable"} {
+##     set_property board_part $p_board [current_project]
+##   }
+## 
+##   set lib_dirs $ad_hdl_dir/library
+##   if {$ad_hdl_dir ne $ad_phdl_dir} {
+##     lappend lib_dirs $ad_phdl_dir/library
+##   }
+## 
+##   set_property ip_repo_paths $lib_dirs [current_fileset]
+##   update_ip_catalog
+## 
+##   ## Load custom message severity definitions
+##   source $ad_hdl_dir/projects/scripts/adi_xilinx_msg.tcl
+## 
+##   create_bd_design "system"
+##   source system_bd.tcl
+## 
+##   save_bd_design
+##   validate_bd_design
+## 
+##   set_property synth_checkpoint_mode None [get_files  $project_system_dir/system.bd]
+##   generate_target {synthesis implementation} [get_files  $project_system_dir/system.bd]
+##   make_wrapper -files [get_files $project_system_dir/system.bd] -top
+## 
+##   if {$mode == 0} {
+##     import_files -force -norecurse -fileset sources_1 $project_system_dir/hdl/system_wrapper.v
+##   } else {
+##     write_hwdef -file "$project_name.data/$project_name.hwdef"
+##   }
+## }
+## proc adi_project_files {project_name project_files} {
+## 
+##   add_files -norecurse -fileset sources_1 $project_files
+##   set_property top system_top [current_fileset]
+## }
+## proc adi_project_run {project_name} {
+##   global ADI_POWER_OPTIMIZATION
+## 
+##   launch_runs synth_1
+##   wait_on_run synth_1
+##   open_run synth_1
+##   report_timing_summary -file timing_synth.log
+## 
+##   if {![info exists ::env(ADI_NO_BITSTREAM_COMPRESSION)] && ![info exists ADI_NO_BITSTREAM_COMPRESSION]} {
+##     set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+##   }
+## 
+##   if {$ADI_POWER_OPTIMIZATION == 1} {
+##   set_property STEPS.POWER_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+##   set_property STEPS.POST_PLACE_POWER_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+##   }
+## 
+##   launch_runs impl_1 -to_step write_bitstream
+##   wait_on_run impl_1
+##   open_run impl_1
+##   report_timing_summary -file timing_impl.log
+## 
+##   file mkdir $project_name.sdk
+## 
+##   if [expr [get_property SLACK [get_timing_paths]] < 0] {
+##     file copy -force $project_name.runs/impl_1/system_top.sysdef $project_name.sdk/system_top_bad_timing.hdf
+##   } else {
+##     file copy -force $project_name.runs/impl_1/system_top.sysdef $project_name.sdk/system_top.hdf
+##   }
+## 
+##   if [expr [get_property SLACK [get_timing_paths]] < 0] {
+##     return -code error [format "ERROR: Timing Constraints NOT met!"]
+##   }
+## }
+## proc adi_project_synth {project_name prcfg_name hdl_files {xdc_files ""}} {
+## 
+##   global p_device
+## 
+##   set p_prefix "$project_name.data/$project_name"
+## 
+##   if {$prcfg_name eq ""} {
+## 
+##     read_verilog .srcs/sources_1/bd/system/hdl/system_wrapper.v
+##     read_verilog $hdl_files
+##     read_xdc $xdc_files
+## 
+##     synth_design -mode default -top system_top -part $p_device > $p_prefix.synth.rds
+##     write_checkpoint -force $p_prefix.synth.dcp
+##     close_project
+## 
+##   } else {
+## 
+##     create_project -in_memory -part $p_device
+##     read_verilog $hdl_files
+##     synth_design -mode out_of_context -top "prcfg" -part $p_device > $p_prefix.${prcfg_name}_synth.rds
+##     write_checkpoint -force $p_prefix.${prcfg_name}_synth.dcp
+##     close_project
+##   }
+## }
+## proc adi_project_impl {project_name prcfg_name {xdc_files ""}} {
+## 
+##   global p_device
+##   global p_prcfg_init
+##   global p_prcfg_list
+##   global p_prcfg_status
+## 
+##   set p_prefix "$project_name.data/$project_name"
+## 
+##   if {$prcfg_name eq "default"} {
+##     set p_prcfg_status 0
+##     set p_prcfg_list ""
+##     set p_prcfg_init "$p_prefix.${prcfg_name}_impl.dcp"
+##     file mkdir $project_name.sdk
+##   }
+## 
+##   if {$prcfg_name eq "default"} {
+## 
+##     open_checkpoint $p_prefix.synth.dcp -part $p_device
+##     read_xdc $xdc_files
+##     read_checkpoint -cell i_prcfg $p_prefix.${prcfg_name}_synth.dcp
+##     set_property HD.RECONFIGURABLE 1 [get_cells i_prcfg]
+##     opt_design > $p_prefix.${prcfg_name}_opt.rds
+##     write_debug_probes -force $p_prefix.${prcfg_name}_debug_nets.ltx
+##     place_design > $p_prefix.${prcfg_name}_place.rds
+##     route_design > $p_prefix.${prcfg_name}_route.rds
+## 
+##   } else {
+## 
+##     open_checkpoint $p_prefix.default_impl_bb.dcp -part $p_device
+##     lock_design -level routing
+##     read_checkpoint -cell i_prcfg $p_prefix.${prcfg_name}_synth.dcp
+##     read_xdc $xdc_files
+##     opt_design > $p_prefix.${prcfg_name}_opt.rds
+##     place_design > $p_prefix.${prcfg_name}_place.rds
+##     route_design > $p_prefix.${prcfg_name}_route.rds
+##   }
+## 
+##   write_checkpoint -force $p_prefix.${prcfg_name}_impl.dcp
+##   report_utilization -pblocks pb_prcfg -file $p_prefix.${prcfg_name}_utilization.rpt
+##   report_timing_summary -file $p_prefix.${prcfg_name}_timing_summary.rpt
+## 
+##   if [expr [get_property SLACK [get_timing_paths]] < 0] {
+##     set p_prcfg_status 1
+##     puts "CRITICAL WARNING: Timing Constraints NOT met ($prcfg_name)!"
+##   }
+## 
+##   write_checkpoint -force -cell i_prcfg $p_prefix.${prcfg_name}_prcfg_impl.dcp
+##   update_design -cell i_prcfg -black_box
+##   write_checkpoint -force $p_prefix.${prcfg_name}_impl_bb.dcp
+##   open_checkpoint $p_prefix.${prcfg_name}_impl.dcp -part $p_device
+##   write_bitstream -force -bin_file -file $p_prefix.${prcfg_name}.bit
+##   write_sysdef -hwdef $p_prefix.hwdef -bitfile $p_prefix.${prcfg_name}.bit -file $p_prefix.${prcfg_name}.hdf
+##   file copy -force $p_prefix.${prcfg_name}.hdf $project_name.sdk/system_top.${prcfg_name}.hdf
+## 
+##   if {$prcfg_name ne "default"} {
+##     lappend p_prcfg_list "$p_prefix.${prcfg_name}_impl.dcp"
+##   }
+## 
+##   if {$prcfg_name eq "default"} {
+##     file copy -force $p_prefix.${prcfg_name}.hdf $project_name.sdk/system_top.hdf
+##   }
+## }
+## proc adi_project_verify {project_name} {
+## 
+##   global p_prcfg_init
+##   global p_prcfg_list
+##   global p_prcfg_status
+## 
+##   set p_prefix "$project_name.data/$project_name"
+## 
+##   pr_verify -full_check -initial $p_prcfg_init \
+##     -additional $p_prcfg_list \
+##     -file $p_prefix.prcfg_verify.log
+## 
+##   if {$p_prcfg_status == 1} {
+##     return -code error [format "ERROR: Timing Constraints NOT met!"]
+##   }
+## }
+# source $ad_hdl_dir/projects/scripts/adi_board.tcl
+## variable sys_cpu_interconnect_index
+## variable sys_hp0_interconnect_index
+## variable sys_hp1_interconnect_index
+## variable sys_hp2_interconnect_index
+## variable sys_hp3_interconnect_index
+## variable sys_mem_interconnect_index
+## variable xcvr_index
+## variable xcvr_tx_index
+## variable xcvr_rx_index
+## variable xcvr_instance
+## set sys_cpu_interconnect_index 0
+## set sys_hp0_interconnect_index -1
+## set sys_hp1_interconnect_index -1
+## set sys_hp2_interconnect_index -1
+## set sys_hp3_interconnect_index -1
+## set sys_mem_interconnect_index -1
+## set xcvr_index -1
+## set xcvr_tx_index 0
+## set xcvr_rx_index 0
+## set xcvr_instance NONE
+## proc ad_ip_instance {i_ip i_name} {
+## 
+##   create_bd_cell -type ip -vlnv [get_ipdefs -all -filter "VLNV =~ *:${i_ip}:* && \
+##     design_tool_contexts =~ *IPI* && UPGRADE_VERSIONS == \"\""] ${i_name}
+## }
+## proc ad_ip_parameter {i_name i_param i_value} {
+## 
+##   set_property ${i_param} ${i_value} [get_bd_cells ${i_name}]
+## }
+## proc ad_connect_type {p_name} {
+## 
+##   set m_name ""
+## 
+##   if {$m_name eq ""} {set m_name [get_bd_intf_pins  -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_pins       -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_intf_ports -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_ports      -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_intf_nets  -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_nets       -quiet $p_name]}
+## 
+##   return $m_name
+## }
+## proc ad_connect {p_name_1 p_name_2} {
+## 
+##   if {($p_name_2 eq "GND") || ($p_name_2 eq "VCC")} {
+##     set p_size 1
+##     set p_msb [get_property left [get_bd_pins $p_name_1]]
+##     set p_lsb [get_property right [get_bd_pins $p_name_1]]
+##     if {($p_msb ne "") && ($p_lsb ne "")} {
+##       set p_size [expr (($p_msb + 1) - $p_lsb)]
+##     }
+##     set p_cell_name [regsub -all {/} $p_name_1 "_"]
+##     set p_cell_name "${p_cell_name}_${p_name_2}"
+##     if {$p_name_2 eq "VCC"} {
+##       set p_value -1
+##     } else {
+##       set p_value 0
+##     }
+##     ad_ip_instance xlconstant $p_cell_name
+##     set_property CONFIG.CONST_WIDTH $p_size [get_bd_cells $p_cell_name]
+##     set_property CONFIG.CONST_VAL $p_value [get_bd_cells $p_cell_name]
+##     puts "connect_bd_net $p_cell_name/dout $p_name_1"
+##     connect_bd_net [get_bd_pins $p_cell_name/dout] [get_bd_pins $p_name_1]
+##     return
+##   }
+## 
+##   set m_name_1 [ad_connect_type $p_name_1]
+##   set m_name_2 [ad_connect_type $p_name_2]
+## 
+##   if {$m_name_1 eq ""} {
+##     if {[get_property CLASS $m_name_2] eq "bd_intf_pin"} {
+##       puts "create_bd_intf_net $p_name_1"
+##       create_bd_intf_net $p_name_1
+##     }
+##     if {[get_property CLASS $m_name_2] eq "bd_pin"} {
+##       puts "create_bd_net $p_name_1"
+##       create_bd_net $p_name_1
+##     }
+##     set m_name_1 [ad_connect_type $p_name_1]
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_intf_pin"} {
+##     puts "connect_bd_intf_net $m_name_1 $m_name_2"
+##     connect_bd_intf_net $m_name_1 $m_name_2
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_pin"} {
+##     puts "connect_bd_net $m_name_1 $m_name_2"
+##     connect_bd_net $m_name_1 $m_name_2
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_net"} {
+##     puts "connect_bd_net -net $m_name_1 $m_name_2"
+##     connect_bd_net -net $m_name_1 $m_name_2
+##     return
+##   }
+## }
+## proc ad_disconnect {p_name_1 p_name_2} {
+## 
+##   set m_name_1 [ad_connect_type $p_name_1]
+##   set m_name_2 [ad_connect_type $p_name_2]
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_net"} {
+##     disconnect_bd_net $m_name_1 $m_name_2
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_port"} {
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet $m_name_1
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_pin"} {
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet $m_name_1
+##     return
+##   }
+## }
+## proc ad_reconct {p_name_1 p_name_2} {
+## 
+##   set m_name_1 [ad_connect_type $p_name_1]
+##   set m_name_2 [ad_connect_type $p_name_2]
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_pin"} {
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_2]]
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_intf_pin"} {
+##     delete_bd_objs -quiet [get_bd_intf_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet [get_bd_intf_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_2]]
+##   }
+## 
+##   ad_connect $p_name_1 $p_name_2
+## }
+## proc ad_xcvrcon {u_xcvr a_xcvr a_jesd {lane_map {}}} {
+##   
+##   global xcvr_index
+##   global xcvr_tx_index
+##   global xcvr_rx_index
+##   global xcvr_instance
+## 
+##   set no_of_lanes [get_property CONFIG.NUM_OF_LANES [get_bd_cells $a_xcvr]]
+##   set qpll_enable [get_property CONFIG.QPLL_ENABLE [get_bd_cells $a_xcvr]]
+##   set tx_or_rx_n [get_property CONFIG.TX_OR_RX_N [get_bd_cells $a_xcvr]]
+## 
+## #  set jesd204_vlnv [get_property VLNV $a_jesd]
+## #
+## #  if {[string first "analog.com" $jesd204_vlnv] == 0} {
+## #    set jesd204_type 0
+## #  } elseif {[string first "xilinx.com" $jesd204_vlnv] == 0} {
+## #    set jesd204_type 1
+## #  } else {
+## #    return -code 1 "Unsupported JESD204 core type."
+## #  }
+## 
+##   set jesd204_bd_type [get_property TYPE [get_bd_cells $a_jesd]]
+## 
+##   if {$jesd204_bd_type == "hier"} {
+##     set jesd204_type 0
+##   } else {
+##     set jesd204_type 1
+##   }
+## 
+##   if {$xcvr_instance ne $u_xcvr} {
+##     set xcvr_index [expr ($xcvr_index + 1)]
+##     set xcvr_tx_index 0
+##     set xcvr_rx_index 0
+##     set xcvr_instance $u_xcvr
+##   }
+## 
+##   set txrx "rx"
+##   set data_dir "I"
+##   set ctrl_dir "O"
+##   set index $xcvr_rx_index
+## 
+##   if {$tx_or_rx_n == 1} {
+## 
+##     set txrx "tx"
+##     set data_dir "O"
+##     set ctrl_dir "I"
+##     set index $xcvr_tx_index
+##   }
+## 
+##   set m_sysref ${txrx}_sysref_${index}
+##   set m_sync ${txrx}_sync_${index}
+##   set m_data ${txrx}_data
+## 
+##   if {$xcvr_index >= 1} {
+## 
+##     set m_sysref ${txrx}_sysref_${xcvr_index}_${index}
+##     set m_sync ${txrx}_sync_${xcvr_index}_${index}
+##     set m_data ${txrx}_data_${xcvr_index}
+##   }
+## 
+##   create_bd_port -dir I $m_sysref
+##   create_bd_port -dir ${ctrl_dir} $m_sync
+##   ad_ip_instance proc_sys_reset ${a_jesd}_rstgen
+## 
+##   for {set n 0} {$n < $no_of_lanes} {incr n} {
+## 
+##     set m [expr ($n + $index)]
+## 
+##     if {$tx_or_rx_n == 0} {
+##       ad_connect  ${a_xcvr}/up_es_${n} ${u_xcvr}/up_es_${m}
+##       if {$jesd204_type == 0} {
+##         ad_connect  ${a_jesd}/phy_en_char_align ${u_xcvr}/${txrx}_calign_${m}
+##       } else {
+##         ad_connect  ${a_jesd}/rxencommaalign_out ${u_xcvr}/${txrx}_calign_${m}
+##       }
+##     }
+## 
+##     if {(($m%4) == 0) && ($qpll_enable == 1)} {
+##       ad_connect  ${a_xcvr}/up_cm_${n} ${u_xcvr}/up_cm_${m}
+##     }
+## 
+##     if {$lane_map != {}} {
+##       set phys_lane [expr [lindex $lane_map $n] + $index]
+##     } else {
+##       set phys_lane $m
+##     }
+## 
+##     ad_connect  ${a_xcvr}/up_ch_${n} ${u_xcvr}/up_${txrx}_${m}
+##     ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${u_xcvr}/${txrx}_clk_${m}
+##     if {$jesd204_type == 0} {
+##       ad_connect  ${u_xcvr}/${txrx}_${phys_lane} ${a_jesd}/${txrx}_phy${n}
+##     } else {
+##       ad_connect  ${u_xcvr}/${txrx}_${phys_lane} ${a_jesd}/gt${n}_${txrx}
+##     }
+## 
+##     create_bd_port -dir ${data_dir} ${m_data}_${m}_p
+##     create_bd_port -dir ${data_dir} ${m_data}_${m}_n
+##     ad_connect  ${u_xcvr}/${txrx}_${m}_p ${m_data}_${m}_p
+##     ad_connect  ${u_xcvr}/${txrx}_${m}_n ${m_data}_${m}_n
+##   }
+## 
+##   if {$jesd204_type == 0} {
+##     ad_connect  ${a_jesd}/sysref $m_sysref
+##     ad_connect  ${a_jesd}/sync $m_sync
+##     ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${a_jesd}/device_clk
+## #    if {$tx_or_rx_n == 0} {
+## #      ad_connect  ${a_xcvr}/up_status ${a_jesd}/phy_ready
+## #    }
+##   } else {
+##     ad_connect  ${a_jesd}/${txrx}_sysref $m_sysref
+##     ad_connect  ${a_jesd}/${txrx}_sync $m_sync
+##     ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${a_jesd}/${txrx}_core_clk
+##     ad_connect  ${a_xcvr}/up_status ${a_jesd}/${txrx}_reset_done
+##     ad_connect  ${a_jesd}_rstgen/peripheral_reset ${a_jesd}/${txrx}_reset
+##   }
+## 
+##   ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${a_jesd}_rstgen/slowest_sync_clk
+##   ad_connect  sys_cpu_resetn ${a_jesd}_rstgen/ext_reset_in
+## 
+##   if {$tx_or_rx_n == 0} {
+##     set xcvr_rx_index [expr ($xcvr_rx_index + $no_of_lanes)]
+##   }
+## 
+##   if {$tx_or_rx_n == 1} {
+##     set xcvr_tx_index [expr ($xcvr_tx_index + $no_of_lanes)]
+##   }
+## }
+## proc ad_xcvrpll {m_src m_dst} {
+## 
+##   foreach p_dst [get_bd_pins -quiet $m_dst] {
+##     connect_bd_net [ad_connect_type $m_src] $p_dst
+##   }
+## }
+## proc ad_mem_hp0_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP0")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP0" $p_clk $p_name}
+## }
+## proc ad_mem_hp1_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP1")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP1" $p_clk $p_name}
+## }
+## proc ad_mem_hp2_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP2")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP2" $p_clk $p_name}
+## }
+## proc ad_mem_hp3_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP3")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP3" $p_clk $p_name}
+## }
+## proc ad_mem_hpx_interconnect {p_sel p_clk p_name} {
+## 
+##   global sys_zynq
+##   global sys_ddr_addr_seg
+##   global sys_hp0_interconnect_index
+##   global sys_hp1_interconnect_index
+##   global sys_hp2_interconnect_index
+##   global sys_hp3_interconnect_index
+##   global sys_mem_interconnect_index
+## 
+##   set p_name_int $p_name
+##   set p_clk_source [get_bd_pins -filter {DIR == O} -of_objects [get_bd_nets $p_clk]]
+## 
+##   if {$p_sel eq "MEM"} {
+##     if {$sys_mem_interconnect_index < 0} {
+##       ad_ip_instance axi_interconnect axi_mem_interconnect
+##     }
+##     set m_interconnect_index $sys_mem_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_mem_interconnect]
+##     set m_addr_seg [get_bd_addr_segs -of_objects [get_bd_cells axi_ddr_cntrl]]
+##   }
+## 
+##   if {($p_sel eq "HP0") && ($sys_zynq == 1)} {
+##     if {$sys_hp0_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP0
+##       set_property CONFIG.PCW_USE_S_AXI_HP0 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp0_interconnect
+##     }
+##     set m_interconnect_index $sys_hp0_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp0_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP0/HP0_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP1") && ($sys_zynq == 1)} {
+##     if {$sys_hp1_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP1
+##       set_property CONFIG.PCW_USE_S_AXI_HP1 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp1_interconnect
+##     }
+##     set m_interconnect_index $sys_hp1_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp1_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP1/HP1_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP2") && ($sys_zynq == 1)} {
+##     if {$sys_hp2_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP2
+##       set_property CONFIG.PCW_USE_S_AXI_HP2 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp2_interconnect
+##     }
+##     set m_interconnect_index $sys_hp2_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp2_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP2/HP2_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP3") && ($sys_zynq == 1)} {
+##     if {$sys_hp3_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP3
+##       set_property CONFIG.PCW_USE_S_AXI_HP3 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp3_interconnect
+##     }
+##     set m_interconnect_index $sys_hp3_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp3_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP3/HP3_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP0") && ($sys_zynq == 2)} {
+##     if {$sys_hp0_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP0_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP2 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp0_interconnect
+##     }
+##     set m_interconnect_index $sys_hp0_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp0_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP0_FPD/PLLPD_DDR_LOW]
+##   }
+## 
+##   if {($p_sel eq "HP1") && ($sys_zynq == 2)} {
+##     if {$sys_hp1_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP1_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP3 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp1_interconnect
+##     }
+##     set m_interconnect_index $sys_hp1_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp1_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP1_FPD/HP0_DDR_LOW]
+##   }
+## 
+##   if {($p_sel eq "HP2") && ($sys_zynq == 2)} {
+##     if {$sys_hp2_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP2_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP4 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp2_interconnect
+##     }
+##     set m_interconnect_index $sys_hp2_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp2_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP2_FPD/HP1_DDR_LOW]
+##   }
+## 
+##   if {($p_sel eq "HP3") && ($sys_zynq == 2)} {
+##     if {$sys_hp3_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP3_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP5 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp3_interconnect
+##     }
+##     set m_interconnect_index $sys_hp3_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp3_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP3_FPD/HP2_DDR_LOW]
+##   }
+## 
+##   set i_str "S$m_interconnect_index"
+##   if {$m_interconnect_index < 10} {
+##     set i_str "S0$m_interconnect_index"
+##   }
+## 
+##   set m_interconnect_index [expr $m_interconnect_index + 1]
+## 
+##   set p_intf_name [lrange [split $p_name_int "/"] end end]
+##   set p_cell_name [lrange [split $p_name_int "/"] 0 0]
+##   set p_intf_clock [get_bd_pins -filter "TYPE == clk && (CONFIG.ASSOCIATED_BUSIF == ${p_intf_name} || \
+##     CONFIG.ASSOCIATED_BUSIF =~ ${p_intf_name}:* || CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name} || \
+##     CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name}:*)" -quiet -of_objects [get_bd_cells $p_cell_name]]
+##   if {[find_bd_objs -quiet -relation connected_to $p_intf_clock] ne "" ||
+##       $p_intf_clock eq $p_clk_source} {
+##     set p_intf_clock ""
+##   }
+## 
+##   regsub clk $p_clk resetn p_rst
+##   if {[get_bd_nets -quiet $p_rst] eq ""} {
+##     set p_rst sys_cpu_resetn
+##   }
+## 
+##   if {$m_interconnect_index == 0} {
+##     set_property CONFIG.NUM_MI 1 $m_interconnect_cell
+##     set_property CONFIG.NUM_SI 1 $m_interconnect_cell
+##     ad_connect $p_rst $m_interconnect_cell/ARESETN
+##     ad_connect $p_clk $m_interconnect_cell/ACLK
+##     ad_connect $p_rst $m_interconnect_cell/M00_ARESETN
+##     ad_connect $p_clk $m_interconnect_cell/M00_ACLK
+##     ad_connect $m_interconnect_cell/M00_AXI $p_name_int
+##     if {$p_intf_clock ne ""} {
+##       ad_connect $p_clk $p_intf_clock
+##     }
+##   } else {
+##     set_property CONFIG.NUM_SI $m_interconnect_index $m_interconnect_cell
+##     ad_connect $p_rst $m_interconnect_cell/${i_str}_ARESETN
+##     ad_connect $p_clk $m_interconnect_cell/${i_str}_ACLK
+##     ad_connect $m_interconnect_cell/${i_str}_AXI $p_name_int
+##     if {$p_intf_clock ne ""} {
+##       ad_connect $p_clk $p_intf_clock
+##     }
+##     assign_bd_address $m_addr_seg
+##   }
+## 
+##   if {$m_interconnect_index > 1} {
+##     set_property CONFIG.STRATEGY {2} $m_interconnect_cell
+##   }
+## 
+##   if {$p_sel eq "MEM"} {set sys_mem_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP0"} {set sys_hp0_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP1"} {set sys_hp1_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP2"} {set sys_hp2_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP3"} {set sys_hp3_interconnect_index $m_interconnect_index}
+## 
+## }
+## proc ad_cpu_interconnect {p_address p_name} {
+## 
+##   global sys_zynq
+##   global sys_cpu_interconnect_index
+## 
+##   set i_str "M$sys_cpu_interconnect_index"
+##   if {$sys_cpu_interconnect_index < 10} {
+##     set i_str "M0$sys_cpu_interconnect_index"
+##   }
+## 
+##   if {$sys_cpu_interconnect_index == 0} {
+##     ad_ip_instance axi_interconnect axi_cpu_interconnect
+##     if {$sys_zynq == 2} {
+##       ad_connect sys_cpu_clk sys_ps8/maxihpm0_lpd_aclk
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/S00_ACLK
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/ARESETN
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/S00_ARESETN
+##       ad_connect axi_cpu_interconnect/S00_AXI sys_ps8/M_AXI_HPM0_LPD
+##     }
+##     if {$sys_zynq == 1} {
+##       ad_connect sys_cpu_clk sys_ps7/M_AXI_GP0_ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/S00_ACLK
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/ARESETN
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/S00_ARESETN
+##       ad_connect axi_cpu_interconnect/S00_AXI sys_ps7/M_AXI_GP0
+##     }
+##     if {$sys_zynq == 0} {
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/S00_ACLK
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/ARESETN
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/S00_ARESETN
+##       ad_connect axi_cpu_interconnect/S00_AXI sys_mb/M_AXI_DP
+##     }
+##   }
+## 
+##   if {$sys_zynq == 2} {
+##     set sys_addr_cntrl_space [get_bd_addr_spaces sys_ps8/Data]
+##   }
+##   if {$sys_zynq == 1} {
+##     set sys_addr_cntrl_space [get_bd_addr_spaces sys_ps7/Data]
+##   }
+##   if {$sys_zynq == 0} {
+##     set sys_addr_cntrl_space [get_bd_addr_spaces sys_mb/Data]
+##   }
+## 
+##   set sys_cpu_interconnect_index [expr $sys_cpu_interconnect_index + 1]
+## 
+## 
+##   set p_cell [get_bd_cells $p_name]
+##   set p_intf [get_bd_intf_pins -filter "MODE == Slave && VLNV == xilinx.com:interface:aximm_rtl:1.0"\
+##     -of_objects $p_cell]
+## 
+##   set p_hier_cell $p_cell
+##   set p_hier_intf $p_intf
+## 
+##   while {$p_hier_intf != "" && [get_property TYPE $p_hier_cell] == "hier"} {
+##     set p_hier_intf [find_bd_objs -boundary_type lower \
+##       -relation connected_to $p_hier_intf]
+##     if {$p_hier_intf != {}} {
+##       set p_hier_cell [get_bd_cells -of_objects $p_hier_intf]
+##     } else {
+##       set p_hier_cell {}
+##     }
+##   }
+## 
+##   set p_intf_clock ""
+##   set p_intf_reset ""
+## 
+##   if {$p_hier_cell != {}} {
+##     set p_intf_name [lrange [split $p_hier_intf "/"] end end]
+## 
+##     set p_intf_clock [get_bd_pins -filter "TYPE == clk && \
+##       (CONFIG.ASSOCIATED_BUSIF == ${p_intf_name} || \
+##       CONFIG.ASSOCIATED_BUSIF =~ ${p_intf_name}:* || \
+##       CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name} || \
+##       CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name}:*)" \
+##       -quiet -of_objects $p_hier_cell]
+##     set p_intf_reset [get_bd_pins -filter "TYPE == rst && \
+##       (CONFIG.ASSOCIATED_BUSIF == ${p_intf_name} || \
+##        CONFIG.ASSOCIATED_BUSIF =~ ${p_intf_name}:* ||
+##        CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name} || \
+##        CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name}:*)" \
+##        -quiet -of_objects $p_hier_cell]
+## 
+##     if {($p_intf_clock ne "") && ($p_intf_reset eq "")} {
+##       set p_intf_reset [get_property CONFIG.ASSOCIATED_RESET [get_bd_pins ${p_intf_clock}]]
+##       if {$p_intf_reset ne ""} {
+##         set p_intf_reset [get_bd_pins -filter "NAME == $p_intf_reset" -of_objects $p_hier_cell]
+##       }
+##     }
+## 
+##     # Trace back up
+##     set p_hier_cell2 $p_hier_cell
+## 
+##     while {$p_intf_clock != {} && $p_hier_cell2 != $p_cell && $p_hier_cell2 != {}} {
+##       puts $p_intf_clock
+##       puts $p_hier_cell2
+##       set p_intf_clock [find_bd_objs -boundary_type upper \
+##         -relation connected_to $p_intf_clock]
+##       if {$p_intf_clock != {}} {
+##         set p_intf_clock [get_bd_pins [get_property PATH $p_intf_clock]]
+##         set p_hier_cell2 [get_bd_cells -of_objects $p_intf_clock]
+##       }
+##     }
+## 
+##     set p_hier_cell2 $p_hier_cell
+## 
+##     while {$p_intf_reset != {} && $p_hier_cell2 != $p_cell && $p_hier_cell2 != {}} {
+##       set p_intf_reset [find_bd_objs -boundary_type upper \
+##         -relation connected_to $p_intf_reset]
+##       if {$p_intf_reset != {}} {
+##         set p_intf_reset [get_bd_pins [get_property PATH $p_intf_reset]]
+##         set p_hier_cell2 [get_bd_cells -of_objects $p_intf_reset]
+##       }
+##     }
+##   }
+## 
+## 
+##   if {[find_bd_objs -quiet -relation connected_to $p_intf_clock] ne ""} {
+##     set p_intf_clock ""
+##   }
+##   if {$p_intf_reset ne ""} {
+##     if {[find_bd_objs -quiet -relation connected_to $p_intf_reset] ne ""} {
+##       set p_intf_reset ""
+##     }
+##   }
+## 
+##   set_property CONFIG.NUM_MI $sys_cpu_interconnect_index [get_bd_cells axi_cpu_interconnect]
+## 
+##   ad_connect sys_cpu_clk axi_cpu_interconnect/${i_str}_ACLK
+##   if {$p_intf_clock ne ""} {
+##     ad_connect sys_cpu_clk ${p_intf_clock}
+##   }
+##   ad_connect sys_cpu_resetn axi_cpu_interconnect/${i_str}_ARESETN
+##   if {$p_intf_reset ne ""} {
+##     ad_connect sys_cpu_resetn ${p_intf_reset}
+##   }
+##   ad_connect axi_cpu_interconnect/${i_str}_AXI ${p_intf}
+## 
+##   set p_seg [get_bd_addr_segs -of_objects $p_hier_cell]
+##   set p_index 0
+##   foreach p_seg_name $p_seg {
+##     if {$p_index == 0} {
+##       set p_seg_range [get_property range $p_seg_name]
+##       if {$p_seg_range < 0x1000} {
+##         set p_seg_range 0x1000
+##       }
+##       if {$sys_zynq == 2} {
+##         if {($p_address >= 0x40000000) && ($p_address <= 0x4fffffff)} {
+##           set p_address [expr ($p_address + 0x40000000)]
+##         }
+##         if {($p_address >= 0x70000000) && ($p_address <= 0x7fffffff)} {
+##           set p_address [expr ($p_address + 0x20000000)]
+##         }
+##       }
+##       create_bd_addr_seg -range $p_seg_range \
+##         -offset $p_address $sys_addr_cntrl_space \
+##         $p_seg_name "SEG_data_${p_name}"
+##     } else {
+##       assign_bd_address $p_seg_name
+##     }
+##     incr p_index
+##   }
+## }
+## proc ad_cpu_interrupt {p_ps_index p_mb_index p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {$sys_zynq == 0} {set p_index_int $p_mb_index}
+##   if {$sys_zynq >= 1} {set p_index_int $p_ps_index}
+## 
+##   set p_index [regsub -all {[^0-9]} $p_index_int ""]
+##   set m_index [expr ($p_index - 8)]
+## 
+##   if {($sys_zynq == 2) && ($p_index <= 7)} {
+##     set p_net [get_bd_nets -of_objects [get_bd_pins sys_concat_intc_0/In$p_index]]
+##     set p_pin [find_bd_objs -relation connected_to [get_bd_pins sys_concat_intc_0/In$p_index]]
+## 
+##     puts "delete_bd_objs $p_net $p_pin"
+##     delete_bd_objs $p_net $p_pin
+##     ad_connect sys_concat_intc_0/In$p_index $p_name
+##   }
+## 
+##   if {($sys_zynq == 2) && ($p_index >= 8)} {
+##     set p_net [get_bd_nets -of_objects [get_bd_pins sys_concat_intc_1/In$m_index]]
+##     set p_pin [find_bd_objs -relation connected_to [get_bd_pins sys_concat_intc_1/In$m_index]]
+## 
+##     puts "delete_bd_objs $p_net $p_pin"
+##     delete_bd_objs $p_net $p_pin
+##     ad_connect sys_concat_intc_1/In$m_index $p_name
+##   }
+## 
+##   if {$sys_zynq <= 1} {
+## 
+##     set p_net [get_bd_nets -of_objects [get_bd_pins sys_concat_intc/In$p_index]]
+##     set p_pin [find_bd_objs -relation connected_to [get_bd_pins sys_concat_intc/In$p_index]]
+## 
+##     puts "delete_bd_objs $p_net $p_pin"
+##     delete_bd_objs $p_net $p_pin
+##     ad_connect sys_concat_intc/In$p_index $p_name
+##   }
+## }
+# adi_project_xilinx adv7511_zed
+CRITICAL WARNING: vivado version mismatch; expected 2017.4.1, got 2013.4.
+ERROR: [Common 17-142] Invalid property name 'board_part'.  Please use the 'list_property' command to find properties supported by the target 'project' object.
+
+    while executing
+"rdi::set_property board_part em.avnet.com:zed:part0:1.3 adv7511_zed"
+    invoked from within
+"set_property board_part $p_board [current_project]"
+    invoked from within
+"if {$p_board ne "not-applicable"} {
+    set_property board_part $p_board [current_project]
+  }"
+    (procedure "adi_project_xilinx" line 81)
+    invoked from within
+"adi_project_xilinx adv7511_zed"
+    (file "./system_project.tcl" line 8)
+list_property
+ERROR: [Common 17-56] 'list_property' expects exactly one object got '0'.
+source ./system_project.tcl
+# source ../../scripts/adi_env.tcl
+## set ad_hdl_dir [file normalize [file join [file dirname [info script]] "../.."]]
+## set ad_phdl_dir $ad_hdl_dir
+## if [info exists ::env(ADI_HDL_DIR)] {
+##   set ad_hdl_dir [file normalize $::env(ADI_HDL_DIR)]
+## }
+## if [info exists ::env(ADI_PHDL_DIR)] {
+##   set ad_phdl_dir [file normalize $::env(ADI_PHDL_DIR)]
+## }
+# source $ad_hdl_dir/projects/scripts/adi_project.tcl
+## variable p_board
+## variable p_device
+## variable sys_zynq
+## variable p_prcfg_init
+## variable p_prcfg_list
+## variable p_prcfg_status
+## if {![info exists REQUIRED_VIVADO_VERSION]} {
+##   set REQUIRED_VIVADO_VERSION "2017.4.1"
+## }
+## if {[info exists ::env(ADI_IGNORE_VERSION_CHECK)]} {
+##   set IGNORE_VERSION_CHECK 1
+## } elseif {![info exists IGNORE_VERSION_CHECK]} {
+##   set IGNORE_VERSION_CHECK 0
+## }
+## set p_board "not-applicable"
+## set p_device "none"
+## set sys_zynq 1
+## set ADI_POWER_OPTIMIZATION 0
+## proc adi_project_xilinx {project_name {mode 0}} {
+## 
+##   global ad_hdl_dir
+##   global ad_phdl_dir
+##   global p_board
+##   global p_device
+##   global sys_zynq
+##   global REQUIRED_VIVADO_VERSION
+##   global IGNORE_VERSION_CHECK
+## 
+##   if [regexp "_ac701$" $project_name] {
+##     set p_device "xc7a200tfbg676-2"
+##     set p_board "xilinx.com:ac701:part0:1.0"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_kc705$" $project_name] {
+##     set p_device "xc7k325tffg900-2"
+##     set p_board "xilinx.com:kc705:part0:1.1"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_vc707$" $project_name] {
+##     set p_device "xc7vx485tffg1761-2"
+##     set p_board "xilinx.com:vc707:part0:1.1"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_kcu105$" $project_name] {
+##     set p_device "xcku040-ffva1156-2-e"
+##     set p_board "xilinx.com:kcu105:part0:1.1"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_zed$" $project_name] {
+##     set p_device "xc7z020clg484-1"
+##     set p_board "em.avnet.com:zed:part0:1.3"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_microzed$" $project_name] {
+##     set p_device "xc7z010clg400-1"
+##     set p_board "not-applicable"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_zc702$" $project_name] {
+##     set p_device "xc7z020clg484-1"
+##     set p_board "xilinx.com:zc702:part0:1.2"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_zc706$" $project_name] {
+##     set p_device "xc7z045ffg900-2"
+##     set p_board "xilinx.com:zc706:part0:1.2"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_mitx045$" $project_name] {
+##     set p_device "xc7z045ffg900-2"
+##     set p_board "not-applicable"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_zcu102$" $project_name] {
+##     set p_device "xczu9eg-ffvb1156-2-e"
+##     set p_board "xilinx.com:zcu102:part0:3.1"
+##     set sys_zynq 2
+##   }
+## 
+##   set VIVADO_VERSION [version -short]
+##   if {[string compare $VIVADO_VERSION $REQUIRED_VIVADO_VERSION] != 0} {
+##     puts -nonewline "CRITICAL WARNING: vivado version mismatch; "
+##     puts -nonewline "expected $REQUIRED_VIVADO_VERSION, "
+##     puts -nonewline "got $VIVADO_VERSION.\n"
+##   }
+## 
+##   if {$mode == 0} {
+##     set project_system_dir "./$project_name.srcs/sources_1/bd/system"
+##     create_project $project_name . -part $p_device -force
+##   } else {
+##     set project_system_dir ".srcs/sources_1/bd/system"
+##     create_project -in_memory -part $p_device
+##   }
+## 
+##   if {$mode == 1} {
+##     file mkdir $project_name.data
+##   }
+## 
+##   if {$p_board ne "not-applicable"} {
+##     set_property board $p_board [current_project]
+##   }
+## 
+##   set lib_dirs $ad_hdl_dir/library
+##   if {$ad_hdl_dir ne $ad_phdl_dir} {
+##     lappend lib_dirs $ad_phdl_dir/library
+##   }
+## 
+##   set_property ip_repo_paths $lib_dirs [current_fileset]
+##   update_ip_catalog
+## 
+##   ## Load custom message severity definitions
+##   source $ad_hdl_dir/projects/scripts/adi_xilinx_msg.tcl
+## 
+##   create_bd_design "system"
+##   source system_bd.tcl
+## 
+##   save_bd_design
+##   validate_bd_design
+## 
+##   set_property synth_checkpoint_mode None [get_files  $project_system_dir/system.bd]
+##   generate_target {synthesis implementation} [get_files  $project_system_dir/system.bd]
+##   make_wrapper -files [get_files $project_system_dir/system.bd] -top
+## 
+##   if {$mode == 0} {
+##     import_files -force -norecurse -fileset sources_1 $project_system_dir/hdl/system_wrapper.v
+##   } else {
+##     write_hwdef -file "$project_name.data/$project_name.hwdef"
+##   }
+## }
+## proc adi_project_files {project_name project_files} {
+## 
+##   add_files -norecurse -fileset sources_1 $project_files
+##   set_property top system_top [current_fileset]
+## }
+## proc adi_project_run {project_name} {
+##   global ADI_POWER_OPTIMIZATION
+## 
+##   launch_runs synth_1
+##   wait_on_run synth_1
+##   open_run synth_1
+##   report_timing_summary -file timing_synth.log
+## 
+##   if {![info exists ::env(ADI_NO_BITSTREAM_COMPRESSION)] && ![info exists ADI_NO_BITSTREAM_COMPRESSION]} {
+##     set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+##   }
+## 
+##   if {$ADI_POWER_OPTIMIZATION == 1} {
+##   set_property STEPS.POWER_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+##   set_property STEPS.POST_PLACE_POWER_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+##   }
+## 
+##   launch_runs impl_1 -to_step write_bitstream
+##   wait_on_run impl_1
+##   open_run impl_1
+##   report_timing_summary -file timing_impl.log
+## 
+##   file mkdir $project_name.sdk
+## 
+##   if [expr [get_property SLACK [get_timing_paths]] < 0] {
+##     file copy -force $project_name.runs/impl_1/system_top.sysdef $project_name.sdk/system_top_bad_timing.hdf
+##   } else {
+##     file copy -force $project_name.runs/impl_1/system_top.sysdef $project_name.sdk/system_top.hdf
+##   }
+## 
+##   if [expr [get_property SLACK [get_timing_paths]] < 0] {
+##     return -code error [format "ERROR: Timing Constraints NOT met!"]
+##   }
+## }
+## proc adi_project_synth {project_name prcfg_name hdl_files {xdc_files ""}} {
+## 
+##   global p_device
+## 
+##   set p_prefix "$project_name.data/$project_name"
+## 
+##   if {$prcfg_name eq ""} {
+## 
+##     read_verilog .srcs/sources_1/bd/system/hdl/system_wrapper.v
+##     read_verilog $hdl_files
+##     read_xdc $xdc_files
+## 
+##     synth_design -mode default -top system_top -part $p_device > $p_prefix.synth.rds
+##     write_checkpoint -force $p_prefix.synth.dcp
+##     close_project
+## 
+##   } else {
+## 
+##     create_project -in_memory -part $p_device
+##     read_verilog $hdl_files
+##     synth_design -mode out_of_context -top "prcfg" -part $p_device > $p_prefix.${prcfg_name}_synth.rds
+##     write_checkpoint -force $p_prefix.${prcfg_name}_synth.dcp
+##     close_project
+##   }
+## }
+## proc adi_project_impl {project_name prcfg_name {xdc_files ""}} {
+## 
+##   global p_device
+##   global p_prcfg_init
+##   global p_prcfg_list
+##   global p_prcfg_status
+## 
+##   set p_prefix "$project_name.data/$project_name"
+## 
+##   if {$prcfg_name eq "default"} {
+##     set p_prcfg_status 0
+##     set p_prcfg_list ""
+##     set p_prcfg_init "$p_prefix.${prcfg_name}_impl.dcp"
+##     file mkdir $project_name.sdk
+##   }
+## 
+##   if {$prcfg_name eq "default"} {
+## 
+##     open_checkpoint $p_prefix.synth.dcp -part $p_device
+##     read_xdc $xdc_files
+##     read_checkpoint -cell i_prcfg $p_prefix.${prcfg_name}_synth.dcp
+##     set_property HD.RECONFIGURABLE 1 [get_cells i_prcfg]
+##     opt_design > $p_prefix.${prcfg_name}_opt.rds
+##     write_debug_probes -force $p_prefix.${prcfg_name}_debug_nets.ltx
+##     place_design > $p_prefix.${prcfg_name}_place.rds
+##     route_design > $p_prefix.${prcfg_name}_route.rds
+## 
+##   } else {
+## 
+##     open_checkpoint $p_prefix.default_impl_bb.dcp -part $p_device
+##     lock_design -level routing
+##     read_checkpoint -cell i_prcfg $p_prefix.${prcfg_name}_synth.dcp
+##     read_xdc $xdc_files
+##     opt_design > $p_prefix.${prcfg_name}_opt.rds
+##     place_design > $p_prefix.${prcfg_name}_place.rds
+##     route_design > $p_prefix.${prcfg_name}_route.rds
+##   }
+## 
+##   write_checkpoint -force $p_prefix.${prcfg_name}_impl.dcp
+##   report_utilization -pblocks pb_prcfg -file $p_prefix.${prcfg_name}_utilization.rpt
+##   report_timing_summary -file $p_prefix.${prcfg_name}_timing_summary.rpt
+## 
+##   if [expr [get_property SLACK [get_timing_paths]] < 0] {
+##     set p_prcfg_status 1
+##     puts "CRITICAL WARNING: Timing Constraints NOT met ($prcfg_name)!"
+##   }
+## 
+##   write_checkpoint -force -cell i_prcfg $p_prefix.${prcfg_name}_prcfg_impl.dcp
+##   update_design -cell i_prcfg -black_box
+##   write_checkpoint -force $p_prefix.${prcfg_name}_impl_bb.dcp
+##   open_checkpoint $p_prefix.${prcfg_name}_impl.dcp -part $p_device
+##   write_bitstream -force -bin_file -file $p_prefix.${prcfg_name}.bit
+##   write_sysdef -hwdef $p_prefix.hwdef -bitfile $p_prefix.${prcfg_name}.bit -file $p_prefix.${prcfg_name}.hdf
+##   file copy -force $p_prefix.${prcfg_name}.hdf $project_name.sdk/system_top.${prcfg_name}.hdf
+## 
+##   if {$prcfg_name ne "default"} {
+##     lappend p_prcfg_list "$p_prefix.${prcfg_name}_impl.dcp"
+##   }
+## 
+##   if {$prcfg_name eq "default"} {
+##     file copy -force $p_prefix.${prcfg_name}.hdf $project_name.sdk/system_top.hdf
+##   }
+## }
+## proc adi_project_verify {project_name} {
+## 
+##   global p_prcfg_init
+##   global p_prcfg_list
+##   global p_prcfg_status
+## 
+##   set p_prefix "$project_name.data/$project_name"
+## 
+##   pr_verify -full_check -initial $p_prcfg_init \
+##     -additional $p_prcfg_list \
+##     -file $p_prefix.prcfg_verify.log
+## 
+##   if {$p_prcfg_status == 1} {
+##     return -code error [format "ERROR: Timing Constraints NOT met!"]
+##   }
+## }
+# source $ad_hdl_dir/projects/scripts/adi_board.tcl
+## variable sys_cpu_interconnect_index
+## variable sys_hp0_interconnect_index
+## variable sys_hp1_interconnect_index
+## variable sys_hp2_interconnect_index
+## variable sys_hp3_interconnect_index
+## variable sys_mem_interconnect_index
+## variable xcvr_index
+## variable xcvr_tx_index
+## variable xcvr_rx_index
+## variable xcvr_instance
+## set sys_cpu_interconnect_index 0
+## set sys_hp0_interconnect_index -1
+## set sys_hp1_interconnect_index -1
+## set sys_hp2_interconnect_index -1
+## set sys_hp3_interconnect_index -1
+## set sys_mem_interconnect_index -1
+## set xcvr_index -1
+## set xcvr_tx_index 0
+## set xcvr_rx_index 0
+## set xcvr_instance NONE
+## proc ad_ip_instance {i_ip i_name} {
+## 
+##   create_bd_cell -type ip -vlnv [get_ipdefs -all -filter "VLNV =~ *:${i_ip}:* && \
+##     design_tool_contexts =~ *IPI* && UPGRADE_VERSIONS == \"\""] ${i_name}
+## }
+## proc ad_ip_parameter {i_name i_param i_value} {
+## 
+##   set_property ${i_param} ${i_value} [get_bd_cells ${i_name}]
+## }
+## proc ad_connect_type {p_name} {
+## 
+##   set m_name ""
+## 
+##   if {$m_name eq ""} {set m_name [get_bd_intf_pins  -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_pins       -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_intf_ports -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_ports      -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_intf_nets  -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_nets       -quiet $p_name]}
+## 
+##   return $m_name
+## }
+## proc ad_connect {p_name_1 p_name_2} {
+## 
+##   if {($p_name_2 eq "GND") || ($p_name_2 eq "VCC")} {
+##     set p_size 1
+##     set p_msb [get_property left [get_bd_pins $p_name_1]]
+##     set p_lsb [get_property right [get_bd_pins $p_name_1]]
+##     if {($p_msb ne "") && ($p_lsb ne "")} {
+##       set p_size [expr (($p_msb + 1) - $p_lsb)]
+##     }
+##     set p_cell_name [regsub -all {/} $p_name_1 "_"]
+##     set p_cell_name "${p_cell_name}_${p_name_2}"
+##     if {$p_name_2 eq "VCC"} {
+##       set p_value -1
+##     } else {
+##       set p_value 0
+##     }
+##     ad_ip_instance xlconstant $p_cell_name
+##     set_property CONFIG.CONST_WIDTH $p_size [get_bd_cells $p_cell_name]
+##     set_property CONFIG.CONST_VAL $p_value [get_bd_cells $p_cell_name]
+##     puts "connect_bd_net $p_cell_name/dout $p_name_1"
+##     connect_bd_net [get_bd_pins $p_cell_name/dout] [get_bd_pins $p_name_1]
+##     return
+##   }
+## 
+##   set m_name_1 [ad_connect_type $p_name_1]
+##   set m_name_2 [ad_connect_type $p_name_2]
+## 
+##   if {$m_name_1 eq ""} {
+##     if {[get_property CLASS $m_name_2] eq "bd_intf_pin"} {
+##       puts "create_bd_intf_net $p_name_1"
+##       create_bd_intf_net $p_name_1
+##     }
+##     if {[get_property CLASS $m_name_2] eq "bd_pin"} {
+##       puts "create_bd_net $p_name_1"
+##       create_bd_net $p_name_1
+##     }
+##     set m_name_1 [ad_connect_type $p_name_1]
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_intf_pin"} {
+##     puts "connect_bd_intf_net $m_name_1 $m_name_2"
+##     connect_bd_intf_net $m_name_1 $m_name_2
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_pin"} {
+##     puts "connect_bd_net $m_name_1 $m_name_2"
+##     connect_bd_net $m_name_1 $m_name_2
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_net"} {
+##     puts "connect_bd_net -net $m_name_1 $m_name_2"
+##     connect_bd_net -net $m_name_1 $m_name_2
+##     return
+##   }
+## }
+## proc ad_disconnect {p_name_1 p_name_2} {
+## 
+##   set m_name_1 [ad_connect_type $p_name_1]
+##   set m_name_2 [ad_connect_type $p_name_2]
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_net"} {
+##     disconnect_bd_net $m_name_1 $m_name_2
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_port"} {
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet $m_name_1
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_pin"} {
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet $m_name_1
+##     return
+##   }
+## }
+## proc ad_reconct {p_name_1 p_name_2} {
+## 
+##   set m_name_1 [ad_connect_type $p_name_1]
+##   set m_name_2 [ad_connect_type $p_name_2]
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_pin"} {
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_2]]
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_intf_pin"} {
+##     delete_bd_objs -quiet [get_bd_intf_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet [get_bd_intf_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_2]]
+##   }
+## 
+##   ad_connect $p_name_1 $p_name_2
+## }
+## proc ad_xcvrcon {u_xcvr a_xcvr a_jesd {lane_map {}}} {
+##   
+##   global xcvr_index
+##   global xcvr_tx_index
+##   global xcvr_rx_index
+##   global xcvr_instance
+## 
+##   set no_of_lanes [get_property CONFIG.NUM_OF_LANES [get_bd_cells $a_xcvr]]
+##   set qpll_enable [get_property CONFIG.QPLL_ENABLE [get_bd_cells $a_xcvr]]
+##   set tx_or_rx_n [get_property CONFIG.TX_OR_RX_N [get_bd_cells $a_xcvr]]
+## 
+## #  set jesd204_vlnv [get_property VLNV $a_jesd]
+## #
+## #  if {[string first "analog.com" $jesd204_vlnv] == 0} {
+## #    set jesd204_type 0
+## #  } elseif {[string first "xilinx.com" $jesd204_vlnv] == 0} {
+## #    set jesd204_type 1
+## #  } else {
+## #    return -code 1 "Unsupported JESD204 core type."
+## #  }
+## 
+##   set jesd204_bd_type [get_property TYPE [get_bd_cells $a_jesd]]
+## 
+##   if {$jesd204_bd_type == "hier"} {
+##     set jesd204_type 0
+##   } else {
+##     set jesd204_type 1
+##   }
+## 
+##   if {$xcvr_instance ne $u_xcvr} {
+##     set xcvr_index [expr ($xcvr_index + 1)]
+##     set xcvr_tx_index 0
+##     set xcvr_rx_index 0
+##     set xcvr_instance $u_xcvr
+##   }
+## 
+##   set txrx "rx"
+##   set data_dir "I"
+##   set ctrl_dir "O"
+##   set index $xcvr_rx_index
+## 
+##   if {$tx_or_rx_n == 1} {
+## 
+##     set txrx "tx"
+##     set data_dir "O"
+##     set ctrl_dir "I"
+##     set index $xcvr_tx_index
+##   }
+## 
+##   set m_sysref ${txrx}_sysref_${index}
+##   set m_sync ${txrx}_sync_${index}
+##   set m_data ${txrx}_data
+## 
+##   if {$xcvr_index >= 1} {
+## 
+##     set m_sysref ${txrx}_sysref_${xcvr_index}_${index}
+##     set m_sync ${txrx}_sync_${xcvr_index}_${index}
+##     set m_data ${txrx}_data_${xcvr_index}
+##   }
+## 
+##   create_bd_port -dir I $m_sysref
+##   create_bd_port -dir ${ctrl_dir} $m_sync
+##   ad_ip_instance proc_sys_reset ${a_jesd}_rstgen
+## 
+##   for {set n 0} {$n < $no_of_lanes} {incr n} {
+## 
+##     set m [expr ($n + $index)]
+## 
+##     if {$tx_or_rx_n == 0} {
+##       ad_connect  ${a_xcvr}/up_es_${n} ${u_xcvr}/up_es_${m}
+##       if {$jesd204_type == 0} {
+##         ad_connect  ${a_jesd}/phy_en_char_align ${u_xcvr}/${txrx}_calign_${m}
+##       } else {
+##         ad_connect  ${a_jesd}/rxencommaalign_out ${u_xcvr}/${txrx}_calign_${m}
+##       }
+##     }
+## 
+##     if {(($m%4) == 0) && ($qpll_enable == 1)} {
+##       ad_connect  ${a_xcvr}/up_cm_${n} ${u_xcvr}/up_cm_${m}
+##     }
+## 
+##     if {$lane_map != {}} {
+##       set phys_lane [expr [lindex $lane_map $n] + $index]
+##     } else {
+##       set phys_lane $m
+##     }
+## 
+##     ad_connect  ${a_xcvr}/up_ch_${n} ${u_xcvr}/up_${txrx}_${m}
+##     ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${u_xcvr}/${txrx}_clk_${m}
+##     if {$jesd204_type == 0} {
+##       ad_connect  ${u_xcvr}/${txrx}_${phys_lane} ${a_jesd}/${txrx}_phy${n}
+##     } else {
+##       ad_connect  ${u_xcvr}/${txrx}_${phys_lane} ${a_jesd}/gt${n}_${txrx}
+##     }
+## 
+##     create_bd_port -dir ${data_dir} ${m_data}_${m}_p
+##     create_bd_port -dir ${data_dir} ${m_data}_${m}_n
+##     ad_connect  ${u_xcvr}/${txrx}_${m}_p ${m_data}_${m}_p
+##     ad_connect  ${u_xcvr}/${txrx}_${m}_n ${m_data}_${m}_n
+##   }
+## 
+##   if {$jesd204_type == 0} {
+##     ad_connect  ${a_jesd}/sysref $m_sysref
+##     ad_connect  ${a_jesd}/sync $m_sync
+##     ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${a_jesd}/device_clk
+## #    if {$tx_or_rx_n == 0} {
+## #      ad_connect  ${a_xcvr}/up_status ${a_jesd}/phy_ready
+## #    }
+##   } else {
+##     ad_connect  ${a_jesd}/${txrx}_sysref $m_sysref
+##     ad_connect  ${a_jesd}/${txrx}_sync $m_sync
+##     ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${a_jesd}/${txrx}_core_clk
+##     ad_connect  ${a_xcvr}/up_status ${a_jesd}/${txrx}_reset_done
+##     ad_connect  ${a_jesd}_rstgen/peripheral_reset ${a_jesd}/${txrx}_reset
+##   }
+## 
+##   ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${a_jesd}_rstgen/slowest_sync_clk
+##   ad_connect  sys_cpu_resetn ${a_jesd}_rstgen/ext_reset_in
+## 
+##   if {$tx_or_rx_n == 0} {
+##     set xcvr_rx_index [expr ($xcvr_rx_index + $no_of_lanes)]
+##   }
+## 
+##   if {$tx_or_rx_n == 1} {
+##     set xcvr_tx_index [expr ($xcvr_tx_index + $no_of_lanes)]
+##   }
+## }
+## proc ad_xcvrpll {m_src m_dst} {
+## 
+##   foreach p_dst [get_bd_pins -quiet $m_dst] {
+##     connect_bd_net [ad_connect_type $m_src] $p_dst
+##   }
+## }
+## proc ad_mem_hp0_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP0")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP0" $p_clk $p_name}
+## }
+## proc ad_mem_hp1_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP1")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP1" $p_clk $p_name}
+## }
+## proc ad_mem_hp2_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP2")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP2" $p_clk $p_name}
+## }
+## proc ad_mem_hp3_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP3")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP3" $p_clk $p_name}
+## }
+## proc ad_mem_hpx_interconnect {p_sel p_clk p_name} {
+## 
+##   global sys_zynq
+##   global sys_ddr_addr_seg
+##   global sys_hp0_interconnect_index
+##   global sys_hp1_interconnect_index
+##   global sys_hp2_interconnect_index
+##   global sys_hp3_interconnect_index
+##   global sys_mem_interconnect_index
+## 
+##   set p_name_int $p_name
+##   set p_clk_source [get_bd_pins -filter {DIR == O} -of_objects [get_bd_nets $p_clk]]
+## 
+##   if {$p_sel eq "MEM"} {
+##     if {$sys_mem_interconnect_index < 0} {
+##       ad_ip_instance axi_interconnect axi_mem_interconnect
+##     }
+##     set m_interconnect_index $sys_mem_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_mem_interconnect]
+##     set m_addr_seg [get_bd_addr_segs -of_objects [get_bd_cells axi_ddr_cntrl]]
+##   }
+## 
+##   if {($p_sel eq "HP0") && ($sys_zynq == 1)} {
+##     if {$sys_hp0_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP0
+##       set_property CONFIG.PCW_USE_S_AXI_HP0 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp0_interconnect
+##     }
+##     set m_interconnect_index $sys_hp0_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp0_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP0/HP0_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP1") && ($sys_zynq == 1)} {
+##     if {$sys_hp1_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP1
+##       set_property CONFIG.PCW_USE_S_AXI_HP1 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp1_interconnect
+##     }
+##     set m_interconnect_index $sys_hp1_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp1_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP1/HP1_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP2") && ($sys_zynq == 1)} {
+##     if {$sys_hp2_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP2
+##       set_property CONFIG.PCW_USE_S_AXI_HP2 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp2_interconnect
+##     }
+##     set m_interconnect_index $sys_hp2_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp2_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP2/HP2_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP3") && ($sys_zynq == 1)} {
+##     if {$sys_hp3_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP3
+##       set_property CONFIG.PCW_USE_S_AXI_HP3 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp3_interconnect
+##     }
+##     set m_interconnect_index $sys_hp3_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp3_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP3/HP3_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP0") && ($sys_zynq == 2)} {
+##     if {$sys_hp0_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP0_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP2 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp0_interconnect
+##     }
+##     set m_interconnect_index $sys_hp0_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp0_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP0_FPD/PLLPD_DDR_LOW]
+##   }
+## 
+##   if {($p_sel eq "HP1") && ($sys_zynq == 2)} {
+##     if {$sys_hp1_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP1_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP3 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp1_interconnect
+##     }
+##     set m_interconnect_index $sys_hp1_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp1_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP1_FPD/HP0_DDR_LOW]
+##   }
+## 
+##   if {($p_sel eq "HP2") && ($sys_zynq == 2)} {
+##     if {$sys_hp2_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP2_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP4 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp2_interconnect
+##     }
+##     set m_interconnect_index $sys_hp2_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp2_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP2_FPD/HP1_DDR_LOW]
+##   }
+## 
+##   if {($p_sel eq "HP3") && ($sys_zynq == 2)} {
+##     if {$sys_hp3_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP3_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP5 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp3_interconnect
+##     }
+##     set m_interconnect_index $sys_hp3_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp3_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP3_FPD/HP2_DDR_LOW]
+##   }
+## 
+##   set i_str "S$m_interconnect_index"
+##   if {$m_interconnect_index < 10} {
+##     set i_str "S0$m_interconnect_index"
+##   }
+## 
+##   set m_interconnect_index [expr $m_interconnect_index + 1]
+## 
+##   set p_intf_name [lrange [split $p_name_int "/"] end end]
+##   set p_cell_name [lrange [split $p_name_int "/"] 0 0]
+##   set p_intf_clock [get_bd_pins -filter "TYPE == clk && (CONFIG.ASSOCIATED_BUSIF == ${p_intf_name} || \
+##     CONFIG.ASSOCIATED_BUSIF =~ ${p_intf_name}:* || CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name} || \
+##     CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name}:*)" -quiet -of_objects [get_bd_cells $p_cell_name]]
+##   if {[find_bd_objs -quiet -relation connected_to $p_intf_clock] ne "" ||
+##       $p_intf_clock eq $p_clk_source} {
+##     set p_intf_clock ""
+##   }
+## 
+##   regsub clk $p_clk resetn p_rst
+##   if {[get_bd_nets -quiet $p_rst] eq ""} {
+##     set p_rst sys_cpu_resetn
+##   }
+## 
+##   if {$m_interconnect_index == 0} {
+##     set_property CONFIG.NUM_MI 1 $m_interconnect_cell
+##     set_property CONFIG.NUM_SI 1 $m_interconnect_cell
+##     ad_connect $p_rst $m_interconnect_cell/ARESETN
+##     ad_connect $p_clk $m_interconnect_cell/ACLK
+##     ad_connect $p_rst $m_interconnect_cell/M00_ARESETN
+##     ad_connect $p_clk $m_interconnect_cell/M00_ACLK
+##     ad_connect $m_interconnect_cell/M00_AXI $p_name_int
+##     if {$p_intf_clock ne ""} {
+##       ad_connect $p_clk $p_intf_clock
+##     }
+##   } else {
+##     set_property CONFIG.NUM_SI $m_interconnect_index $m_interconnect_cell
+##     ad_connect $p_rst $m_interconnect_cell/${i_str}_ARESETN
+##     ad_connect $p_clk $m_interconnect_cell/${i_str}_ACLK
+##     ad_connect $m_interconnect_cell/${i_str}_AXI $p_name_int
+##     if {$p_intf_clock ne ""} {
+##       ad_connect $p_clk $p_intf_clock
+##     }
+##     assign_bd_address $m_addr_seg
+##   }
+## 
+##   if {$m_interconnect_index > 1} {
+##     set_property CONFIG.STRATEGY {2} $m_interconnect_cell
+##   }
+## 
+##   if {$p_sel eq "MEM"} {set sys_mem_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP0"} {set sys_hp0_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP1"} {set sys_hp1_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP2"} {set sys_hp2_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP3"} {set sys_hp3_interconnect_index $m_interconnect_index}
+## 
+## }
+## proc ad_cpu_interconnect {p_address p_name} {
+## 
+##   global sys_zynq
+##   global sys_cpu_interconnect_index
+## 
+##   set i_str "M$sys_cpu_interconnect_index"
+##   if {$sys_cpu_interconnect_index < 10} {
+##     set i_str "M0$sys_cpu_interconnect_index"
+##   }
+## 
+##   if {$sys_cpu_interconnect_index == 0} {
+##     ad_ip_instance axi_interconnect axi_cpu_interconnect
+##     if {$sys_zynq == 2} {
+##       ad_connect sys_cpu_clk sys_ps8/maxihpm0_lpd_aclk
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/S00_ACLK
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/ARESETN
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/S00_ARESETN
+##       ad_connect axi_cpu_interconnect/S00_AXI sys_ps8/M_AXI_HPM0_LPD
+##     }
+##     if {$sys_zynq == 1} {
+##       ad_connect sys_cpu_clk sys_ps7/M_AXI_GP0_ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/S00_ACLK
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/ARESETN
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/S00_ARESETN
+##       ad_connect axi_cpu_interconnect/S00_AXI sys_ps7/M_AXI_GP0
+##     }
+##     if {$sys_zynq == 0} {
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/S00_ACLK
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/ARESETN
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/S00_ARESETN
+##       ad_connect axi_cpu_interconnect/S00_AXI sys_mb/M_AXI_DP
+##     }
+##   }
+## 
+##   if {$sys_zynq == 2} {
+##     set sys_addr_cntrl_space [get_bd_addr_spaces sys_ps8/Data]
+##   }
+##   if {$sys_zynq == 1} {
+##     set sys_addr_cntrl_space [get_bd_addr_spaces sys_ps7/Data]
+##   }
+##   if {$sys_zynq == 0} {
+##     set sys_addr_cntrl_space [get_bd_addr_spaces sys_mb/Data]
+##   }
+## 
+##   set sys_cpu_interconnect_index [expr $sys_cpu_interconnect_index + 1]
+## 
+## 
+##   set p_cell [get_bd_cells $p_name]
+##   set p_intf [get_bd_intf_pins -filter "MODE == Slave && VLNV == xilinx.com:interface:aximm_rtl:1.0"\
+##     -of_objects $p_cell]
+## 
+##   set p_hier_cell $p_cell
+##   set p_hier_intf $p_intf
+## 
+##   while {$p_hier_intf != "" && [get_property TYPE $p_hier_cell] == "hier"} {
+##     set p_hier_intf [find_bd_objs -boundary_type lower \
+##       -relation connected_to $p_hier_intf]
+##     if {$p_hier_intf != {}} {
+##       set p_hier_cell [get_bd_cells -of_objects $p_hier_intf]
+##     } else {
+##       set p_hier_cell {}
+##     }
+##   }
+## 
+##   set p_intf_clock ""
+##   set p_intf_reset ""
+## 
+##   if {$p_hier_cell != {}} {
+##     set p_intf_name [lrange [split $p_hier_intf "/"] end end]
+## 
+##     set p_intf_clock [get_bd_pins -filter "TYPE == clk && \
+##       (CONFIG.ASSOCIATED_BUSIF == ${p_intf_name} || \
+##       CONFIG.ASSOCIATED_BUSIF =~ ${p_intf_name}:* || \
+##       CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name} || \
+##       CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name}:*)" \
+##       -quiet -of_objects $p_hier_cell]
+##     set p_intf_reset [get_bd_pins -filter "TYPE == rst && \
+##       (CONFIG.ASSOCIATED_BUSIF == ${p_intf_name} || \
+##        CONFIG.ASSOCIATED_BUSIF =~ ${p_intf_name}:* ||
+##        CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name} || \
+##        CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name}:*)" \
+##        -quiet -of_objects $p_hier_cell]
+## 
+##     if {($p_intf_clock ne "") && ($p_intf_reset eq "")} {
+##       set p_intf_reset [get_property CONFIG.ASSOCIATED_RESET [get_bd_pins ${p_intf_clock}]]
+##       if {$p_intf_reset ne ""} {
+##         set p_intf_reset [get_bd_pins -filter "NAME == $p_intf_reset" -of_objects $p_hier_cell]
+##       }
+##     }
+## 
+##     # Trace back up
+##     set p_hier_cell2 $p_hier_cell
+## 
+##     while {$p_intf_clock != {} && $p_hier_cell2 != $p_cell && $p_hier_cell2 != {}} {
+##       puts $p_intf_clock
+##       puts $p_hier_cell2
+##       set p_intf_clock [find_bd_objs -boundary_type upper \
+##         -relation connected_to $p_intf_clock]
+##       if {$p_intf_clock != {}} {
+##         set p_intf_clock [get_bd_pins [get_property PATH $p_intf_clock]]
+##         set p_hier_cell2 [get_bd_cells -of_objects $p_intf_clock]
+##       }
+##     }
+## 
+##     set p_hier_cell2 $p_hier_cell
+## 
+##     while {$p_intf_reset != {} && $p_hier_cell2 != $p_cell && $p_hier_cell2 != {}} {
+##       set p_intf_reset [find_bd_objs -boundary_type upper \
+##         -relation connected_to $p_intf_reset]
+##       if {$p_intf_reset != {}} {
+##         set p_intf_reset [get_bd_pins [get_property PATH $p_intf_reset]]
+##         set p_hier_cell2 [get_bd_cells -of_objects $p_intf_reset]
+##       }
+##     }
+##   }
+## 
+## 
+##   if {[find_bd_objs -quiet -relation connected_to $p_intf_clock] ne ""} {
+##     set p_intf_clock ""
+##   }
+##   if {$p_intf_reset ne ""} {
+##     if {[find_bd_objs -quiet -relation connected_to $p_intf_reset] ne ""} {
+##       set p_intf_reset ""
+##     }
+##   }
+## 
+##   set_property CONFIG.NUM_MI $sys_cpu_interconnect_index [get_bd_cells axi_cpu_interconnect]
+## 
+##   ad_connect sys_cpu_clk axi_cpu_interconnect/${i_str}_ACLK
+##   if {$p_intf_clock ne ""} {
+##     ad_connect sys_cpu_clk ${p_intf_clock}
+##   }
+##   ad_connect sys_cpu_resetn axi_cpu_interconnect/${i_str}_ARESETN
+##   if {$p_intf_reset ne ""} {
+##     ad_connect sys_cpu_resetn ${p_intf_reset}
+##   }
+##   ad_connect axi_cpu_interconnect/${i_str}_AXI ${p_intf}
+## 
+##   set p_seg [get_bd_addr_segs -of_objects $p_hier_cell]
+##   set p_index 0
+##   foreach p_seg_name $p_seg {
+##     if {$p_index == 0} {
+##       set p_seg_range [get_property range $p_seg_name]
+##       if {$p_seg_range < 0x1000} {
+##         set p_seg_range 0x1000
+##       }
+##       if {$sys_zynq == 2} {
+##         if {($p_address >= 0x40000000) && ($p_address <= 0x4fffffff)} {
+##           set p_address [expr ($p_address + 0x40000000)]
+##         }
+##         if {($p_address >= 0x70000000) && ($p_address <= 0x7fffffff)} {
+##           set p_address [expr ($p_address + 0x20000000)]
+##         }
+##       }
+##       create_bd_addr_seg -range $p_seg_range \
+##         -offset $p_address $sys_addr_cntrl_space \
+##         $p_seg_name "SEG_data_${p_name}"
+##     } else {
+##       assign_bd_address $p_seg_name
+##     }
+##     incr p_index
+##   }
+## }
+## proc ad_cpu_interrupt {p_ps_index p_mb_index p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {$sys_zynq == 0} {set p_index_int $p_mb_index}
+##   if {$sys_zynq >= 1} {set p_index_int $p_ps_index}
+## 
+##   set p_index [regsub -all {[^0-9]} $p_index_int ""]
+##   set m_index [expr ($p_index - 8)]
+## 
+##   if {($sys_zynq == 2) && ($p_index <= 7)} {
+##     set p_net [get_bd_nets -of_objects [get_bd_pins sys_concat_intc_0/In$p_index]]
+##     set p_pin [find_bd_objs -relation connected_to [get_bd_pins sys_concat_intc_0/In$p_index]]
+## 
+##     puts "delete_bd_objs $p_net $p_pin"
+##     delete_bd_objs $p_net $p_pin
+##     ad_connect sys_concat_intc_0/In$p_index $p_name
+##   }
+## 
+##   if {($sys_zynq == 2) && ($p_index >= 8)} {
+##     set p_net [get_bd_nets -of_objects [get_bd_pins sys_concat_intc_1/In$m_index]]
+##     set p_pin [find_bd_objs -relation connected_to [get_bd_pins sys_concat_intc_1/In$m_index]]
+## 
+##     puts "delete_bd_objs $p_net $p_pin"
+##     delete_bd_objs $p_net $p_pin
+##     ad_connect sys_concat_intc_1/In$m_index $p_name
+##   }
+## 
+##   if {$sys_zynq <= 1} {
+## 
+##     set p_net [get_bd_nets -of_objects [get_bd_pins sys_concat_intc/In$p_index]]
+##     set p_pin [find_bd_objs -relation connected_to [get_bd_pins sys_concat_intc/In$p_index]]
+## 
+##     puts "delete_bd_objs $p_net $p_pin"
+##     delete_bd_objs $p_net $p_pin
+##     ad_connect sys_concat_intc/In$p_index $p_name
+##   }
+## }
+# adi_project_xilinx adv7511_zed
+CRITICAL WARNING: vivado version mismatch; expected 2017.4.1, got 2013.4.
+ERROR: [Coretcl 2-99] Project adv7511_zed is currently open. Please close the project before executing this command
+
+    while executing
+"create_project $project_name . -part $p_device -force"
+    invoked from within
+"if {$mode == 0} {
+    set project_system_dir "./$project_name.srcs/sources_1/bd/system"
+    create_project $project_name . -part $p_device -force
+  } ..."
+    (procedure "adi_project_xilinx" line 69)
+    invoked from within
+"adi_project_xilinx adv7511_zed"
+    (file "./system_project.tcl" line 8)
+close_project
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution.
+adv7511_zed.data
+adv7511_zed.xpr
+Makefile
+system_bd.tcl
+system_project.tcl
+system_top.v
+source ./system_project.tcl
+# source ../../scripts/adi_env.tcl
+## set ad_hdl_dir [file normalize [file join [file dirname [info script]] "../.."]]
+## set ad_phdl_dir $ad_hdl_dir
+## if [info exists ::env(ADI_HDL_DIR)] {
+##   set ad_hdl_dir [file normalize $::env(ADI_HDL_DIR)]
+## }
+## if [info exists ::env(ADI_PHDL_DIR)] {
+##   set ad_phdl_dir [file normalize $::env(ADI_PHDL_DIR)]
+## }
+# source $ad_hdl_dir/projects/scripts/adi_project.tcl
+## variable p_board
+## variable p_device
+## variable sys_zynq
+## variable p_prcfg_init
+## variable p_prcfg_list
+## variable p_prcfg_status
+## if {![info exists REQUIRED_VIVADO_VERSION]} {
+##   set REQUIRED_VIVADO_VERSION "2017.4.1"
+## }
+## if {[info exists ::env(ADI_IGNORE_VERSION_CHECK)]} {
+##   set IGNORE_VERSION_CHECK 1
+## } elseif {![info exists IGNORE_VERSION_CHECK]} {
+##   set IGNORE_VERSION_CHECK 0
+## }
+## set p_board "not-applicable"
+## set p_device "none"
+## set sys_zynq 1
+## set ADI_POWER_OPTIMIZATION 0
+## proc adi_project_xilinx {project_name {mode 0}} {
+## 
+##   global ad_hdl_dir
+##   global ad_phdl_dir
+##   global p_board
+##   global p_device
+##   global sys_zynq
+##   global REQUIRED_VIVADO_VERSION
+##   global IGNORE_VERSION_CHECK
+## 
+##   if [regexp "_ac701$" $project_name] {
+##     set p_device "xc7a200tfbg676-2"
+##     set p_board "xilinx.com:ac701:part0:1.0"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_kc705$" $project_name] {
+##     set p_device "xc7k325tffg900-2"
+##     set p_board "xilinx.com:kc705:part0:1.1"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_vc707$" $project_name] {
+##     set p_device "xc7vx485tffg1761-2"
+##     set p_board "xilinx.com:vc707:part0:1.1"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_kcu105$" $project_name] {
+##     set p_device "xcku040-ffva1156-2-e"
+##     set p_board "xilinx.com:kcu105:part0:1.1"
+##     set sys_zynq 0
+##   }
+##   if [regexp "_zed$" $project_name] {
+##     set p_device "xc7z020clg484-1"
+##     set p_board "em.avnet.com:zed:part0:1.3"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_microzed$" $project_name] {
+##     set p_device "xc7z010clg400-1"
+##     set p_board "not-applicable"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_zc702$" $project_name] {
+##     set p_device "xc7z020clg484-1"
+##     set p_board "xilinx.com:zc702:part0:1.2"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_zc706$" $project_name] {
+##     set p_device "xc7z045ffg900-2"
+##     set p_board "xilinx.com:zc706:part0:1.2"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_mitx045$" $project_name] {
+##     set p_device "xc7z045ffg900-2"
+##     set p_board "not-applicable"
+##     set sys_zynq 1
+##   }
+##   if [regexp "_zcu102$" $project_name] {
+##     set p_device "xczu9eg-ffvb1156-2-e"
+##     set p_board "xilinx.com:zcu102:part0:3.1"
+##     set sys_zynq 2
+##   }
+## 
+##   set VIVADO_VERSION [version -short]
+##   if {[string compare $VIVADO_VERSION $REQUIRED_VIVADO_VERSION] != 0} {
+##     puts -nonewline "CRITICAL WARNING: vivado version mismatch; "
+##     puts -nonewline "expected $REQUIRED_VIVADO_VERSION, "
+##     puts -nonewline "got $VIVADO_VERSION.\n"
+##   }
+## 
+##   if {$mode == 0} {
+##     set project_system_dir "./$project_name.srcs/sources_1/bd/system"
+##     create_project $project_name . -part $p_device -force
+##   } else {
+##     set project_system_dir ".srcs/sources_1/bd/system"
+##     create_project -in_memory -part $p_device
+##   }
+## 
+##   if {$mode == 1} {
+##     file mkdir $project_name.data
+##   }
+## 
+##   if {$p_board ne "not-applicable"} {
+##     set_property board $p_board [current_project]
+##   }
+## 
+##   set lib_dirs $ad_hdl_dir/library
+##   if {$ad_hdl_dir ne $ad_phdl_dir} {
+##     lappend lib_dirs $ad_phdl_dir/library
+##   }
+## 
+##   set_property ip_repo_paths $lib_dirs [current_fileset]
+##   update_ip_catalog
+## 
+##   ## Load custom message severity definitions
+##   source $ad_hdl_dir/projects/scripts/adi_xilinx_msg.tcl
+## 
+##   create_bd_design "system"
+##   source system_bd.tcl
+## 
+##   save_bd_design
+##   validate_bd_design
+## 
+##   set_property synth_checkpoint_mode None [get_files  $project_system_dir/system.bd]
+##   generate_target {synthesis implementation} [get_files  $project_system_dir/system.bd]
+##   make_wrapper -files [get_files $project_system_dir/system.bd] -top
+## 
+##   if {$mode == 0} {
+##     import_files -force -norecurse -fileset sources_1 $project_system_dir/hdl/system_wrapper.v
+##   } else {
+##     write_hwdef -file "$project_name.data/$project_name.hwdef"
+##   }
+## }
+## proc adi_project_files {project_name project_files} {
+## 
+##   add_files -norecurse -fileset sources_1 $project_files
+##   set_property top system_top [current_fileset]
+## }
+## proc adi_project_run {project_name} {
+##   global ADI_POWER_OPTIMIZATION
+## 
+##   launch_runs synth_1
+##   wait_on_run synth_1
+##   open_run synth_1
+##   report_timing_summary -file timing_synth.log
+## 
+##   if {![info exists ::env(ADI_NO_BITSTREAM_COMPRESSION)] && ![info exists ADI_NO_BITSTREAM_COMPRESSION]} {
+##     set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+##   }
+## 
+##   if {$ADI_POWER_OPTIMIZATION == 1} {
+##   set_property STEPS.POWER_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+##   set_property STEPS.POST_PLACE_POWER_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
+##   }
+## 
+##   launch_runs impl_1 -to_step write_bitstream
+##   wait_on_run impl_1
+##   open_run impl_1
+##   report_timing_summary -file timing_impl.log
+## 
+##   file mkdir $project_name.sdk
+## 
+##   if [expr [get_property SLACK [get_timing_paths]] < 0] {
+##     file copy -force $project_name.runs/impl_1/system_top.sysdef $project_name.sdk/system_top_bad_timing.hdf
+##   } else {
+##     file copy -force $project_name.runs/impl_1/system_top.sysdef $project_name.sdk/system_top.hdf
+##   }
+## 
+##   if [expr [get_property SLACK [get_timing_paths]] < 0] {
+##     return -code error [format "ERROR: Timing Constraints NOT met!"]
+##   }
+## }
+## proc adi_project_synth {project_name prcfg_name hdl_files {xdc_files ""}} {
+## 
+##   global p_device
+## 
+##   set p_prefix "$project_name.data/$project_name"
+## 
+##   if {$prcfg_name eq ""} {
+## 
+##     read_verilog .srcs/sources_1/bd/system/hdl/system_wrapper.v
+##     read_verilog $hdl_files
+##     read_xdc $xdc_files
+## 
+##     synth_design -mode default -top system_top -part $p_device > $p_prefix.synth.rds
+##     write_checkpoint -force $p_prefix.synth.dcp
+##     close_project
+## 
+##   } else {
+## 
+##     create_project -in_memory -part $p_device
+##     read_verilog $hdl_files
+##     synth_design -mode out_of_context -top "prcfg" -part $p_device > $p_prefix.${prcfg_name}_synth.rds
+##     write_checkpoint -force $p_prefix.${prcfg_name}_synth.dcp
+##     close_project
+##   }
+## }
+## proc adi_project_impl {project_name prcfg_name {xdc_files ""}} {
+## 
+##   global p_device
+##   global p_prcfg_init
+##   global p_prcfg_list
+##   global p_prcfg_status
+## 
+##   set p_prefix "$project_name.data/$project_name"
+## 
+##   if {$prcfg_name eq "default"} {
+##     set p_prcfg_status 0
+##     set p_prcfg_list ""
+##     set p_prcfg_init "$p_prefix.${prcfg_name}_impl.dcp"
+##     file mkdir $project_name.sdk
+##   }
+## 
+##   if {$prcfg_name eq "default"} {
+## 
+##     open_checkpoint $p_prefix.synth.dcp -part $p_device
+##     read_xdc $xdc_files
+##     read_checkpoint -cell i_prcfg $p_prefix.${prcfg_name}_synth.dcp
+##     set_property HD.RECONFIGURABLE 1 [get_cells i_prcfg]
+##     opt_design > $p_prefix.${prcfg_name}_opt.rds
+##     write_debug_probes -force $p_prefix.${prcfg_name}_debug_nets.ltx
+##     place_design > $p_prefix.${prcfg_name}_place.rds
+##     route_design > $p_prefix.${prcfg_name}_route.rds
+## 
+##   } else {
+## 
+##     open_checkpoint $p_prefix.default_impl_bb.dcp -part $p_device
+##     lock_design -level routing
+##     read_checkpoint -cell i_prcfg $p_prefix.${prcfg_name}_synth.dcp
+##     read_xdc $xdc_files
+##     opt_design > $p_prefix.${prcfg_name}_opt.rds
+##     place_design > $p_prefix.${prcfg_name}_place.rds
+##     route_design > $p_prefix.${prcfg_name}_route.rds
+##   }
+## 
+##   write_checkpoint -force $p_prefix.${prcfg_name}_impl.dcp
+##   report_utilization -pblocks pb_prcfg -file $p_prefix.${prcfg_name}_utilization.rpt
+##   report_timing_summary -file $p_prefix.${prcfg_name}_timing_summary.rpt
+## 
+##   if [expr [get_property SLACK [get_timing_paths]] < 0] {
+##     set p_prcfg_status 1
+##     puts "CRITICAL WARNING: Timing Constraints NOT met ($prcfg_name)!"
+##   }
+## 
+##   write_checkpoint -force -cell i_prcfg $p_prefix.${prcfg_name}_prcfg_impl.dcp
+##   update_design -cell i_prcfg -black_box
+##   write_checkpoint -force $p_prefix.${prcfg_name}_impl_bb.dcp
+##   open_checkpoint $p_prefix.${prcfg_name}_impl.dcp -part $p_device
+##   write_bitstream -force -bin_file -file $p_prefix.${prcfg_name}.bit
+##   write_sysdef -hwdef $p_prefix.hwdef -bitfile $p_prefix.${prcfg_name}.bit -file $p_prefix.${prcfg_name}.hdf
+##   file copy -force $p_prefix.${prcfg_name}.hdf $project_name.sdk/system_top.${prcfg_name}.hdf
+## 
+##   if {$prcfg_name ne "default"} {
+##     lappend p_prcfg_list "$p_prefix.${prcfg_name}_impl.dcp"
+##   }
+## 
+##   if {$prcfg_name eq "default"} {
+##     file copy -force $p_prefix.${prcfg_name}.hdf $project_name.sdk/system_top.hdf
+##   }
+## }
+## proc adi_project_verify {project_name} {
+## 
+##   global p_prcfg_init
+##   global p_prcfg_list
+##   global p_prcfg_status
+## 
+##   set p_prefix "$project_name.data/$project_name"
+## 
+##   pr_verify -full_check -initial $p_prcfg_init \
+##     -additional $p_prcfg_list \
+##     -file $p_prefix.prcfg_verify.log
+## 
+##   if {$p_prcfg_status == 1} {
+##     return -code error [format "ERROR: Timing Constraints NOT met!"]
+##   }
+## }
+# source $ad_hdl_dir/projects/scripts/adi_board.tcl
+## variable sys_cpu_interconnect_index
+## variable sys_hp0_interconnect_index
+## variable sys_hp1_interconnect_index
+## variable sys_hp2_interconnect_index
+## variable sys_hp3_interconnect_index
+## variable sys_mem_interconnect_index
+## variable xcvr_index
+## variable xcvr_tx_index
+## variable xcvr_rx_index
+## variable xcvr_instance
+## set sys_cpu_interconnect_index 0
+## set sys_hp0_interconnect_index -1
+## set sys_hp1_interconnect_index -1
+## set sys_hp2_interconnect_index -1
+## set sys_hp3_interconnect_index -1
+## set sys_mem_interconnect_index -1
+## set xcvr_index -1
+## set xcvr_tx_index 0
+## set xcvr_rx_index 0
+## set xcvr_instance NONE
+## proc ad_ip_instance {i_ip i_name} {
+## 
+##   create_bd_cell -type ip -vlnv [get_ipdefs -all -filter "VLNV =~ *:${i_ip}:* && \
+##     design_tool_contexts =~ *IPI* && UPGRADE_VERSIONS == \"\""] ${i_name}
+## }
+## proc ad_ip_parameter {i_name i_param i_value} {
+## 
+##   set_property ${i_param} ${i_value} [get_bd_cells ${i_name}]
+## }
+## proc ad_connect_type {p_name} {
+## 
+##   set m_name ""
+## 
+##   if {$m_name eq ""} {set m_name [get_bd_intf_pins  -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_pins       -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_intf_ports -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_ports      -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_intf_nets  -quiet $p_name]}
+##   if {$m_name eq ""} {set m_name [get_bd_nets       -quiet $p_name]}
+## 
+##   return $m_name
+## }
+## proc ad_connect {p_name_1 p_name_2} {
+## 
+##   if {($p_name_2 eq "GND") || ($p_name_2 eq "VCC")} {
+##     set p_size 1
+##     set p_msb [get_property left [get_bd_pins $p_name_1]]
+##     set p_lsb [get_property right [get_bd_pins $p_name_1]]
+##     if {($p_msb ne "") && ($p_lsb ne "")} {
+##       set p_size [expr (($p_msb + 1) - $p_lsb)]
+##     }
+##     set p_cell_name [regsub -all {/} $p_name_1 "_"]
+##     set p_cell_name "${p_cell_name}_${p_name_2}"
+##     if {$p_name_2 eq "VCC"} {
+##       set p_value -1
+##     } else {
+##       set p_value 0
+##     }
+##     ad_ip_instance xlconstant $p_cell_name
+##     set_property CONFIG.CONST_WIDTH $p_size [get_bd_cells $p_cell_name]
+##     set_property CONFIG.CONST_VAL $p_value [get_bd_cells $p_cell_name]
+##     puts "connect_bd_net $p_cell_name/dout $p_name_1"
+##     connect_bd_net [get_bd_pins $p_cell_name/dout] [get_bd_pins $p_name_1]
+##     return
+##   }
+## 
+##   set m_name_1 [ad_connect_type $p_name_1]
+##   set m_name_2 [ad_connect_type $p_name_2]
+## 
+##   if {$m_name_1 eq ""} {
+##     if {[get_property CLASS $m_name_2] eq "bd_intf_pin"} {
+##       puts "create_bd_intf_net $p_name_1"
+##       create_bd_intf_net $p_name_1
+##     }
+##     if {[get_property CLASS $m_name_2] eq "bd_pin"} {
+##       puts "create_bd_net $p_name_1"
+##       create_bd_net $p_name_1
+##     }
+##     set m_name_1 [ad_connect_type $p_name_1]
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_intf_pin"} {
+##     puts "connect_bd_intf_net $m_name_1 $m_name_2"
+##     connect_bd_intf_net $m_name_1 $m_name_2
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_pin"} {
+##     puts "connect_bd_net $m_name_1 $m_name_2"
+##     connect_bd_net $m_name_1 $m_name_2
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_net"} {
+##     puts "connect_bd_net -net $m_name_1 $m_name_2"
+##     connect_bd_net -net $m_name_1 $m_name_2
+##     return
+##   }
+## }
+## proc ad_disconnect {p_name_1 p_name_2} {
+## 
+##   set m_name_1 [ad_connect_type $p_name_1]
+##   set m_name_2 [ad_connect_type $p_name_2]
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_net"} {
+##     disconnect_bd_net $m_name_1 $m_name_2
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_port"} {
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet $m_name_1
+##     return
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_pin"} {
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet $m_name_1
+##     return
+##   }
+## }
+## proc ad_reconct {p_name_1 p_name_2} {
+## 
+##   set m_name_1 [ad_connect_type $p_name_1]
+##   set m_name_2 [ad_connect_type $p_name_2]
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_pin"} {
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet [get_bd_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_2]]
+##   }
+## 
+##   if {[get_property CLASS $m_name_1] eq "bd_intf_pin"} {
+##     delete_bd_objs -quiet [get_bd_intf_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_1]]
+##     delete_bd_objs -quiet [get_bd_intf_nets -quiet -of_objects \
+##       [find_bd_objs -relation connected_to $m_name_2]]
+##   }
+## 
+##   ad_connect $p_name_1 $p_name_2
+## }
+## proc ad_xcvrcon {u_xcvr a_xcvr a_jesd {lane_map {}}} {
+##   
+##   global xcvr_index
+##   global xcvr_tx_index
+##   global xcvr_rx_index
+##   global xcvr_instance
+## 
+##   set no_of_lanes [get_property CONFIG.NUM_OF_LANES [get_bd_cells $a_xcvr]]
+##   set qpll_enable [get_property CONFIG.QPLL_ENABLE [get_bd_cells $a_xcvr]]
+##   set tx_or_rx_n [get_property CONFIG.TX_OR_RX_N [get_bd_cells $a_xcvr]]
+## 
+## #  set jesd204_vlnv [get_property VLNV $a_jesd]
+## #
+## #  if {[string first "analog.com" $jesd204_vlnv] == 0} {
+## #    set jesd204_type 0
+## #  } elseif {[string first "xilinx.com" $jesd204_vlnv] == 0} {
+## #    set jesd204_type 1
+## #  } else {
+## #    return -code 1 "Unsupported JESD204 core type."
+## #  }
+## 
+##   set jesd204_bd_type [get_property TYPE [get_bd_cells $a_jesd]]
+## 
+##   if {$jesd204_bd_type == "hier"} {
+##     set jesd204_type 0
+##   } else {
+##     set jesd204_type 1
+##   }
+## 
+##   if {$xcvr_instance ne $u_xcvr} {
+##     set xcvr_index [expr ($xcvr_index + 1)]
+##     set xcvr_tx_index 0
+##     set xcvr_rx_index 0
+##     set xcvr_instance $u_xcvr
+##   }
+## 
+##   set txrx "rx"
+##   set data_dir "I"
+##   set ctrl_dir "O"
+##   set index $xcvr_rx_index
+## 
+##   if {$tx_or_rx_n == 1} {
+## 
+##     set txrx "tx"
+##     set data_dir "O"
+##     set ctrl_dir "I"
+##     set index $xcvr_tx_index
+##   }
+## 
+##   set m_sysref ${txrx}_sysref_${index}
+##   set m_sync ${txrx}_sync_${index}
+##   set m_data ${txrx}_data
+## 
+##   if {$xcvr_index >= 1} {
+## 
+##     set m_sysref ${txrx}_sysref_${xcvr_index}_${index}
+##     set m_sync ${txrx}_sync_${xcvr_index}_${index}
+##     set m_data ${txrx}_data_${xcvr_index}
+##   }
+## 
+##   create_bd_port -dir I $m_sysref
+##   create_bd_port -dir ${ctrl_dir} $m_sync
+##   ad_ip_instance proc_sys_reset ${a_jesd}_rstgen
+## 
+##   for {set n 0} {$n < $no_of_lanes} {incr n} {
+## 
+##     set m [expr ($n + $index)]
+## 
+##     if {$tx_or_rx_n == 0} {
+##       ad_connect  ${a_xcvr}/up_es_${n} ${u_xcvr}/up_es_${m}
+##       if {$jesd204_type == 0} {
+##         ad_connect  ${a_jesd}/phy_en_char_align ${u_xcvr}/${txrx}_calign_${m}
+##       } else {
+##         ad_connect  ${a_jesd}/rxencommaalign_out ${u_xcvr}/${txrx}_calign_${m}
+##       }
+##     }
+## 
+##     if {(($m%4) == 0) && ($qpll_enable == 1)} {
+##       ad_connect  ${a_xcvr}/up_cm_${n} ${u_xcvr}/up_cm_${m}
+##     }
+## 
+##     if {$lane_map != {}} {
+##       set phys_lane [expr [lindex $lane_map $n] + $index]
+##     } else {
+##       set phys_lane $m
+##     }
+## 
+##     ad_connect  ${a_xcvr}/up_ch_${n} ${u_xcvr}/up_${txrx}_${m}
+##     ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${u_xcvr}/${txrx}_clk_${m}
+##     if {$jesd204_type == 0} {
+##       ad_connect  ${u_xcvr}/${txrx}_${phys_lane} ${a_jesd}/${txrx}_phy${n}
+##     } else {
+##       ad_connect  ${u_xcvr}/${txrx}_${phys_lane} ${a_jesd}/gt${n}_${txrx}
+##     }
+## 
+##     create_bd_port -dir ${data_dir} ${m_data}_${m}_p
+##     create_bd_port -dir ${data_dir} ${m_data}_${m}_n
+##     ad_connect  ${u_xcvr}/${txrx}_${m}_p ${m_data}_${m}_p
+##     ad_connect  ${u_xcvr}/${txrx}_${m}_n ${m_data}_${m}_n
+##   }
+## 
+##   if {$jesd204_type == 0} {
+##     ad_connect  ${a_jesd}/sysref $m_sysref
+##     ad_connect  ${a_jesd}/sync $m_sync
+##     ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${a_jesd}/device_clk
+## #    if {$tx_or_rx_n == 0} {
+## #      ad_connect  ${a_xcvr}/up_status ${a_jesd}/phy_ready
+## #    }
+##   } else {
+##     ad_connect  ${a_jesd}/${txrx}_sysref $m_sysref
+##     ad_connect  ${a_jesd}/${txrx}_sync $m_sync
+##     ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${a_jesd}/${txrx}_core_clk
+##     ad_connect  ${a_xcvr}/up_status ${a_jesd}/${txrx}_reset_done
+##     ad_connect  ${a_jesd}_rstgen/peripheral_reset ${a_jesd}/${txrx}_reset
+##   }
+## 
+##   ad_connect  ${u_xcvr}/${txrx}_out_clk_${index} ${a_jesd}_rstgen/slowest_sync_clk
+##   ad_connect  sys_cpu_resetn ${a_jesd}_rstgen/ext_reset_in
+## 
+##   if {$tx_or_rx_n == 0} {
+##     set xcvr_rx_index [expr ($xcvr_rx_index + $no_of_lanes)]
+##   }
+## 
+##   if {$tx_or_rx_n == 1} {
+##     set xcvr_tx_index [expr ($xcvr_tx_index + $no_of_lanes)]
+##   }
+## }
+## proc ad_xcvrpll {m_src m_dst} {
+## 
+##   foreach p_dst [get_bd_pins -quiet $m_dst] {
+##     connect_bd_net [ad_connect_type $m_src] $p_dst
+##   }
+## }
+## proc ad_mem_hp0_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP0")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP0" $p_clk $p_name}
+## }
+## proc ad_mem_hp1_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP1")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP1" $p_clk $p_name}
+## }
+## proc ad_mem_hp2_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP2")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP2" $p_clk $p_name}
+## }
+## proc ad_mem_hp3_interconnect {p_clk p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {($sys_zynq == 0) && ($p_name eq "sys_ps7/S_AXI_HP3")} {return}
+##   if {$sys_zynq == 0} {ad_mem_hpx_interconnect "MEM" $p_clk $p_name}
+##   if {$sys_zynq >= 1} {ad_mem_hpx_interconnect "HP3" $p_clk $p_name}
+## }
+## proc ad_mem_hpx_interconnect {p_sel p_clk p_name} {
+## 
+##   global sys_zynq
+##   global sys_ddr_addr_seg
+##   global sys_hp0_interconnect_index
+##   global sys_hp1_interconnect_index
+##   global sys_hp2_interconnect_index
+##   global sys_hp3_interconnect_index
+##   global sys_mem_interconnect_index
+## 
+##   set p_name_int $p_name
+##   set p_clk_source [get_bd_pins -filter {DIR == O} -of_objects [get_bd_nets $p_clk]]
+## 
+##   if {$p_sel eq "MEM"} {
+##     if {$sys_mem_interconnect_index < 0} {
+##       ad_ip_instance axi_interconnect axi_mem_interconnect
+##     }
+##     set m_interconnect_index $sys_mem_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_mem_interconnect]
+##     set m_addr_seg [get_bd_addr_segs -of_objects [get_bd_cells axi_ddr_cntrl]]
+##   }
+## 
+##   if {($p_sel eq "HP0") && ($sys_zynq == 1)} {
+##     if {$sys_hp0_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP0
+##       set_property CONFIG.PCW_USE_S_AXI_HP0 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp0_interconnect
+##     }
+##     set m_interconnect_index $sys_hp0_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp0_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP0/HP0_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP1") && ($sys_zynq == 1)} {
+##     if {$sys_hp1_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP1
+##       set_property CONFIG.PCW_USE_S_AXI_HP1 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp1_interconnect
+##     }
+##     set m_interconnect_index $sys_hp1_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp1_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP1/HP1_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP2") && ($sys_zynq == 1)} {
+##     if {$sys_hp2_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP2
+##       set_property CONFIG.PCW_USE_S_AXI_HP2 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp2_interconnect
+##     }
+##     set m_interconnect_index $sys_hp2_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp2_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP2/HP2_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP3") && ($sys_zynq == 1)} {
+##     if {$sys_hp3_interconnect_index < 0} {
+##       set p_name_int sys_ps7/S_AXI_HP3
+##       set_property CONFIG.PCW_USE_S_AXI_HP3 {1} [get_bd_cells sys_ps7]
+##       ad_ip_instance axi_interconnect axi_hp3_interconnect
+##     }
+##     set m_interconnect_index $sys_hp3_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp3_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps7/S_AXI_HP3/HP3_DDR_LOWOCM]
+##   }
+## 
+##   if {($p_sel eq "HP0") && ($sys_zynq == 2)} {
+##     if {$sys_hp0_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP0_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP2 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp0_interconnect
+##     }
+##     set m_interconnect_index $sys_hp0_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp0_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP0_FPD/PLLPD_DDR_LOW]
+##   }
+## 
+##   if {($p_sel eq "HP1") && ($sys_zynq == 2)} {
+##     if {$sys_hp1_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP1_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP3 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp1_interconnect
+##     }
+##     set m_interconnect_index $sys_hp1_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp1_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP1_FPD/HP0_DDR_LOW]
+##   }
+## 
+##   if {($p_sel eq "HP2") && ($sys_zynq == 2)} {
+##     if {$sys_hp2_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP2_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP4 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp2_interconnect
+##     }
+##     set m_interconnect_index $sys_hp2_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp2_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP2_FPD/HP1_DDR_LOW]
+##   }
+## 
+##   if {($p_sel eq "HP3") && ($sys_zynq == 2)} {
+##     if {$sys_hp3_interconnect_index < 0} {
+##       set p_name_int sys_ps8/S_AXI_HP3_FPD
+##       set_property CONFIG.PSU__USE__S_AXI_GP5 {1} [get_bd_cells sys_ps8]
+##       ad_ip_instance axi_interconnect axi_hp3_interconnect
+##     }
+##     set m_interconnect_index $sys_hp3_interconnect_index
+##     set m_interconnect_cell [get_bd_cells axi_hp3_interconnect]
+##     set m_addr_seg [get_bd_addr_segs sys_ps8/S_AXI_HP3_FPD/HP2_DDR_LOW]
+##   }
+## 
+##   set i_str "S$m_interconnect_index"
+##   if {$m_interconnect_index < 10} {
+##     set i_str "S0$m_interconnect_index"
+##   }
+## 
+##   set m_interconnect_index [expr $m_interconnect_index + 1]
+## 
+##   set p_intf_name [lrange [split $p_name_int "/"] end end]
+##   set p_cell_name [lrange [split $p_name_int "/"] 0 0]
+##   set p_intf_clock [get_bd_pins -filter "TYPE == clk && (CONFIG.ASSOCIATED_BUSIF == ${p_intf_name} || \
+##     CONFIG.ASSOCIATED_BUSIF =~ ${p_intf_name}:* || CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name} || \
+##     CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name}:*)" -quiet -of_objects [get_bd_cells $p_cell_name]]
+##   if {[find_bd_objs -quiet -relation connected_to $p_intf_clock] ne "" ||
+##       $p_intf_clock eq $p_clk_source} {
+##     set p_intf_clock ""
+##   }
+## 
+##   regsub clk $p_clk resetn p_rst
+##   if {[get_bd_nets -quiet $p_rst] eq ""} {
+##     set p_rst sys_cpu_resetn
+##   }
+## 
+##   if {$m_interconnect_index == 0} {
+##     set_property CONFIG.NUM_MI 1 $m_interconnect_cell
+##     set_property CONFIG.NUM_SI 1 $m_interconnect_cell
+##     ad_connect $p_rst $m_interconnect_cell/ARESETN
+##     ad_connect $p_clk $m_interconnect_cell/ACLK
+##     ad_connect $p_rst $m_interconnect_cell/M00_ARESETN
+##     ad_connect $p_clk $m_interconnect_cell/M00_ACLK
+##     ad_connect $m_interconnect_cell/M00_AXI $p_name_int
+##     if {$p_intf_clock ne ""} {
+##       ad_connect $p_clk $p_intf_clock
+##     }
+##   } else {
+##     set_property CONFIG.NUM_SI $m_interconnect_index $m_interconnect_cell
+##     ad_connect $p_rst $m_interconnect_cell/${i_str}_ARESETN
+##     ad_connect $p_clk $m_interconnect_cell/${i_str}_ACLK
+##     ad_connect $m_interconnect_cell/${i_str}_AXI $p_name_int
+##     if {$p_intf_clock ne ""} {
+##       ad_connect $p_clk $p_intf_clock
+##     }
+##     assign_bd_address $m_addr_seg
+##   }
+## 
+##   if {$m_interconnect_index > 1} {
+##     set_property CONFIG.STRATEGY {2} $m_interconnect_cell
+##   }
+## 
+##   if {$p_sel eq "MEM"} {set sys_mem_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP0"} {set sys_hp0_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP1"} {set sys_hp1_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP2"} {set sys_hp2_interconnect_index $m_interconnect_index}
+##   if {$p_sel eq "HP3"} {set sys_hp3_interconnect_index $m_interconnect_index}
+## 
+## }
+## proc ad_cpu_interconnect {p_address p_name} {
+## 
+##   global sys_zynq
+##   global sys_cpu_interconnect_index
+## 
+##   set i_str "M$sys_cpu_interconnect_index"
+##   if {$sys_cpu_interconnect_index < 10} {
+##     set i_str "M0$sys_cpu_interconnect_index"
+##   }
+## 
+##   if {$sys_cpu_interconnect_index == 0} {
+##     ad_ip_instance axi_interconnect axi_cpu_interconnect
+##     if {$sys_zynq == 2} {
+##       ad_connect sys_cpu_clk sys_ps8/maxihpm0_lpd_aclk
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/S00_ACLK
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/ARESETN
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/S00_ARESETN
+##       ad_connect axi_cpu_interconnect/S00_AXI sys_ps8/M_AXI_HPM0_LPD
+##     }
+##     if {$sys_zynq == 1} {
+##       ad_connect sys_cpu_clk sys_ps7/M_AXI_GP0_ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/S00_ACLK
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/ARESETN
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/S00_ARESETN
+##       ad_connect axi_cpu_interconnect/S00_AXI sys_ps7/M_AXI_GP0
+##     }
+##     if {$sys_zynq == 0} {
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/ACLK
+##       ad_connect sys_cpu_clk axi_cpu_interconnect/S00_ACLK
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/ARESETN
+##       ad_connect sys_cpu_resetn axi_cpu_interconnect/S00_ARESETN
+##       ad_connect axi_cpu_interconnect/S00_AXI sys_mb/M_AXI_DP
+##     }
+##   }
+## 
+##   if {$sys_zynq == 2} {
+##     set sys_addr_cntrl_space [get_bd_addr_spaces sys_ps8/Data]
+##   }
+##   if {$sys_zynq == 1} {
+##     set sys_addr_cntrl_space [get_bd_addr_spaces sys_ps7/Data]
+##   }
+##   if {$sys_zynq == 0} {
+##     set sys_addr_cntrl_space [get_bd_addr_spaces sys_mb/Data]
+##   }
+## 
+##   set sys_cpu_interconnect_index [expr $sys_cpu_interconnect_index + 1]
+## 
+## 
+##   set p_cell [get_bd_cells $p_name]
+##   set p_intf [get_bd_intf_pins -filter "MODE == Slave && VLNV == xilinx.com:interface:aximm_rtl:1.0"\
+##     -of_objects $p_cell]
+## 
+##   set p_hier_cell $p_cell
+##   set p_hier_intf $p_intf
+## 
+##   while {$p_hier_intf != "" && [get_property TYPE $p_hier_cell] == "hier"} {
+##     set p_hier_intf [find_bd_objs -boundary_type lower \
+##       -relation connected_to $p_hier_intf]
+##     if {$p_hier_intf != {}} {
+##       set p_hier_cell [get_bd_cells -of_objects $p_hier_intf]
+##     } else {
+##       set p_hier_cell {}
+##     }
+##   }
+## 
+##   set p_intf_clock ""
+##   set p_intf_reset ""
+## 
+##   if {$p_hier_cell != {}} {
+##     set p_intf_name [lrange [split $p_hier_intf "/"] end end]
+## 
+##     set p_intf_clock [get_bd_pins -filter "TYPE == clk && \
+##       (CONFIG.ASSOCIATED_BUSIF == ${p_intf_name} || \
+##       CONFIG.ASSOCIATED_BUSIF =~ ${p_intf_name}:* || \
+##       CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name} || \
+##       CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name}:*)" \
+##       -quiet -of_objects $p_hier_cell]
+##     set p_intf_reset [get_bd_pins -filter "TYPE == rst && \
+##       (CONFIG.ASSOCIATED_BUSIF == ${p_intf_name} || \
+##        CONFIG.ASSOCIATED_BUSIF =~ ${p_intf_name}:* ||
+##        CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name} || \
+##        CONFIG.ASSOCIATED_BUSIF =~ *:${p_intf_name}:*)" \
+##        -quiet -of_objects $p_hier_cell]
+## 
+##     if {($p_intf_clock ne "") && ($p_intf_reset eq "")} {
+##       set p_intf_reset [get_property CONFIG.ASSOCIATED_RESET [get_bd_pins ${p_intf_clock}]]
+##       if {$p_intf_reset ne ""} {
+##         set p_intf_reset [get_bd_pins -filter "NAME == $p_intf_reset" -of_objects $p_hier_cell]
+##       }
+##     }
+## 
+##     # Trace back up
+##     set p_hier_cell2 $p_hier_cell
+## 
+##     while {$p_intf_clock != {} && $p_hier_cell2 != $p_cell && $p_hier_cell2 != {}} {
+##       puts $p_intf_clock
+##       puts $p_hier_cell2
+##       set p_intf_clock [find_bd_objs -boundary_type upper \
+##         -relation connected_to $p_intf_clock]
+##       if {$p_intf_clock != {}} {
+##         set p_intf_clock [get_bd_pins [get_property PATH $p_intf_clock]]
+##         set p_hier_cell2 [get_bd_cells -of_objects $p_intf_clock]
+##       }
+##     }
+## 
+##     set p_hier_cell2 $p_hier_cell
+## 
+##     while {$p_intf_reset != {} && $p_hier_cell2 != $p_cell && $p_hier_cell2 != {}} {
+##       set p_intf_reset [find_bd_objs -boundary_type upper \
+##         -relation connected_to $p_intf_reset]
+##       if {$p_intf_reset != {}} {
+##         set p_intf_reset [get_bd_pins [get_property PATH $p_intf_reset]]
+##         set p_hier_cell2 [get_bd_cells -of_objects $p_intf_reset]
+##       }
+##     }
+##   }
+## 
+## 
+##   if {[find_bd_objs -quiet -relation connected_to $p_intf_clock] ne ""} {
+##     set p_intf_clock ""
+##   }
+##   if {$p_intf_reset ne ""} {
+##     if {[find_bd_objs -quiet -relation connected_to $p_intf_reset] ne ""} {
+##       set p_intf_reset ""
+##     }
+##   }
+## 
+##   set_property CONFIG.NUM_MI $sys_cpu_interconnect_index [get_bd_cells axi_cpu_interconnect]
+## 
+##   ad_connect sys_cpu_clk axi_cpu_interconnect/${i_str}_ACLK
+##   if {$p_intf_clock ne ""} {
+##     ad_connect sys_cpu_clk ${p_intf_clock}
+##   }
+##   ad_connect sys_cpu_resetn axi_cpu_interconnect/${i_str}_ARESETN
+##   if {$p_intf_reset ne ""} {
+##     ad_connect sys_cpu_resetn ${p_intf_reset}
+##   }
+##   ad_connect axi_cpu_interconnect/${i_str}_AXI ${p_intf}
+## 
+##   set p_seg [get_bd_addr_segs -of_objects $p_hier_cell]
+##   set p_index 0
+##   foreach p_seg_name $p_seg {
+##     if {$p_index == 0} {
+##       set p_seg_range [get_property range $p_seg_name]
+##       if {$p_seg_range < 0x1000} {
+##         set p_seg_range 0x1000
+##       }
+##       if {$sys_zynq == 2} {
+##         if {($p_address >= 0x40000000) && ($p_address <= 0x4fffffff)} {
+##           set p_address [expr ($p_address + 0x40000000)]
+##         }
+##         if {($p_address >= 0x70000000) && ($p_address <= 0x7fffffff)} {
+##           set p_address [expr ($p_address + 0x20000000)]
+##         }
+##       }
+##       create_bd_addr_seg -range $p_seg_range \
+##         -offset $p_address $sys_addr_cntrl_space \
+##         $p_seg_name "SEG_data_${p_name}"
+##     } else {
+##       assign_bd_address $p_seg_name
+##     }
+##     incr p_index
+##   }
+## }
+## proc ad_cpu_interrupt {p_ps_index p_mb_index p_name} {
+## 
+##   global sys_zynq
+## 
+##   if {$sys_zynq == 0} {set p_index_int $p_mb_index}
+##   if {$sys_zynq >= 1} {set p_index_int $p_ps_index}
+## 
+##   set p_index [regsub -all {[^0-9]} $p_index_int ""]
+##   set m_index [expr ($p_index - 8)]
+## 
+##   if {($sys_zynq == 2) && ($p_index <= 7)} {
+##     set p_net [get_bd_nets -of_objects [get_bd_pins sys_concat_intc_0/In$p_index]]
+##     set p_pin [find_bd_objs -relation connected_to [get_bd_pins sys_concat_intc_0/In$p_index]]
+## 
+##     puts "delete_bd_objs $p_net $p_pin"
+##     delete_bd_objs $p_net $p_pin
+##     ad_connect sys_concat_intc_0/In$p_index $p_name
+##   }
+## 
+##   if {($sys_zynq == 2) && ($p_index >= 8)} {
+##     set p_net [get_bd_nets -of_objects [get_bd_pins sys_concat_intc_1/In$m_index]]
+##     set p_pin [find_bd_objs -relation connected_to [get_bd_pins sys_concat_intc_1/In$m_index]]
+## 
+##     puts "delete_bd_objs $p_net $p_pin"
+##     delete_bd_objs $p_net $p_pin
+##     ad_connect sys_concat_intc_1/In$m_index $p_name
+##   }
+## 
+##   if {$sys_zynq <= 1} {
+## 
+##     set p_net [get_bd_nets -of_objects [get_bd_pins sys_concat_intc/In$p_index]]
+##     set p_pin [find_bd_objs -relation connected_to [get_bd_pins sys_concat_intc/In$p_index]]
+## 
+##     puts "delete_bd_objs $p_net $p_pin"
+##     delete_bd_objs $p_net $p_pin
+##     ad_connect sys_concat_intc/In$p_index $p_name
+##   }
+## }
+# adi_project_xilinx adv7511_zed
+CRITICAL WARNING: vivado version mismatch; expected 2017.4.1, got 2013.4.
+ERROR: [Project 1-474] Board 'em.avnet.com:zed:part0:1.3' not found. Run 'get_boards' Tcl command to view list of applicable boards.
+
+    while executing
+"rdi::set_property board em.avnet.com:zed:part0:1.3 adv7511_zed"
+    invoked from within
+"set_property board $p_board [current_project]"
+    invoked from within
+"if {$p_board ne "not-applicable"} {
+    set_property board $p_board [current_project]
+  }"
+    (procedure "adi_project_xilinx" line 81)
+    invoked from within
+"adi_project_xilinx adv7511_zed"
+    (file "./system_project.tcl" line 8)
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  1 18:52:09 2018...

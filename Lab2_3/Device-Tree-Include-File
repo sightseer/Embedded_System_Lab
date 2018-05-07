@@ -1,0 +1,20 @@
+The steps in the website: Done in the step 10
+
+
+zynq-zed-adv7511.dts
+/dts-v1/;
+
+/include/ "zynq-zed.dtsi"
+/include/ "zynq-zed-adv7511.dtsi"
+
+	zynq-zed.dtsi
+	/include/ "zynq.dtsi"
+
+	zynq-zed-adv7511.dtsi
+	none
+		
+		zynq.dtsi
+		none
+		
+	
+

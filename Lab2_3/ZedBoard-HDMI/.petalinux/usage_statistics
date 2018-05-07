@@ -1,0 +1,10 @@
+4159702930
+
+command_total_run_petalinux-create=1
+command_failures_petalinux-create=0
+command_option_petalinux-create=-t
+command_option_value_petalinux-create=project
+command_option_petalinux-create=-n
+command_option_value_petalinux-create=ZedBoard-HDMI
+command_total_run_petalinux-config=3
+command_failures_petalinux-config=0

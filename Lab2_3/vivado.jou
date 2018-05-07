@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Tue May  1 19:07:08 2018
+# Process ID: 5962
+# Log file: /home/xyin/Embedded_System_Lab/Lab2_3/vivado.log
+# Journal file: /home/xyin/Embedded_System_Lab/Lab2_3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source /home/xyin/Embedded_System_Lab/Lab2_3/hdl/projects/adv7511/zed/system_project.tcl
+ls
+cd hdl/library/axi_clkgen/
+source ./axi_clkgen_ip.tcl
+update_compile_order -fileset sim_1
+close_project
+cd ../../projects/adv7511/zed/
+source ./system_project.tcl
+set_property top Lab2_3 [current_fileset]
+update_compile_order -fileset sources_1
+save_bd_design
+close_bd_design [get_bd_designs system]
+close_project
+cd ../../../library/axi_hdmi_tx/
+ls
+source ./axi_hdmi_tx_ip.tcl
+update_compile_order -fileset sim_1
+close_project
+cd ../axi_i2s_adi/
+source ./axi_i2s_adi_ip.tcl
+update_compile_order -fileset sim_1
+close_project
+cd ../axi_spdif_tx/
+source ./axi_spdif_tx_ip.tcl
+update_compile_order -fileset sim_1
+close_project
+cd ../util_i2c_mixer/util_i2c_mixer_ip.tcl
+cd ../util_i2c_mixer/
+source ./util_i2c_mixer_ip.tcl
+update_compile_order -fileset sim_1
+close_project
+cd ../../projects/adv7511/zed/
+source ./system_project.tcl
+update_compile_order -fileset sim_1
+export_hardware [get_files /home/xyin/Embedded_System_Lab/Lab2_3/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system.bd] [get_runs impl_1] -bitstream
+launch_sdk -bit /home/xyin/Embedded_System_Lab/Lab2_3/hdl/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system_top.bit -workspace /home/xyin/Embedded_System_Lab/Lab2_3/hdl/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export -hwspec /home/xyin/Embedded_System_Lab/Lab2_3/hdl/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml
+export_hardware [get_files /home/xyin/Embedded_System_Lab/Lab2_3/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system.bd] [get_runs impl_1] -bitstream
+launch_sdk -bit /home/xyin/Embedded_System_Lab/Lab2_3/hdl/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system_top.bit -workspace /home/xyin/Embedded_System_Lab/Lab2_3/hdl/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export -hwspec /home/xyin/Embedded_System_Lab/Lab2_3/hdl/projects/adv7511/zed/adv7511_zed.sdk/SDK/SDK_Export/hw/system.xml

@@ -1,0 +1,15 @@
+[INFO ] generate /home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/subsystems/linux/hw-description/system.dts
+[INFO ] oldconfig linux
+[INFO ] oldconfig linux/kernel
+[INFO ] oldconfig linux/rootfs ROOTFS_CONFIG=/home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/subsystems/linux/configs/rootfs/config KCONFIGFILE=/home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/build/linux/rootfs/Kconfig
+[INFO ] generate /home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/subsystems/linux/hw-description/system.dts
+[INFO ] oldconfig linux/kernel
+[INFO ] oldconfig linux/rootfs ROOTFS_CONFIG=/home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/subsystems/linux/configs/rootfs/config KCONFIGFILE=/home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/build/linux/rootfs/Kconfig
+[INFO ] config linux
+[INFO ] generate /home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/subsystems/linux/hw-description/system.dts
+[INFO ] oldconfig linux/kernel
+[INFO ] oldconfig linux/rootfs ROOTFS_CONFIG=/home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/subsystems/linux/configs/rootfs/config KCONFIGFILE=/home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/build/linux/rootfs/Kconfig
+[INFO ] config linux
+[INFO ] generate /home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/subsystems/linux/hw-description/system.dts
+[INFO ] oldconfig linux/kernel
+[INFO ] oldconfig linux/rootfs ROOTFS_CONFIG=/home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/subsystems/linux/configs/rootfs/config KCONFIGFILE=/home/xyin/Embedded_System_Lab/Lab2_3/ZedBoard-HDMI/build/linux/rootfs/Kconfig

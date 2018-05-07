@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:26:26 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Tue May  1 17:13:23 2018
+# Process ID: 4318
+# Log file: /home/xyin/Embedded_System_Lab/Lab2_3/vivado.log
+# Journal file: /home/xyin/Embedded_System_Lab/Lab2_3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source {/home/xyin/Embedded_System_Lab/Lab2_3/hdl-master/projects/adv7511/zed/system_project.tcl}
+ls
+cd hdl-master
+cd library/axi_clkgen/
+sour
+source ./axi_clkgen_ip.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_project
+ls
+cd ../..
+ls
+cd ../hdl-master/
+ls
+cd projects/adv7511/zed/
+source ./system_project.tcl
+list_property
+source ./system_project.tcl
+close_project
+ls
+source ./system_project.tcl
